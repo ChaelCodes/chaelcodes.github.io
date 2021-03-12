@@ -1,32 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-title: ChaelCodes
-email: chaelcodes@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Portfolio site for ChaelCodes.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ChaelCodes
-github_username:  ChaelCodes
-
 # Build settings
 # theme: type-on-strap
 remote_theme: sylhare/Type-on-Strap
@@ -34,6 +5,32 @@ remote_theme: sylhare/Type-on-Strap
 plugins:
   - jekyll-feed
   - jekyll-paginate
+
+# SEO
+author: ChaelCodes
+twitter:
+  username: ChaelCodes
+  card: summary
+social:
+  name: ChaelCodes
+  links:
+    - https://twitch.tv/ChaelCodes
+    - https://twitter.com/ChaelCodes
+    - https://github.com/ChaelCodes
+
+# Site Settings
+title: ChaelCodes
+tagline: Portoflio
+description: >- # this means to ignore newlines until "baseurl:"
+  Rachael wants to share the joy and beauty of programming through
+  programming games and regular open-source streams on Twitch. She's
+  been a professional dev since 2012, 3x Team Lead, and manages an
+  open-source repo for playing games of Monster of the Week. Currently,
+  she works as a Developer Relations Engineer for New Relic.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://chael.codes" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ChaelCodes
+github_username:  ChaelCodes
 
 # Theme Settings
 # meta
