@@ -28,7 +28,9 @@ twitter_username: ChaelCodes
 github_username:  ChaelCodes
 
 # Build settings
-theme: type-on-strap
+# theme: type-on-strap
+remote_theme: sylhare/Type-on-Strap
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
