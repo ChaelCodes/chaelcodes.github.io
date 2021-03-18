@@ -3,7 +3,7 @@ layout: post
 title: Building Jekyll-Twitch, the gem
 author: ChaelCodes
 date: 2021-03-11 00:00:00 -0000
-feature-img: "assets/img/website.jpg"
+feature-img: "assets/img/website.png"
 tags: [ruby, jekyll, gem, twitch]
 ---
 
@@ -17,7 +17,7 @@ This project breaks down into 3 distinct problems:
 - Creating a Gem, and publishing it to Ruby Gems
 
 ## Creating a Jekyll Liquid Tag
-Jekyll liquid tags allow you to embed user-generated content safely. You might be okay with letting your users embed youtube videos, but you don't want them executing random javascript on your website. [Liquids](https://shopify.dev/docs/themes/liquid/reference/basics) are an extensible templating library designed by Shopify. You specify a tag type, and then pass your url or id, and the tag sanitizes it and embeds the content. `{% twitch <clip url here> %}`
+Jekyll liquid tags allow you to embed user-generated content safely. You might be okay with letting your users embed youtube videos, but you don't want them executing random javascript on your website. [Liquids](https://shopify.dev/docs/themes/liquid/reference/basics) are an extensible templating library designed by Shopify. You specify a tag type, and then pass your url or id, and the tag sanitizes it and embeds the content. {% comment %}{% twitch <clip url here> %}{% endcomment %}
 
 >#### Examples:
 >[Jekyll-YouTube](https://github.com/dommmel/jekyll-youtube)
@@ -64,8 +64,7 @@ None of these gems will be dependencies. I can run them exclusively in developme
 
 ## CI/CD
 
-Let's reuse the GitHub actions from last week.
-{% github https://github.com/ChaelCodes/chaelcodes.github.io/pull/1 %}
+Let's reuse the [GitHub actions](https://github.com/ChaelCodes/chaelcodes.github.io/pull/1) from last week.
 Then we'll add a new one to run RSpec, and verify that tests pass.
 
 Once I have the entire repository set up, and the gem built, I'll want to add it to my own site.
