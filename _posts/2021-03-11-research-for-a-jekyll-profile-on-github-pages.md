@@ -41,4 +41,4 @@ Plugins, tools, and deploys are all great, but they're nothing without the conte
 
 I can foresee a future where I gather Twitch + Youtube + Blog content around games I'm playing, but that's the future! Not for today! (I think a Games directory with a post page for each would be cool though...)
 
-With that all the research done, I should be ready to build my first Jekyll site! I'll be streaming it [on Twitch](https://twitch.tv/ChaelCodes?utm_source=theRelicans&utm_medium=blog&utm_campaign=friday_plan) at 15:00 UTC, March 12th, and I'll report back with everything I learned!
+{% twitch https://www.twitch.tv/chaelcodes/clip/NurturingEphemeralLegKreygasm-pZLTOLAGhV8sHP7Z %}

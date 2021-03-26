@@ -17,12 +17,12 @@ This project breaks down into 3 distinct problems:
 - Creating a Gem, and publishing it to Ruby Gems
 
 ## Creating a Jekyll Liquid Tag
-Jekyll liquid tags allow you to embed user-generated content safely. You might be okay with letting your users embed youtube videos, but you don't want them executing random javascript on your website. [Liquids](https://shopify.dev/docs/themes/liquid/reference/basics) are an extensible templating library designed by Shopify. You specify a tag type, and then pass your url or id, and the tag sanitizes it and embeds the content. {% comment %}{% twitch <clip url here> %}{% endcomment %}
+Jekyll liquid tags allow you to embed user-generated content safely. You might be okay with letting your users embed youtube videos, but you don't want them executing random javascript on your website. [Liquids](https://shopify.dev/docs/themes/liquid/reference/basics) are an extensible templating library designed by Shopify. You specify a tag type, and then pass your url or id, and the tag sanitizes it and embeds the content.
 
 >#### Examples:
->[Jekyll-YouTube](https://github.com/dommmel/jekyll-youtube)
->[Jekyll-Twitter](https://github.com/rob-murray/jekyll-twitter-plugin)
->[Jekyll-Gist](https://github.com/jekyll/jekyll-gist) (This one is maintained by Jekyll)
+>- [Jekyll-YouTube](https://github.com/dommmel/jekyll-youtube)
+>- [Jekyll-Twitter](https://github.com/rob-murray/jekyll-twitter-plugin)
+>- [Jekyll-Gist](https://github.com/jekyll/jekyll-gist) (This one is maintained by Jekyll)
 
 We'll start with Jekyll's guide to [liquid tags.](https://jekyllrb.com/docs/plugins/tags/) They say we should create a `TwitchTag` class inside the `Jekyll` module, and add a render method for the embeds. We also need to register the tag, `Liquid::Template.register_tag('twitch', Jekyll::TwitchTag)`, so Jekyll knows that it can use this tag.
 
