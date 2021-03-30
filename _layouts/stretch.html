@@ -8,12 +8,12 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <header class="site-header">
+    <header class="site-header nhs-header">
 
         <!-- Logo and title -->
         <div class="branding">
             <a class="site-title" aria-label="{{ site.title }}" href="{{ '/' | relative_url }}">
-                {{site.title}}
+                <em>CHAEL</em>
             </a>
         </div>
     
@@ -33,7 +33,7 @@
                 <li>
                     <a class="clear" aria-label="{{ page.title }}" title="{{ page.title }}" href="{{ page.url | relative_url }}">
                         {% if page.icon %} <i class="fas {{ page.icon }}" aria-hidden="true"></i>
-                        {% else %} {{ page.title }} {% endif%}
+                        {% else %} <span class="nav-link">{{ page.title }}</span> {% endif%}
                     </a>
                 </li>
                 {% endunless %}
