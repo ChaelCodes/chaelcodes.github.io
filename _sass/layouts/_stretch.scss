@@ -1,0 +1,29 @@
+.nhs-stretch {
+    img {
+        padding-left: 0px;
+    }
+
+    ol {
+        list-style-type: upper-alpha;
+
+        li {
+            padding: 5px;
+        }
+    }
+}
+
+.nhs-header {
+    background-color: #005eb8;
+
+    .site-title {
+        background-color: #fff;
+        color: #005eb8;
+        padding: 0px 5px;
+    }
+    .toggle {
+        color: #fff;
+    }
+    .nav-link {
+        color: #fff;
+    }
+}
