@@ -13,6 +13,16 @@ collections:
 
 # Site Settings
 author: ChaelCodes
+baseurl: "" # the subpath of your site, e.g. /blog
+description: >- # this means to ignore newlines until "baseurl:"
+  Rachael wants to share the joy and beauty of programming through
+  programming games and regular open-source streams on Twitch. She's
+  been a professional dev since 2012, 3x Team Lead, and manages an
+  open-source repo for playing games of Monster of the Week. Currently,
+  she works as a Developer Relations Engineer for New Relic.
+favicon: assets/favicon.png
+tagline: Portfolio
+title: ChaelCodes
 twitter:
   username: ChaelCodes
   card: summary
@@ -22,24 +32,9 @@ social:
     - https://twitch.tv/ChaelCodes
     - https://twitter.com/ChaelCodes
     - https://github.com/ChaelCodes
-
-# Site Settings
-title: ChaelCodes
-tagline: Portoflio
-description: >- # this means to ignore newlines until "baseurl:"
-  Rachael wants to share the joy and beauty of programming through
-  programming games and regular open-source streams on Twitch. She's
-  been a professional dev since 2012, 3x Team Lead, and manages an
-  open-source repo for playing games of Monster of the Week. Currently,
-  she works as a Developer Relations Engineer for New Relic.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.chael.codes" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ChaelCodes
 github_username:  ChaelCodes
-
-# Theme Settings
-# meta
-favicon: assets/favicon.png
+twitter_username: ChaelCodes
 
 # Header and Footer
 header_text: ChaelCodes
