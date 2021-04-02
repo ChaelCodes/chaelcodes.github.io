@@ -12,7 +12,10 @@ collections:
     output: true
 
 # Site Settings
-author: ChaelCodes
+author:
+  name: Rachael
+  picture: /img/setup.jpg
+  twitter: ChaelCodes
 baseurl: "" # the subpath of your site, e.g. /blog
 description: >- # this means to ignore newlines until "baseurl:"
   Rachael wants to share the joy and beauty of programming through
