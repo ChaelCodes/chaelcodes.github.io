@@ -7,7 +7,11 @@ plugins:
   - jekyll-paginate
   - jekyll-twitch
 
-# SEO
+collections:
+  updates:
+    output: true
+
+# Site Settings
 author: ChaelCodes
 twitter:
   username: ChaelCodes
@@ -48,6 +52,11 @@ excerpt: truncate
 # PAGINATION
 paginate: 10
 paginate_path: "blog/page:num"
+
+# Atom/RSS Feed
+feed:
+  collections:
+    - updates
 
 # Exclude from processing.
 # The following items will not be processed, by default.
