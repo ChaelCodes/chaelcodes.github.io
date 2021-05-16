@@ -1,0 +1,9 @@
+- name: Jekyll-Twitch
+  description: This is a liquid tag that lets folks embed twitch clips, broadcasts, etc in their Jekyll sites.
+  url: https://www.chael.codes/jekyll-twitch
+- name: Sadistic Self-Care Survival Simulator(SSCSS)
+  description: A game, built with DragonRuby, that kills the player for neglecting their body's basic needs. Drink water or die.
+  url: https://chaelcodes.itch.io/sscs-game
+- name: HuntersKeepers
+  description: The first live-coded app Chael built on stream. Started in October 2018, this Rails app manages games of Monster of the Week.
+  url: http://hunters-keepers.herokuapp.com/
