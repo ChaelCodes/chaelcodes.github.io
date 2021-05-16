@@ -1,6 +1,6 @@
 .comments {
   @extend %padding-post;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid var(--border);
   float: left;
   width: 100%;
 }
@@ -46,7 +46,7 @@ header {
 }
 
 .meta {
-  color: $meta; // rgba($text-color, .65);
+  color: var(--meta); // rgba($text-color, .65);
   letter-spacing: 0.1em;
   margin: 0;
   text-transform: uppercase;
@@ -84,7 +84,7 @@ header {
   padding: 0;
 
   .post-link {
-    color: $feature-image-text-color;
+    color: var(--header-text);
   }
 
   h1.title, .post-info {
@@ -92,12 +92,13 @@ header {
   }
 
   header {
-    color: $feature-image-text-color;
+    color: var(--header-text);
     margin-bottom: 0;
     padding: $padding-large/2.5 $padding-large;
 
     .meta {
-      color: rgba($feature-image-text-color, .7);
+      color: var(--header-text);
+      filter: opacity(0.7);
     }
   }
 

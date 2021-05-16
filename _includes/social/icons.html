@@ -1,5 +1,5 @@
 {% if site.data.social.rss or site.theme_settings.rss %}
-  <li>
+  <li class="social-icon">
       <a feed.xml href="{{ site.data.social.feed.path | default: 'feed.xml' | relative_url }}"
         title="{{ site.data.language.str_rss_follow | default: "Follow RSS feed" }}">
           <span class="fa-stack fa-lg">
@@ -11,7 +11,7 @@
 {% endif %}
 
 {% for social in site.data.social.links %}
-  <li>
+  <li class="social-icon">
     <a href="{{ social.link }}" title="{{ social.title }}">
 		  <span class="fa-stack fa-lg">
         <i class="fas fa-circle fa-stack-2x"></i>
