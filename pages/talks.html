@@ -1,0 +1,47 @@
+---
+title: Talks
+description: All the talks ChaelCodes has ever given!
+layout: page
+permalink: "/talks"
+---
+<p>Thank you for checking out the various talks I've given!</p>
+
+<div class="talks-container">
+  {% for talk in site.categories.talks %}
+    <div class="talk-card">
+      <a href="{{talk.post_url}}"><strong class="title">{{talk.title}}</strong></a>
+      <a href="{{talk.post_url}}"><img src="{{talk.image}}" alt="{{talk.title}}" /></a>
+      <p>{{talk.description}} <a href="{{talk.post_url}}">See the slides.</a></p>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.talks-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.talk-card {
+  width: 20rem;
+  min-width: 250px;
+  box-shadow: 5px -5px #25B2BC;
+  border: 3px solid black;
+  margin: 1rem;
+}
+
+.talk-card .title {
+  margin: 5px 10px;
+  display: block;
+}
+
+.talk-card img {
+  padding: 0;
+  width: 20rem;
+}
+
+.talk-card p {
+  margin: 10px;
+}
+</style>
