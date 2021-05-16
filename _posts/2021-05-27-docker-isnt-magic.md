@@ -5,6 +5,8 @@ description: An exploration of 4 open-source docker setups, why Docker isn't mag
 category: talks
 thumbnail: "/assets/img/posts/docker-isn't-magic.png"
 image: "/assets/img/posts/docker-isn't-magic.png"
+twitter:
+  card: summary_large_image
 ---
 An exploration of 4 open-source docker setups, why Docker isn't magic, and why it's worth it to use it anyway.
 

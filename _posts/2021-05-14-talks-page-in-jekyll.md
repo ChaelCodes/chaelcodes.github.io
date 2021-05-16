@@ -63,7 +63,7 @@ Jekyll-Seo is the main gem for managing seo and sharing. We can add frontmatter 
 description: <talk description>
 image: <image of first slide>
 twitter:
-  card: summary-large-image
+  card: summary_large_image
 ---
 ```
 
