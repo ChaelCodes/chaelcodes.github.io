@@ -6,6 +6,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-twitch
+  - jekyll-youtube
 
 collections:
   updates:
