@@ -9,9 +9,9 @@ permalink: "/talks"
 <div class="talks-container">
   {% for talk in site.categories.talks %}
     <div class="talk-card">
-      <a href="{{talk.post_url}}"><strong class="title">{{talk.title}}</strong></a>
-      <a href="{{talk.post_url}}"><img src="{{talk.image}}" alt="{{talk.title}}" /></a>
-      <p>{{talk.description}} <a href="{{talk.post_url}}">See the slides.</a></p>
+      <a href="{{talk.url}}"><strong class="title">{{talk.title}}</strong></a>
+      <a href="{{talk.url}}"><img src="{{talk.image}}" alt="{{talk.title}}" /></a>
+      <p>{{talk.description}} <a href="{{talk.url}}">See the slides.</a></p>
     </div>
   {% endfor %}
 </div>
