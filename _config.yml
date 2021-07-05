@@ -8,10 +8,6 @@ plugins:
   - jekyll-twitch
   - jekyll-youtube
 
-collections:
-  updates:
-    output: true
-
 # Site Settings
 author:
   name: Rachael
@@ -54,8 +50,6 @@ paginate_path: "blog/page:num"
 
 # Atom/RSS Feed
 feed:
-  collections:
-    - updates
 
 # Exclude from processing.
 # The following items will not be processed, by default.
