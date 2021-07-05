@@ -1,0 +1,66 @@
+--- 
+layout: page
+title : Podcasts
+description: Like listening to ChaelCodes, but your eyes are tired? Why not listen to a podcast? They're all here. <3
+permalink: /podcasts/
+feature-img: /assets/img/pages/podcasts-header.jpg
+---
+
+<p>Hello! I'm a co-host of the <a href="https://www.therelicans.com/polyglot">Polyglot Show.</a> A show about the patterns and techniques we use to build better software.</p>
+
+<p>Do you have a podcast? Want to invite Chael as a guest? DMs are open <a href="https://twitter.com/ChaelCodes">on Twitter.</a></p>
+
+<div class="podcast-container">
+  {% for podcast in site.categories.podcast %}
+    <div class="podcast-card">
+      <a href="{{podcast.url}}"><strong class="title">{{podcast.title}}</strong></a>
+      <a href="{{podcast.url}}"><img src="{{podcast.image}}" alt="{{podcast.title}}" /></a>
+      <p>{{podcast.description}} <a href="{{podcast.url}}">Listen</a></p>
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.podcast-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.podcast-card {
+  width: 20rem;
+  min-width: 250px;
+  border: 3px solid black;
+  margin: 1rem;
+}
+
+.podcast-card:nth-child(1n) {
+  box-shadow: 5px -5px #21BFC2;
+}
+
+.podcast-card:nth-child(2n) {
+  box-shadow: 5px -5px #E95379;
+}
+
+.podcast-card:nth-child(3n) {
+  box-shadow: 5px -5px #09F7A0;
+}
+
+.podcast-card:nth-child(4n) {
+  box-shadow: 5px -5px #FAB28E;
+}
+
+.podcast-card .title {
+  margin: 5px 10px;
+  display: block;
+}
+
+.podcast-card img {
+  padding: 0;
+  width: 20rem;
+}
+
+.podcast-card p {
+  margin: 10px;
+}
+</style>
