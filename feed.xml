@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://www.chael.codes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.chael.codes/" rel="alternate" type="text/html" /><updated>2021-07-07T17:11:35+00:00</updated><id>https://www.chael.codes/feed.xml</id><title type="html">ChaelCodes</title><subtitle>Rachael wants to share the joy and beauty of programming through programming games and regular open-source streams on Twitch. She's been a professional dev since 2012, 3x Team Lead, and manages an open-source repo for playing games of Monster of the Week. Currently, she works as a Developer Relations Engineer for New Relic.</subtitle><author><name>Rachael</name></author><entry><title type="html">Software Architecture: Different vs Wrong with Casey Dement</title><link href="https://www.chael.codes/podcast/2021/07/07/polyglot-casey-dement.html" rel="alternate" type="text/html" title="Software Architecture: Different vs Wrong with Casey Dement" /><published>2021-07-07T00:00:00+00:00</published><updated>2021-07-07T00:00:00+00:00</updated><id>https://www.chael.codes/podcast/2021/07/07/polyglot-casey-dement</id><content type="html" xml:base="https://www.chael.codes/podcast/2021/07/07/polyglot-casey-dement.html">&lt;p&gt;I met Casey at one of my previous jobs and admire the way he designs systems and discusses architecture. He’s a long-time software architect who has been designing solutions for businesses of all sizes for 26 years. I’ve always wanted to be a software architect, but the timing has never worked out. This was a really fun podcast though! Casey has a bunch of great stories to share about designing systems, unintended advertising side effects, and technology hottakes!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Casey: All the time. Pretty much any time you try to take the initiative and do something new and cool, there’s always going to be lots of unintended consequences.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Rachael: One of the challenges of having power is the fact that you are not the person who is doing the thing. It’s really easy to tell a computer, “I would like you to do this thing, go do this thing.” And it’ll do exactly what you told it to do. If you tell a person that, you can hope that what they bring back to you is that thing, […]But at the end of the day, you can’t make them do that thing. You can just repeatedly tell them over and over and over again, “I would like you to do this thing. Please do this thing in the way that I have drawn out in the pretty diagram.”&lt;/p&gt;
+
+  &lt;p&gt;Casey: Well, and so much of it is there’s some perspective that you have because you’re looking at a certain set of concerns, and there’s some perspective they have because they’re looking at a certain set of concerns. And I take it as a given that two bright people looking at the same set of information will come to reasonably compatible conclusions.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Casey: And when they go out and build their piece of it, it all fits together. Legos don’t work if one person is making bricks with circles and another one’s making bricks with squares.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;technology-review&quot;&gt;Technology Review&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Casey: Yep. Rust is interesting. Rust is a language that can give you the low-level capabilities and performance of C or C++ without the existential threat to your life that comes from choosing to use C as the programming language that you’re going to work in because C is the language where you can make a very, very small hard-to-find mistake that allows national security to be undermined.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Casey: I’ve actually found that I get a really good advantage out of coupling MongoDB and a relational database together and representing the actual structured, detailed objects in Mongo and then putting the relationships between things in the relational database. And then, I do my queries in the relational database, get back a list of the objects that I need, then go fetch those objects from Mongo, and use those to populate whatever interface or interaction I’m dealing with.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Casey: So I’ll answer that question this way, the Weather Channel originally was built on top of Oracle. They were paying a lot of money to Oracle and had full Oracle enterprise support. And The Weather Channel dumped Oracle and went to MySQL. Ironically, Oracle later bought MySQL. What they found is that when they had a problem with the database, and they were dealing with the MySQL open-source community, the level of expertise that they could access and the rapidity, the latency with which they would get responses back was much better than what they were getting paying Oracle for expert support.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have to stop now. I want to quote this whole podcast!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.therelicans.com/mandymoore/software-architecture-different-vs-wrong-with-casey-dement-190b&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Listen to the Podcast&lt;/a&gt;&lt;/p&gt;</content><author><name>Rachael</name></author><category term="podcast" /><summary type="html">I met Casey at one of my previous jobs and admire the way he designs systems and discusses architecture. He’s a long-time software architect who has been designing solutions for businesses of all sizes for 26 years. I’ve always wanted to be a software architect, but the timing has never worked out. This was a really fun podcast though! Casey has a bunch of great stories to share about designing systems, unintended advertising side effects, and technology hottakes!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/podcasts/caseydement_polyglot.jpg" /><media:content medium="image" url="https://www.chael.codes/assets/img/podcasts/caseydement_polyglot.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Slaying Dragons – Inside A Dark Room with Amir Rajan</title><link href="https://www.chael.codes/podcast/2021/06/16/amir-rajan-polyglot.html" rel="alternate" type="text/html" title="Slaying Dragons – Inside A Dark Room with Amir Rajan" /><published>2021-06-16T00:00:00+00:00</published><updated>2021-06-16T00:00:00+00:00</updated><id>https://www.chael.codes/podcast/2021/06/16/amir-rajan-polyglot</id><content type="html" xml:base="https://www.chael.codes/podcast/2021/06/16/amir-rajan-polyglot.html">&lt;p&gt;&lt;a href=&quot;https://twitter.com/amirrajan&quot;&gt;Amir Rajan&lt;/a&gt; is a hyperpolyglot with over 15 years of industry experience. Amir is also the creator of &lt;a href=&quot;https://apps.apple.com/us/app/a-dark-room/id736683061&quot;&gt;A Dark Room iOS&lt;/a&gt;. This RPG conquered the world and took over the Number 1 spot in the App Store, and placed in the Top 10 paid apps across 70 countries. He’s also the CEO of &lt;a href=&quot;https://dragonruby.org/&quot;&gt;DragonRuby LLP&lt;/a&gt;, creators of &lt;a href=&quot;https://dragonruby.itch.io/dragonruby-gtk&quot;&gt;DragonRuby Game Toolkit&lt;/a&gt; and &lt;a href=&quot;http://www.rubymotion.com/&quot;&gt;RubyMotion&lt;/a&gt;, which is what we’re here to talk about today.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.therelicans.com/mandymoore/slaying-dragons-inside-a-dark-room-with-amir-rajan-ga&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Listen to the Podcast&lt;/a&gt;&lt;/p&gt;</content><author><name>Rachael</name></author><category term="podcast" /><summary type="html">Amir Rajan is a hyperpolyglot with over 15 years of industry experience. Amir is also the creator of A Dark Room iOS. This RPG conquered the world and took over the Number 1 spot in the App Store, and placed in the Top 10 paid apps across 70 countries. He’s also the CEO of DragonRuby LLP, creators of DragonRuby Game Toolkit and RubyMotion, which is what we’re here to talk about today.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/podcasts/amirrajan_polyglot.jpg" /><media:content medium="image" url="https://www.chael.codes/assets/img/podcasts/amirrajan_polyglot.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Docker isn’t Magic</title><link href="https://www.chael.codes/talks/2021/05/27/docker-isnt-magic.html" rel="alternate" type="text/html" title="Docker isn’t Magic" /><published>2021-05-27T00:00:00+00:00</published><updated>2021-05-27T00:00:00+00:00</updated><id>https://www.chael.codes/talks/2021/05/27/docker-isnt-magic</id><content type="html" xml:base="https://www.chael.codes/talks/2021/05/27/docker-isnt-magic.html">&lt;p&gt;An exploration of 4 open-source docker setups, why Docker isn’t magic, and why it’s worth it to use it anyway.&lt;/p&gt;
+
+&lt;h3 id=&quot;watch-the-recording&quot;&gt;Watch the Recording&lt;/h3&gt;
+&lt;style&gt;.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }&lt;/style&gt;
+&lt;div class=&quot;embed-container&quot;&gt;    &lt;iframe title=&quot;YouTube video player&quot; width=&quot;640&quot; height=&quot;390&quot; src=&quot;//www.youtube.com/embed/p9c1IrBfu0I&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;slides&quot;&gt;Slides&lt;/h3&gt;
+
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/e/2PACX-1vTmNN5NM2u4a4u288rssIDpFlYwnrjI8bFE9q9UOan7dX2uxLy5z1PLiNG7L1IzBqFkrWYybtdqjHoO/embed?start=true&amp;amp;loop=true&amp;amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;960&quot; height=&quot;569&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;</content><author><name>Rachael</name></author><category term="talks" /><summary type="html">An exploration of 4 open-source docker setups, why Docker isn’t magic, and why it’s worth it to use it anyway.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/docker-isn't-magic.png" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/docker-isn't-magic.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Invisible Zoom Streaming method</title><link href="https://www.chael.codes/2021/05/22/invisible-zoom.html" rel="alternate" type="text/html" title="The Invisible Zoom Streaming method" /><published>2021-05-22T00:00:00+00:00</published><updated>2021-05-22T00:00:00+00:00</updated><id>https://www.chael.codes/2021/05/22/invisible-zoom</id><content type="html" xml:base="https://www.chael.codes/2021/05/22/invisible-zoom.html">&lt;p&gt;Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily adding guests and sharing screens, without cropping zoom windows.&lt;/p&gt;
+
+&lt;h1 id=&quot;hide-zoom&quot;&gt;Hide Zoom&lt;/h1&gt;
+&lt;h2 id=&quot;1-join-the-zoom-call-with-your-camera&quot;&gt;1. Join the zoom call with your camera&lt;/h2&gt;
+&lt;p&gt;The first step is joining a zoom call. You must use the desktop application to follow the rest of these steps. Your video feed will run through zoom. This is much easier, and your guests will see you.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-add-zoom-to-obs&quot;&gt;2. Add zoom to OBS&lt;/h2&gt;
+&lt;p&gt;Create a window capture in OBS, and select your zoom window. Exclude the cursor, and only capture the client area to remove any application window styling.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/invisible_zoom/1-create-a-window-capture.PNG&quot; alt=&quot;screenshot of OBS window settings&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-unmirror-your-video&quot;&gt;3. Unmirror your video&lt;/h2&gt;
+&lt;p&gt;Inside zoom, your video will display mirrored by default. This only inverts your image on your zoom instance. Now that we’re sharing that instance with the world, you want to unmirror it so text displays normally. Under video settings, ensure “Mirror my Image” is unchecked.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/invisible_zoom/2-turn-off-mirrored-screen.png&quot; alt=&quot;Screenshot of zoom settings&quot; /&gt;
+Optional: Slide “Touch up my appearance” all the way into “turn my bags into smokey eyes” territory. No foundation? No problem!&lt;/p&gt;
+
+&lt;h2 id=&quot;4-share-your-visible-guests&quot;&gt;4. Share your &lt;em&gt;visible&lt;/em&gt; guests&lt;/h2&gt;
+&lt;p&gt;You can hide everyone who has chosen not to share their video by checking hide non-video participants. This makes it easy to cue up guest changes, and also have a hidden producer running the show. If you have multiple guests, having a producer who can pass messages like “5 minutes left” or communicate with the next guest via zoom chat is really helpful.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/invisible_zoom/3-hide-non-video-participants.png&quot; alt=&quot;screenshot of zoom UI&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While you’re here, optionally uncheck “Always display participant names on their video.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-hide-the-rest-of-the-zoom-ui&quot;&gt;5. Hide the rest of the zoom UI&lt;/h2&gt;
+&lt;p&gt;Uncheck “Always show meeting controls” to have the option of hiding zoom’s buttons.&lt;/p&gt;
+
+&lt;p&gt;Alt will cycle through displaying the zoom UI, showing participant names, and hiding everything. If you want to crop zoom’s UI out, that also works. Note that hovering over the zoom UI area will bring it back, so keep your cursor above the bottom third.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/invisible_zoom/4-no-participant-names-or-ui.PNG&quot; alt=&quot;zoom in OBS with no participant names or UI&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Your Zoom window in OBS should look like this.&lt;/p&gt;
+
+&lt;h2 id=&quot;6-hide-zoom-in-obs&quot;&gt;6. Hide Zoom in OBS&lt;/h2&gt;
+&lt;p&gt;Chromakey works by removing everything of one color. Normally, that color is green, but we can make it Zoom Grey. Chromakey also adds a little variability to catch green shadows, but we can strip all that range out, because zoom doesn’t have lighting or shadows. Add a filter to the Zoom window source in OBS. Use a color key with a custom color of 1a1a1a, and set the similarity and smoothness all the way down to 1.
+&lt;img src=&quot;/assets/img/posts/invisible_zoom/5-apply-chroma-key.PNG&quot; alt=&quot;screen shot of color key window&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Place an image beneath the zoom window in OBS, and now you’ve got a pretty great looking setup!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/invisible_zoom/6-invisible-zoom-demo.PNG&quot; alt=&quot;final form of invisible zoom technique&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;screenshare-in-zoom&quot;&gt;Screenshare in Zoom&lt;/h1&gt;
+&lt;p&gt;All of this is good, but we need screensharing for the real magic of zoom to activate. Don’t worry, we won’t have separate windows and captures. Seamless transitions from a conversation to presentation.&lt;/p&gt;
+
+&lt;h2 id=&quot;keep-screenshare-in-one-window&quot;&gt;Keep screenshare in one window&lt;/h2&gt;
+&lt;p&gt;By default, when someone shares their screen, Zoom goes full-screen, and moves audience video into a second window, but you can set zoom to share a screen within the current view.&lt;/p&gt;
+
+&lt;p&gt;Turn on side-by-side view.
+&lt;img src=&quot;/assets/img/posts/invisible_zoom/7-turn-on-side-by-side.PNG&quot; alt=&quot;side by side in zoom&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Your presentation will be on the left and your guests can be added and drop on the right!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/invisible_zoom/8-side-by-side-demo.PNG&quot; alt=&quot;zoom looking good with slides and screenshare&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now there’s a great looking zoom presentation on an image background. You can sub in speakers without issue, and people can swap between presentations!&lt;/p&gt;
+
+&lt;h2 id=&quot;flaws&quot;&gt;Flaws&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;You cannot screenshare while producing.&lt;/em&gt; It will change your whole view. A secondary computer or your guest can screenshare.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Zoom does not resize windows automatically.&lt;/em&gt; You will need to adjust the zoom level if the user’s screen is very large or very small.&lt;/p&gt;
+
+&lt;h1 id=&quot;dont-forget-audio&quot;&gt;Don’t forget audio!&lt;/h1&gt;
+&lt;p&gt;Audio is a whole different challenge. When you capture audio from zoom, you will get everyone else’s audio, but not your own. Zoom doesn’t play your own audio back to you. There are two ways to handle this.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Have a producer who’s responsible for communicating with guests, and streaming the zoom, but doesn’t appear on-screen. This has the added benefit of giving you a moderator who’s focused on chat and production.&lt;/li&gt;
+  &lt;li&gt;Stitch your audio together using loopback, voicemeeter, or two audio inputs in OBS. If you use two audio inputs in OBS, then you will have issues &lt;a href=&quot;https://dev.to/chaelcodes/how-to-caption-your-twitch-streams-5e63&quot;&gt;captioning&lt;/a&gt;, because all captioning plugins that I know of use one audio input as the source.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+&lt;p&gt;This isn’t the greatest and most technically proficient guest setup that has ever existed, but it is a robust, easy solution that uses technology your guests are confident in. It’s a great option for panels or small-scale live conferences and meetups. Let me know if you try this out, or come up with ways to deal with those flaws above!&lt;/p&gt;</content><author><name>ChaelCodes</name></author><category term="streaming" /><category term="zoom" /><summary type="html">Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily adding guests and sharing screens, without cropping zoom windows.</summary></entry><entry><title type="html">Jekyll Talks Page</title><link href="https://www.chael.codes/2021/05/14/talks-page-in-jekyll.html" rel="alternate" type="text/html" title="Jekyll Talks Page" /><published>2021-05-14T00:00:00+00:00</published><updated>2021-05-14T00:00:00+00:00</updated><id>https://www.chael.codes/2021/05/14/talks-page-in-jekyll</id><content type="html" xml:base="https://www.chael.codes/2021/05/14/talks-page-in-jekyll.html">&lt;p&gt;I’m giving a talk at &lt;a href=&quot;https://bit.ly/futurestack-relicans&quot;&gt;FutureStack&lt;/a&gt;! I want to share my new talk with people on my portfolio site, because SpeakerDeck and SlideShare cost money. I’m a developer, why do I need to pay a company and expose you to ads to share my slides?&lt;/p&gt;
+
+&lt;h1 id=&quot;requirements&quot;&gt;Requirements&lt;/h1&gt;
+&lt;p&gt;I want to share as much contextual information as possible, and expose the talk in as many formats as possible. The key things I need to share are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Talk title&lt;/li&gt;
+  &lt;li&gt;Description of the talk&lt;/li&gt;
+  &lt;li&gt;Slides embedded in the page&lt;/li&gt;
+  &lt;li&gt;YouTube video embedded in the talk page&lt;/li&gt;
+  &lt;li&gt;Salient points summarized in text&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I also want to make sure that the talk is easy to share, so we’ll give it some good SEO, and a nice Twitter card.&lt;/p&gt;
+
+&lt;p&gt;We’ll need a separate page to aggregate the talks. I want this page to be responsive, and expose the talk front page and description.&lt;/p&gt;
+
+&lt;h1 id=&quot;technical-plan---show-page&quot;&gt;Technical Plan - Show Page&lt;/h1&gt;
+&lt;p&gt;Let’s start with a plan for how to build the show page for talks. A show page will show one talk, and all its details.&lt;/p&gt;
+
+&lt;h2 id=&quot;page-type&quot;&gt;Page Type&lt;/h2&gt;
+&lt;p&gt;Jekyll has three ways to create new pages on your site: Pages, Posts, and Collections.&lt;/p&gt;
+
+&lt;p&gt;Pages are standalone content that exists at a permalink. It’s good for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/about&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/pricing&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/talks&lt;/code&gt; pages. If we stored talks here, then we’d have urls like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/docker-isn't-magic&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;indoor-hazards-and-plants-that-cure-them&lt;/code&gt;, but we’d have to create a data structure to hold all these talks for the talks page.&lt;/p&gt;
+
+&lt;p&gt;Posts are used for blog posts! They’re automatically added to your RSS Feed, if you have one. They must always be associated with a date, which is why they’re commonly located at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&amp;lt;year&amp;gt;/&amp;lt;month&amp;gt;/&amp;lt;day&amp;gt;/&amp;lt;post-title&amp;gt;&lt;/code&gt; and must have a filename like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title&lt;/code&gt;. If you’re viewing this page at &lt;a href=&quot;https://www.chael.codes/2021-05-14-talks-page-in-jekyll.md&quot;&gt;chael.codes&lt;/a&gt; instead of Dev.To or the Relicans, then you’re looking at a Post page. These posts are in a collection called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;site.posts&lt;/code&gt;. You can also assign a category (or categories) to a post. If you assign a category in the frontmatter, then you can query by that category from liquid.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{% for talk in site.categories.talk %}
+    Title: {{talk.title}}
+    Description: {{talk.excerpt}}
+{% endfor %}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The last type is a collection of pages. These do not need to be associated with a date, and can be queried. These do not update on the RSS Feed, but can have a separate RSS Feed. The nice part about this is that we’d be able to cut off the date part of the url.&lt;/p&gt;
+
+&lt;p&gt;After evaluating the options, I plan to share these as normal posts. We can use the date of the conference to release it on the date of. The date in the url is a little inconvenient, but I love the idea of sharing new talks in the RSS Feed, and I don’t want to deal with the hassle of making an array for pages. The category feature will make our talks index page easy.&lt;/p&gt;
+
+&lt;h2 id=&quot;slides&quot;&gt;Slides&lt;/h2&gt;
+&lt;p&gt;I build my slides out on Google Slides, and they have &lt;a href=&quot;https://support.google.com/docs/answer/183965#zippy=%2Cembed-a-document-spreadsheet-or-presentation&quot;&gt;an embed&lt;/a&gt;. Normally, I would be focused on turning this into a liquid embed, but I need to get this set up quick, and I don’t have time before futurestack, so I’ll be embedding it directly in the file.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I didn’t use slide share or speakerdeck. SpeakerDeck wants to put their branding on my slide deck unless I pay a fee. SlideShare is also trying to make money from hosting slides. Why? Why are we paying these companies money to display our own content on their site? It is because it’s pretty? Why does link.tree exist? Let’s build our own.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;youtube&quot;&gt;YouTube&lt;/h2&gt;
+&lt;p&gt;We’ll pull in YouTube using the &lt;a href=&quot;https://github.com/dommmel/jekyll-youtube&quot;&gt;Jekyll-Youtube&lt;/a&gt; gem. This gives us access to a liquid tag for YouTube, so we can embed the recording of the talk.&lt;/p&gt;
+
+&lt;h2 id=&quot;talks-index-page&quot;&gt;Talks Index Page&lt;/h2&gt;
+&lt;p&gt;An index page will list all our talks. Let’s build this from scratch with fresh new SCSS and LOTS of advice from chat. We’ll have an image of the first slide, and then the description of the talk excerpt in a card shape. I want to use flexbox to make the list responsive.&lt;/p&gt;
+
+&lt;h2 id=&quot;sharing&quot;&gt;Sharing&lt;/h2&gt;
+&lt;p&gt;Jekyll-Seo is the main gem for managing seo and sharing. We can add frontmatter to the page that will update how Twitter cards look.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+description: &amp;lt;talk description&amp;gt;
+image: &amp;lt;image of first slide&amp;gt;
+twitter:
+  card: summary_large_image
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;At this point, we should have two new pages, one for showing off all my talks, and another page that’ll host my very first talk. &amp;lt;3&lt;/p&gt;</content><author><name>ChaelCodes</name></author><category term="ruby" /><category term="jekyll" /><category term="talks" /><summary type="html">I’m giving a talk at FutureStack! I want to share my new talk with people on my portfolio site, because SpeakerDeck and SlideShare cost money. I’m a developer, why do I need to pay a company and expose you to ads to share my slides?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/docker-isn't-magic.png" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/docker-isn't-magic.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jekyll-Twitch Demo!</title><link href="https://www.chael.codes/2021/04/22/jekyll-plugin-demo.html" rel="alternate" type="text/html" title="Jekyll-Twitch Demo!" /><published>2021-04-22T00:00:00+00:00</published><updated>2021-04-22T00:00:00+00:00</updated><id>https://www.chael.codes/2021/04/22/jekyll-plugin-demo</id><content type="html" xml:base="https://www.chael.codes/2021/04/22/jekyll-plugin-demo.html">&lt;p&gt;Let’s build a simple demo website in our Jekyll-Twitch gem! This will allow us to test inside the repo, and demonstrate the plugin live to users. It’ll serve as documentation, demo, and local testing environment!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This blog is a companion guide to a &lt;a href=&quot;https://twitch.tv/ChaelCodes&quot;&gt;Twitch stream&lt;/a&gt; that will happen 04/23 at 15:00 UTC.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;About a month ago, I created a &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; plugin called &lt;a href=&quot;https://github.com/ChaelCodes/jekyll-twitch&quot;&gt;Jekyll-Twitch&lt;/a&gt; that adds a Jekyll Liquid tag to a repo. This &lt;a href=&quot;https://shopify.github.io/liquid/&quot;&gt;liquid&lt;/a&gt; tag lets users embed a Twitch clip in their sites using only a clip url. Right now, it’s difficult to test, because I have to connect it to my personal site which is in a different repo, and there’s no way for potential users to see it working.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-a-project-site-in-github-pages&quot;&gt;Create a Project Site in GitHub Pages&lt;/h3&gt;
+
+&lt;p&gt;GitHub Pages offers a really nice way to handle this! GitHub pages lets you create a documentation site inside of a git repo at /docs. This is called a [Project site], and would be hosted at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http(s)://&amp;lt;username&amp;gt;.github.io/&amp;lt;repository&amp;gt;&lt;/code&gt; which would be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://chaelcodes.github.io/jekyll-twitch&lt;/code&gt;. This will allow every fork to be deployed to the contributer’s account. We’re gong to use the default theme to keep this as simple and lightweight as possible.&lt;/p&gt;
+
+&lt;p&gt;Inside the Jekyll-Twitch repo, we’ll do the following:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Open the repo at the top-level&lt;/li&gt;
+  &lt;li&gt;Install jekyll - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gem install jekyll&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Create a docs Jekyll site &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll new docs&lt;/code&gt; This must be called docs to deploy to GitHub Pages&lt;/li&gt;
+  &lt;li&gt;Test the site using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; (use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--livereload&lt;/code&gt; to see changes instantly!)&lt;/li&gt;
+  &lt;li&gt;Create a page for each plugin.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;create-a-page-for-each-plugin&quot;&gt;Create a page for each Plugin&lt;/h3&gt;
+
+&lt;p&gt;Now we want to demonstrate the capabilities of our plugin. For Jekyll-Twitch, we have 3 Configurations: Clip, Broadcast, and VoD (Highlight), so we’ll create 3 pages to demonstrate each config. We’ll include the example using raw tags that let you show the liquid syntax with embedding it.
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{% twitch https://www.twitch.tv/chaelcodes/clip/DeterminedSweetRedpandaDoritosChip-pQiRlDz6rQ9uvuuq %}&lt;/code&gt;
+Then we need to include the plugin as a gem. We’re going to reference the gem using GitHub instead of rubygems, and reference the branch to make it easy for users to test their own branch, and test the current version on main, instead of the latest released version. We’ll also put it in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll_plugins&lt;/code&gt;, so Jekyll knows to use it.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Add your gem to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; to the jekyll_plugins group using GitHub
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;group :jekyll_plugins do
+  gem 'jekyll-twitch', 'https://github.com/sparklemotion/nokogiri.git', branch: 'main'
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add your plugin to Jekyll’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;plugins:
+  - jekyll-twitch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Install the gem - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; inside your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/docs/&lt;/code&gt; folder&lt;/li&gt;
+  &lt;li&gt;Restart the server - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; (use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--livereload&lt;/code&gt; to see changes instantly!)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;deploying-the-example-repo&quot;&gt;Deploying the Example repo&lt;/h3&gt;
+
+&lt;p&gt;If you tried to deploy the last site to GitHub pages using their automatic deployment, then you quickly ran into issues.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;GitHub Pages does not support custom gems&lt;/li&gt;
+  &lt;li&gt;GitHub Pages is stuck on Jekyll 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That’s okay though, we can deploy the site to the gh-pages branch using GitHub actions. helaili/jekyll-action@v2 supports deploying a project site to a gh-pages branch. &lt;a href=&quot;https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html&quot;&gt;I’ve done this previously for my portfolio site.&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;name: Build and deploy Jekyll site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: helaili/jekyll-action@v2
+        with:
+          jekyll_src: 'docs'
+          target_branch: 'gh-pages'
+          token: $
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;At this point, we should have a demo site that automatically deploys on new pushes to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt;, and works great as a testing environment!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This blog is a companion guide to a &lt;a href=&quot;https://twitch.tv/ChaelCodes&quot;&gt;Twitch stream&lt;/a&gt; that will happen 04/23 at 15:00 UTC.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>ChaelCodes</name></author><category term="ruby" /><category term="jekyll" /><category term="open-source" /><category term="gem" /><summary type="html">Let’s build a simple demo website in our Jekyll-Twitch gem! This will allow us to test inside the repo, and demonstrate the plugin live to users. It’ll serve as documentation, demo, and local testing environment!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/Jekyll-Twitch%20Demo.jpg" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/Jekyll-Twitch%20Demo.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Sadistic Self-Care Survival Game</title><link href="https://www.chael.codes/2021/04/15/sadistic-self-care-survival-game.html" rel="alternate" type="text/html" title="Sadistic Self-Care Survival Game" /><published>2021-04-15T00:00:00+00:00</published><updated>2021-04-15T00:00:00+00:00</updated><id>https://www.chael.codes/2021/04/15/sadistic-self-care-survival-game</id><content type="html" xml:base="https://www.chael.codes/2021/04/15/sadistic-self-care-survival-game.html">&lt;p&gt;Your body has been kind to you. It has tolerated your dehydration, exhaustion, hunger, and lack of exercise without complaint for YEARS. That ends today. This game built using the DragonRuby framework will remind you how generous your body has been with its mistreatment.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This blog post is a companion guide to a &lt;a href=&quot;https://twitch.tv/ChaelCodes&quot;&gt;Twitch stream&lt;/a&gt; on 4/16 at 1500 UTC.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/DragonRuby.png&quot; height=&quot;250px&quot; alt=&quot;DragonRuby logo&quot; style=&quot;display: block;margin-left: auto;margin-right: auto;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s start with the tools. &lt;a href=&quot;https://dragonruby.itch.io/&quot;&gt;DragonRuby&lt;/a&gt; is a game framework built on the Ruby specification. We’ll be joined by one of the creators of that framework, Amir Rajan! It focuses on 2D game design, and the entire game state is stored in an object called args. It supports PC, Mac, Linux, Raspberry Pi, Web (wasm)iOS, Android, Nintendo Switch, XBOX One, and PS4. Let’s target this one at a web release!&lt;/p&gt;
+
+&lt;p&gt;NOW IT’S TIME FOR THE GAME! I want to give the player a feeling of desperation as they use self-care techniques to keep their body alive and functioning. I plan to utilize status bars that slowly clutter the screen to help create that desperate feeling. For the first stream I want to focus on building one full core gameplay loop, then adding the rest.&lt;/p&gt;
+
+&lt;p&gt;In order to create the simplest version possible, I’d like to focus on the task screen and status bars. The game will start on a laptop screen with a 🍽 food status bar, 🥤 water status bar, and progress bar running on the screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/mockup.jpg&quot; alt=&quot;Prototype&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The progress bar starts at 0%, and every tick, it increments by the product of all active status bars. If you have a full water and food bar, it increments by 1, but if your food and water are half-full, then it increments by .25. When the progress bar reaches 100, the player receives 💵$50. The time to completion is always displayed above the task.&lt;/p&gt;
+
+&lt;p&gt;If any status bar reaches 0, and there are no warnings for this, the character dies, and it’s Game Over for the player. The status bars can be refilled by drinking water from a water bottle or eating a granola bar from the desk.&lt;/p&gt;
+
+&lt;p&gt;Drinking water and eating food to keep your status bars up so tasks complete faster is a good start, but it’s meaningless if you run out of food or can’t spend the mokney, so let’s implement a store!&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Item&lt;/th&gt;
+      &lt;th&gt;Cost&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Pomodoro Timer&lt;/td&gt;
+      &lt;td&gt;$20&lt;/td&gt;
+      &lt;td&gt;Saves task process every 25%&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Granola Bar&lt;/td&gt;
+      &lt;td&gt;$2&lt;/td&gt;
+      &lt;td&gt;Increases food by 10 points&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Sandwich&lt;/td&gt;
+      &lt;td&gt;$8&lt;/td&gt;
+      &lt;td&gt;Increases food by 40 points, takes 5s to make&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;We also need to implement some breaks to refill your water bottle, make sandwiches, and do something about all that water you’ve been drinking. I’m not sure if we’ll get to that part though. I’d like to implement additional status bars like 🍺 pee, 💩 waste, 💢 stress, 💫soreness, and 💤tiredness. I think completing tasks should increase stress and soreness, and tiredness should gradually rise! Maybe we can take a break to reduce stress and tiredness, and do some stretches to reduce soreness. I feel a whole system building out of this, but let’s start with hunger and thirst!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This blog post is a companion guide to a &lt;a href=&quot;https://twitch.tv/ChaelCodes&quot;&gt;Twitch stream&lt;/a&gt; on 4/16 at 1500 UTC.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>ChaelCodes</name></author><category term="ruby" /><category term="DragonRuby" /><category term="open-source" /><category term="Amir Rajan" /><category term="game dev" /><summary type="html">Your body has been kind to you. It has tolerated your dehydration, exhaustion, hunger, and lack of exercise without complaint for YEARS. That ends today. This game built using the DragonRuby framework will remind you how generous your body has been with its mistreatment.</summary></entry><entry><title type="html">Lending some color to Tokei Open-Source</title><link href="https://www.chael.codes/2021/04/08/tokei-open-source.html" rel="alternate" type="text/html" title="Lending some color to Tokei Open-Source" /><published>2021-04-08T00:00:00+00:00</published><updated>2021-04-08T00:00:00+00:00</updated><id>https://www.chael.codes/2021/04/08/tokei-open-source</id><content type="html" xml:base="https://www.chael.codes/2021/04/08/tokei-open-source.html">&lt;p&gt;Time for another open-source adventure! We’ll be joined by &lt;a href=&quot;https://twitter.com/maxjacobson&quot;&gt;Max Jacobson&lt;/a&gt; as we visit the Rust cli-tool &lt;a href=&quot;https://github.com/XAMPPRocky/tokei&quot;&gt;Tokei&lt;/a&gt;. Tokei generates statistics around your code and language usage. For example, &lt;a href=&quot;https://www.chael.codes/2021/04/07/tokei-open-source.html&quot;&gt;chael.codes&lt;/a&gt; looks like:
+&lt;img src=&quot;/assets/img/posts/Tokei-no-color.JPG&quot; alt=&quot;tokei code analysis&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Forem, the repo behind therelicans.com and dev.to, looks like this:
+&lt;img src=&quot;/assets/img/posts/tokei-forem-no-color.JPG&quot; alt=&quot;tokei code analysis of Forem&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We’re going to pick up &lt;a href=&quot;https://github.com/XAMPPRocky/tokei/issues/419&quot;&gt;an issue&lt;/a&gt; with a lot of discussion that hasn’t been touched in 10 months that I personally like. Those screenshots before weren’t very engaging, right? Let’s add some lovely color to Tokei’s terminal output!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;There are some requirements listed out in the issue above.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;It must look good in light and dark mode terminals&lt;/li&gt;
+    &lt;li&gt;A crate should manage colorizing the output&lt;/li&gt;
+    &lt;li&gt;A color flag should manage color output &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--color (always|auto|never)&lt;/code&gt;&lt;/li&gt;
+    &lt;li&gt;thick rows === should be bold and the thin rows — dimmed&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I think it’d look nice to give all the languages a cyan color, and emphasize the subtotals.&lt;/p&gt;
+
+&lt;p&gt;First step is identifying how we’ll cover color output, and the issue points us to &lt;a href=&quot;https://crates.io/crates/colored&quot;&gt;colored&lt;/a&gt; which is based on a Ruby gem of &lt;a href=&quot;https://github.com/defunkt/colored&quot;&gt;the same name&lt;/a&gt;. Usage is very straightforward. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;println!(&quot;Hello, {}!&quot;, &quot;world&quot;.green().bold())&lt;/code&gt; will use the terminal’s colors, and bold the text.
+&lt;img src=&quot;/assets/img/posts/terminal-color.JPG&quot; alt=&quot;the world in hello, world is green and bold&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Note that “cyan” or “green” may not always be cyan or green, they’re just roles in your terminal color scheme.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Next, it’s time to think about how and where to output these colors. Tokei implements a printer interface in &lt;a href=&quot;https://github.com/XAMPPRocky/tokei/blob/611de1fc7b33027b918e97127c67825cc7408273/src/cli_utils.rs&quot;&gt;cli_utils.rs&lt;/a&gt; which is where I found the &lt;a href=&quot;https://github.com/XAMPPRocky/tokei/blob/611de1fc7b33027b918e97127c67825cc7408273/src/cli_utils.rs#L150-L164&quot;&gt;headers!&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;With some lovely colors and style implemented in Tokei, it’s time to think about those command line args and turning off color. Some people (like other computers) prefer not to have color. I think we handle this in &lt;a href=&quot;https://github.com/XAMPPRocky/tokei/blob/611de1fc7b33027b918e97127c67825cc7408273/src/cli.rs#L10-L26&quot;&gt;cli.rs&lt;/a&gt;. &lt;a href=&quot;https://docs.rs/colored/2.0.0/colored/control/struct.ShouldColorize.html&quot;&gt;ShouldColorize&lt;/a&gt; respects environment variables like NOCOLOR and CLICOLOR, but flags seem helpful too. We should document this regardless.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is the technical plan for a &lt;a href=&quot;https://twitch.tv/ChaelCodes&quot;&gt;stream&lt;/a&gt; on 4/9. We’ll start with project setup, and testing out Tokei at 1500UTC, then we’ll be joined by Max Jacobson at 1800 UTC to complete the work of creating our changes and PR.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>ChaelCodes</name></author><category term="rust" /><category term="open-source" /><category term="maxjacobson" /><category term="tokei" /><summary type="html">Time for another open-source adventure! We’ll be joined by Max Jacobson as we visit the Rust cli-tool Tokei. Tokei generates statistics around your code and language usage. For example, chael.codes looks like:</summary></entry><entry><title type="html">Retreat and Delete with Write Better Code with Corey Haines</title><link href="https://www.chael.codes/podcast/2021/04/07/polyglot-corey-haines.html" rel="alternate" type="text/html" title="Retreat and Delete with Write Better Code with Corey Haines" /><published>2021-04-07T00:00:00+00:00</published><updated>2021-04-07T00:00:00+00:00</updated><id>https://www.chael.codes/podcast/2021/04/07/polyglot-corey-haines</id><content type="html" xml:base="https://www.chael.codes/podcast/2021/04/07/polyglot-corey-haines.html">&lt;p&gt;Cat aficionado and author of &lt;a href=&quot;https://leanpub.com/4rulesofsimpledesign&quot;&gt;Understanding the Four Rules of Simple Design&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/coreyhaines&quot;&gt;Corey Haines&lt;/a&gt; talks about co-creating the Coderetreat Workshop and spreading his coding knowledge and experience in exchange for a couch to crash on.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Chael: I’m like, at some point, you have to handle branching logic.&lt;/p&gt;
+
+  &lt;p&gt;Corey: There are lots of ways to handle branching logic without if statements. However, should you use those techniques all the time? No. Sometimes the best way is just an if statement. I wrote one on Friday. I literally wrote an if statement. I don’t write a lot of if statements, to be fair.&lt;/p&gt;
+
+  &lt;p&gt;Chael: [laughs] You’re like having to protect yourself. You’re like, “No, not the if statements. The if statements are coming for me.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Corey: Yep. And it comes back to that idea that these are called the Four Rules of Simple Design. Why do we have simple design? Why do we care about making simple design? And it’s entirely because we want to make it easier to change. I like to say that you can’t have a good design. There’s no such thing as a good design. There’s only a better design in a given context because if you have two designs and in the context that you’re in, one of them is more easily changeable, that’s a better design.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Corey: Ruby never yelled at me.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Corey: And I would often tell people like, ‘I’ve been doing this a long time. I’ve seen the code that gets written, and there’s no reason to keep this code at all. The world is a better place because it’s deleted, believe me.’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;On single vs double quotes:
+Corey: “And I would say if the performance of the string is your bottleneck, that’s a really great app!”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Because your code is already good.” -ChaelCodes
+“Your code is good, it’s doing the job. Don’t make it feel bad.” -Corey Haines&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.therelicans.com/mandymoore/retreat-and-delete-to-write-better-code-with-corey-haines-pl&quot; rel=&quot;noopener noreferrer&quot; target=&quot;_blank&quot;&gt;Listen to the Podcast&lt;/a&gt;&lt;/p&gt;</content><author><name>Rachael</name></author><category term="podcast" /><summary type="html">Cat aficionado and author of Understanding the Four Rules of Simple Design, Corey Haines talks about co-creating the Coderetreat Workshop and spreading his coding knowledge and experience in exchange for a couch to crash on.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/podcasts/corey_haines_polyglot.jpg" /><media:content medium="image" url="https://www.chael.codes/assets/img/podcasts/corey_haines_polyglot.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Deploying Jekyll with GitHub Actions, not Pages</title><link href="https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html" rel="alternate" type="text/html" title="Deploying Jekyll with GitHub Actions, not Pages" /><published>2021-03-25T00:00:00+00:00</published><updated>2021-03-25T00:00:00+00:00</updated><id>https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages</id><content type="html" xml:base="https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html">&lt;p&gt;I built a &lt;a href=&quot;https://rubygems.org/gems/jekyll-twitch&quot;&gt;Gem&lt;/a&gt; that embeds Twitch clips in Jekyll Sites! Unfortunately, I can’t use it, because I’m deploying using github-pages. So let’s change the deploy process. 😏&lt;/p&gt;
+
+&lt;h1 id=&quot;why-do-we-have-to-do-this&quot;&gt;Why do we have to do this?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub pages&lt;/a&gt; is where &lt;a href=&quot;https://www.chael.codes&quot;&gt;my site&lt;/a&gt; is hosted. They require you to add the gh-pages gem instead of the jekyll gem, and they lock the version of Jekyll at 3.9.0. They would have to rework how gh-pages interacts with GitHub servers to support Jekyll 4.0, and that would break all the 3.9 sites out there. &lt;em&gt;&lt;a href=&quot;https://github.com/github/pages-gem/issues/651&quot;&gt;They’ve decided not to upgrade instead.&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;They also don’t let you add &lt;a href=&quot;https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins&quot;&gt;random plugins&lt;/a&gt;. Only their allow list, and &lt;a href=&quot;https://github.com/ChaelCodes/jekyll-twitch/&quot;&gt;my baby Jekyll-Twitch&lt;/a&gt; isn’t on it.&lt;/p&gt;
+
+&lt;h1 id=&quot;so-whats-the-plan&quot;&gt;So, what’s the plan?&lt;/h1&gt;
+&lt;p&gt;Jekyll has shared a guide on &lt;a href=&quot;https://jekyllrb.com/docs/continuous-integration/github-actions/&quot;&gt;deploying using GitHub Actions&lt;/a&gt;. We’ll need a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;github_pages.yml&lt;/code&gt; file in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.github/workflows&lt;/code&gt;. This is going to trigger every time we push to main. It’ll call out to a &lt;a href=&quot;https://github.com/helaili/jekyll-action&quot;&gt;jekyll-action&lt;/a&gt; created by helaili which deploys the static site on the gh-pages branch. The jekyll-action deprecates &lt;a href=&quot;https://github.com/helaili/jekyll-action#deprecation&quot;&gt;JEKYLL_PAT&lt;/a&gt;, so we should update &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/docs/_docs/continuous-integration/github-actions.md&quot;&gt;their docs&lt;/a&gt; while we do this.&lt;/p&gt;
+
+&lt;p&gt;There’s some additional GitHub configuration necessary. First, the jekyll action needs a github token to push to the gh-pages branch, then GitHub needs to use the gh-pages branch instead of the main branch.&lt;/p&gt;
+
+&lt;p&gt;We’ll need to include a &lt;a href=&quot;https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository&quot;&gt;secret&lt;/a&gt; in our &lt;a href=&quot;https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsenv&quot;&gt;action&lt;/a&gt; to store the github token.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/ChaelCodes/chaelcodes.github.io/pull/11&quot;&gt;This was easier than I thought.&lt;/a&gt;&lt;/p&gt;</content><author><name>ChaelCodes</name></author><category term="ruby" /><category term="jekyll" /><category term="open-source" /><category term="github actions" /><summary type="html">I built a Gem that embeds Twitch clips in Jekyll Sites! Unfortunately, I can’t use it, because I’m deploying using github-pages. So let’s change the deploy process. 😏</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/Jekyll-pages.PNG" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/Jekyll-pages.PNG" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.3.5
+    Copyright 2016-2021 Sylhare
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    
+    <script>
+        const isAutoTheme = false;
+        document.documentElement.setAttribute('data-theme', "light")
+    </script>
+    
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="ChaelCodes" href="https://www.chael.codes/feed.xml"/>
+
+    
+
+    <!-- KaTeX 0.12.0 -->
+    
+
+    <!-- Mermaid 8.9.2 -->
+    
+
+    <!-- Simple Jekyll Search 1.9.1 -->
+    <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-https://www.chael.codes';
+      const isCookieConsent = '';
+      const analyticsName = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <meta property="og:image" content="https://www.chael.codes//assets/img/bagelbanner.jpg">
+    
+    <meta property="og:type" content="website" />
+    
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>ChaelCodes | Portfolio</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="ChaelCodes" />
+<meta name="author" content="Rachael" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Welcome to ChaelCodes’ portfolio! There are ABSOLUTELY NO EASTER EGGS, as of this message." />
+<meta property="og:description" content="Welcome to ChaelCodes’ portfolio! There are ABSOLUTELY NO EASTER EGGS, as of this message." />
+<link rel="canonical" href="https://www.chael.codes/" />
+<meta property="og:url" content="https://www.chael.codes/" />
+<meta property="og:site_name" content="ChaelCodes" />
+<meta property="og:image" content="https://www.chael.codes/assets/img/website.png" />
+<link rel="next" href="https://www.chael.codes/blog/page2" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://www.chael.codes/assets/img/website.png" />
+<meta property="twitter:title" content="ChaelCodes" />
+<meta name="twitter:site" content="@ChaelCodes" />
+<meta name="twitter:creator" content="@ChaelCodes" />
+<script type="application/ld+json">
+{"description":"Welcome to ChaelCodes’ portfolio! There are ABSOLUTELY NO EASTER EGGS, as of this message.","url":"https://www.chael.codes/","@type":"WebSite","headline":"ChaelCodes","sameAs":["https://twitch.tv/ChaelCodes","https://twitter.com/ChaelCodes","https://github.com/ChaelCodes"],"image":"https://www.chael.codes/assets/img/website.png","author":{"@type":"Person","name":"Rachael"},"name":"ChaelCodes","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- RSS -->
+    <link type="application/atom+xml" rel="alternate" href="https://www.chael.codes/feed.xml" title="ChaelCodes" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="ChaelCodes">
+    <meta name="twitter:description" content="{% include blog.html posts=paginator.posts %}">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.chael.codes//assets/img/bagelbanner.jpg">
+    <meta name="twitter:image:alt" content="ChaelCodes">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+        <a class="site-title" aria-label="ChaelCodes" href="/">
+        ChaelCodes
+		</a>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Live" title="Live" href="/live/">
+                     Live 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Podcasts" title="Podcasts" href="/podcasts/">
+                     Podcasts 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/projects">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Talks" title="Talks" href="/talks">
+                     Talks 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Updates" title="Updates" href="/updates/">
+                     Updates 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <div class="home">
+
+    <div id="main" class="call-out"
+         style="background-image: url('/assets/img/bagelbanner.jpg')">
+        <h1> ChaelCodes </h1>
+    </div>
+
+    <div class="posts">
+    
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Software Architecture: Different vs Wrong with Casey Dement" href="/podcast/2021/07/07/polyglot-casey-dement.html">
+                <img alt="Software Architecture: Different vs Wrong with Casey Dement" src="/assets/img/podcasts/caseydement_polyglot.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Software Architecture: Different vs Wrong with Casey Dement" class="post-link" href="/podcast/2021/07/07/polyglot-casey-dement.html">
+                Software Architecture: Different vs Wrong with Casey Dement
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      July 07, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     I met Casey at one of my previous jobs and admire the way he designs systems and discusses architecture. He’s a long-time software architect who has been designing solutions for businesses of all sizes for 26 years. I’ve always wanted to be a soft...
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Slaying Dragons – Inside A Dark Room with Amir Rajan" href="/podcast/2021/06/16/amir-rajan-polyglot.html">
+                <img alt="Slaying Dragons – Inside A Dark Room with Amir Rajan" src="/assets/img/podcasts/amirrajan_polyglot.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Slaying Dragons – Inside A Dark Room with Amir Rajan" class="post-link" href="/podcast/2021/06/16/amir-rajan-polyglot.html">
+                Slaying Dragons – Inside A Dark Room with Amir Rajan
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      June 16, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Amir Rajan is a hyperpolyglot with over 15 years of industry experience. Amir is also the creator of A Dark Room iOS. This RPG conquered the world and took over the Number 1 spot in the App Store, and placed in the Top 10 paid apps across 70 count...
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Docker isn't Magic" href="/talks/2021/05/27/docker-isnt-magic.html">
+                <img alt="Docker isn't Magic" src="/assets/img/posts/docker-isn't-magic.png">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Docker isn't Magic" class="post-link" href="/talks/2021/05/27/docker-isnt-magic.html">
+                Docker isn't Magic
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      May 27, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     An exploration of 4 open-source docker setups, why Docker isn’t magic, and why it’s worth it to use it anyway.
+
+Watch the Recording
+
+    
+
+Slides
+
+
+
+References
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="The Invisible Zoom Streaming method" class="post-link" href="/2021/05/22/invisible-zoom.html">
+                The Invisible Zoom Streaming method
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      May 22, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily adding guests and sharing screens, without cropping zoom windows.
+
+Hide Zoom
+1. Join the ...
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Jekyll Talks Page" href="/2021/05/14/talks-page-in-jekyll.html">
+                <img alt="Jekyll Talks Page" src="/assets/img/posts/docker-isn't-magic.png">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Jekyll Talks Page" class="post-link" href="/2021/05/14/talks-page-in-jekyll.html">
+                Jekyll Talks Page
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      May 14, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     I’m giving a talk at FutureStack! I want to share my new talk with people on my portfolio site, because SpeakerDeck and SlideShare cost money. I’m a developer, why do I need to pay a company and expose you to ads to share my slides?
+
+Requirements
+...
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Jekyll-Twitch Demo!" href="/2021/04/22/jekyll-plugin-demo.html">
+                <img alt="Jekyll-Twitch Demo!" src="/assets/img/posts/Jekyll-Twitch%20Demo.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Jekyll-Twitch Demo!" class="post-link" href="/2021/04/22/jekyll-plugin-demo.html">
+                Jekyll-Twitch Demo!
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      April 22, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Let’s build a simple demo website in our Jekyll-Twitch gem! This will allow us to test inside the repo, and demonstrate the plugin live to users. It’ll serve as documentation, demo, and local testing environment!
+
+
+  This blog is a companion guide...
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Sadistic Self-Care Survival Game" href="/2021/04/15/sadistic-self-care-survival-game.html">
+                <img alt="Sadistic Self-Care Survival Game" src="/assets/img/posts/mockup.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Sadistic Self-Care Survival Game" class="post-link" href="/2021/04/15/sadistic-self-care-survival-game.html">
+                Sadistic Self-Care Survival Game
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      April 15, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Your body has been kind to you. It has tolerated your dehydration, exhaustion, hunger, and lack of exercise without complaint for YEARS. That ends today. This game built using the DragonRuby framework will remind you how generous your body has bee...
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Lending some color to Tokei Open-Source" class="post-link" href="/2021/04/08/tokei-open-source.html">
+                Lending some color to Tokei Open-Source
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      April 08, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Time for another open-source adventure! We’ll be joined by Max Jacobson as we visit the Rust cli-tool Tokei. Tokei generates statistics around your code and language usage. For example, chael.codes looks like:
+
+
+Forem, the repo behind therelicans....
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Retreat and Delete with Write Better Code with Corey Haines" href="/podcast/2021/04/07/polyglot-corey-haines.html">
+                <img alt="Retreat and Delete with Write Better Code with Corey Haines" src="/assets/img/podcasts/corey_haines_polyglot.jpg">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Retreat and Delete with Write Better Code with Corey Haines" class="post-link" href="/podcast/2021/04/07/polyglot-corey-haines.html">
+                Retreat and Delete with Write Better Code with Corey Haines
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      April 07, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Cat aficionado and author of Understanding the Four Rules of Simple Design, Corey Haines talks about co-creating the Coderetreat Workshop and spreading his coding knowledge and experience in exchange for a couch to crash on.
+
+
+  Chael: I’m like, a...
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Deploying Jekyll with GitHub Actions, not Pages" href="/2021/03/25/Deploying-with-github-actions-not-pages.html">
+                <img alt="Deploying Jekyll with GitHub Actions, not Pages" src="/assets/img/posts/Jekyll-pages.PNG">
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Deploying Jekyll with GitHub Actions, not Pages" class="post-link" href="/2021/03/25/Deploying-with-github-actions-not-pages.html">
+                Deploying Jekyll with GitHub Actions, not Pages
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      March 25, 2021
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     I built a Gem that embeds Twitch clips in Jekyll Sites! Unfortunately, I can’t use it, because I’m deploying using github-pages. So let’s change the deploy process. 😏
+
+Why do we have to do this?
+GitHub pages is where my site is hosted. They requir...
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+</div>
+
+
+<div class="pagination">
+    <div class="previous">
+        
+        
+        
+        <!-- < previous -->
+        <a aria-label="Prev" href=""
+           style="visibility:hidden" class="button">
+            <span><i class="fas fa-chevron-left"></i></span>
+            Prev
+        </a>
+    </div>
+
+    <div class="page_number">
+        1 / 2
+    </div>
+
+    <div class="next">
+        
+        <!-- next > -->
+        <a aria-label="Next" href="/blog/page2"
+            class="button">
+            Next
+            <span><i class="fas fa-chevron-right"></i></span>
+        </a>
+
+        
+        
+    </div>
+</div>
+
+
+
+
+</div>
+
+    </div>
+    <footer class="site-footer">
+    <p class="text">
+        Cuddle your else's, Track your Performance, and Docker isn't Magic. <3</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+  <li class="social-icon">
+      <a feed.xml href="/feed.xml"
+        title="Follow RSS feed">
+          <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  </li>
+
+
+
+  <li class="social-icon">
+    <a href="https://twitch.tv/ChaelCodes" title="Twitch">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://twitter.com/ChaelCodes" title="Twitter">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://youtube.com/c/ChaelCodes" title="YouTube">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://github.com/ChaelCodes" title="GitHub">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://steamcommunity.com/id/chaelcodes/" title="Steam">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.therelicans.com/chaelcodes" title="Relicans">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-wordpress fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://dev.to/chaelcodes/" title="Dev.To">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://gitlab.com/ChaelCodes" title="GitLab">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.reddit.com/user/ChaelCodes" title="reddit">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+
+                </ul>
+            </div>
+</footer>
+
+
+
+  </body>
+</html>
