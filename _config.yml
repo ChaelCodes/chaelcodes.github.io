@@ -21,6 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   open-source repo for playing games of Monster of the Week. Currently,
   she works as a Developer Relations Engineer for New Relic.
 favicon: assets/favicon.png
+future: true
 tagline: Portfolio
 title: ChaelCodes
 twitter:
