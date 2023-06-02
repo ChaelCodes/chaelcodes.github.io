@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-ruby '2.7.4'
+ruby '2.7.8'
 
 gem 'jekyll', '~> 4.2.0'
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
