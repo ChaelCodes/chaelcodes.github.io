@@ -4,9 +4,9 @@ layout: talk
 description: Do you find open-source intimidating? Let's fix that. Let's talk about how to get started in open-source.
 category: talks
 published: true
-thumbnail: "/assets/img/talks/open-source-contributing.jpg"
-image: "/assets/img/talks/open-source-contributing.jpg"
-feature-img: "/assets/img/talks/open-source-contributing.jpg"
+thumbnail: /assets/img/talks/open-source-contributing.jpg
+image: /assets/img/talks/open-source-contributing.jpg
+feature-img: /assets/img/talks/open-source-contributing.jpg
 twitter:
   card: summary_large_image
 ---
