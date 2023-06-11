@@ -11,7 +11,7 @@ twitter:
 An exploration of 4 open-source docker setups, why Docker isn't magic, and why it's worth it to use it anyway.
 
 ### Watch the Recording
-{% youtube "https://www.youtube.com/watch?v=p9c1IrBfu0I" %}
+{% youtube https://www.youtube.com/embed/p9c1IrBfu0I %}
 
 ### Slides
 
