@@ -10,6 +10,7 @@
   background: no-repeat var(--header-background);
   backdrop-filter: brightness(0.5);
   background-size: cover;
+  background-attachment: fixed;
 
   h1 {
     font-family: $font-family-logo;
@@ -35,10 +36,6 @@ text-align: center;
   p:last-child {
     margin-bottom: 0;
   }
-}
-
-#main {
-  background-position: 100% -50px, 0 center, center top;
 }
 
 /* --- Post listing --- */
