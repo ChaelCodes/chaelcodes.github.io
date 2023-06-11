@@ -1,6 +1,7 @@
 # Build settings
 theme: type-on-strap
 # remote_theme: sylhare/Type-on-Strap
+color_theme: auto
 
 plugins:
   - jekyll-feed
