@@ -1,0 +1,13 @@
+<div class="timeline">
+  <ul>
+    {% for event in include.events %}
+    <li>
+      <span>{{event.date | date_to_string: "ordinal", "US" }}</span>
+      <div class="content">
+        <h3>{{event.title}}</h3>
+        <p>{{event.content}}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
