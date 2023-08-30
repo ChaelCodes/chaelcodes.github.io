@@ -33,13 +33,13 @@ Now we want to demonstrate the capabilities of our plugin. For Jekyll-Twitch, we
 Then we need to include the plugin as a gem. We're going to reference the gem using GitHub instead of rubygems, and reference the branch to make it easy for users to test their own branch, and test the current version on main, instead of the latest released version. We'll also put it in `jekyll_plugins`, so Jekyll knows to use it.
 
 1. Add your gem to the `Gemfile` to the jekyll_plugins group using GitHub
-```
+```ruby
 group :jekyll_plugins do
   gem 'jekyll-twitch', 'https://github.com/sparklemotion/nokogiri.git', branch: 'main'
 end
 ```
 2. Add your plugin to Jekyll's `_config.yml`
-```
+```yml
 plugins:
   - jekyll-twitch
 ```
@@ -55,7 +55,7 @@ If you tried to deploy the last site to GitHub pages using their automatic deplo
 
 That's okay though, we can deploy the site to the gh-pages branch using GitHub actions. helaili/jekyll-action@v2 supports deploying a project site to a gh-pages branch. [I've done this previously for my portfolio site.](https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html)
 
-```
+```yml
 name: Build and deploy Jekyll site to GitHub Pages
 
 on:
