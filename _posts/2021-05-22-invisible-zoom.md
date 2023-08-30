@@ -21,6 +21,7 @@ Create a window capture in OBS, and select your zoom window. Exclude the cursor,
 Inside zoom, your video will display mirrored by default. This only inverts your image on your zoom instance. Now that we're sharing that instance with the world, you want to unmirror it so text displays normally. Under video settings, ensure "Mirror my Image" is unchecked.
 
 ![Screenshot of zoom settings](/assets/img/posts/invisible_zoom/2-turn-off-mirrored-screen.png)
+
 Optional: Slide "Touch up my appearance" all the way into "turn my bags into smokey eyes" territory. No foundation? No problem!
 
 ## 4. Share your _visible_ guests
