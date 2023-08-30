@@ -1,0 +1,132 @@
+/* TYPOGRAPHY */
+$font-family-main: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-family-headings: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-family-logo: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$font-size: 1.25em;
+
+$monospace: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif !default;
+$font-size-code: 0.85em !default;
+$font-height-code: 1.3em !default;
+$border-radius: 4px !default;
+
+/* PADDING */
+$padding-x-large: 23%;
+$padding-large: 9%;
+$padding-medium: 6%;
+$padding-small: 4%;
+$padding-x-small: 3%;
+$title-padding: 1%;
+$feature-image-padding: 10%;
+
+/* MOBILE */
+$xl-break: 2000px;
+$l-break: 1400px;
+$m-break: 1000px;
+$break: 768px;
+$sm-break: 576px;
+$x-sm-break: 320px;
+
+/* COLORS */
+:root {
+  --vivid-color-1: #B877DB;
+  --vivid-color-2: #25B2BC;
+  --vivid-color-3: #E95678;
+  --vivid-color-4: #F09383;
+  --vivid-color-5: #FAB795;
+  --vivid-color-6: #FAC29A;
+
+  --background-color-100: #16161C;
+  --background-color-80: #1A1C23;
+  --background-color-60: #1C1E26;
+  --background-color-40: #232530;
+  --background-color-20: #2E303E;
+  --background-color-0: #6C6F93;
+}
+
+/* THEME COLOR SCHEMES */
+html, html[data-theme="light"] {
+  --background: #ffffff;
+  --blockquote: #eef7fa;
+  --selection: var(--vivid-color-1);
+  --meta: #595959;
+  --link: var(--vivid-color-2);
+  --header-background: #24292e;
+  --header-text: #ffffff;
+  --header-link: #383838;
+  --code-background: #E0E0E0;
+  --code-inline: #24292e;
+  --text-shadow: #3f3f3f;
+  --text: #262626;
+  --h1: #262626;
+  --h2: #262626;
+  --h3: #262626;
+  --h4: #262626;
+  --h5: #262626;
+  --h6: #262626;
+  --border: rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] {
+  --background: var(--background-color-60); // brand, background
+  --blockquote: var(--background-color-40); // blockquote
+  --selection: var(--vivid-color-3); // selection
+  --meta: var(--background-color-0); // meta
+  --link: var(--vivid-color-2); // theme, link, link shadow header bg
+  --header-background: var(--background-color-60); // Color before header image load
+  --header-text: #e7f3f4; // header text, feature img text
+  --header-link: #adbac7; // header link, search color
+  --code-background: var(--background-color-40);
+  --code-inline: var(--vivid-color-1);
+  --text-shadow: #2d333b; // text shadow
+  --text: #cdd9e5; // text
+  --h1: var(--vivid-color-1); // headers
+  --h2: var(--vivid-color-2);
+  --h3: var(--vivid-color-3);
+  --h4: var(--vivid-color-4);
+  --h5: var(--vivid-color-5);
+  --h6: var(--vivid-color-6);
+  --border: rgba(255, 255, 255, 0.5); // border
+  --cusdis--color-text-default: var(--text);
+  --cusdis--color-comment-username-text: var(--link);
+}
+
+/* BASE16 CODE HIGHLIGHT */
+// Material Theme
+html, html[data-theme="light"] {
+  --base00: var(--background-color-60); // Default Background
+  --base01: var(--background-color-60); // Lighter Background (Used for status bars, line number and folding marks)
+  --base02: var(--vivid-color-3); // Selection Background
+  --base03: var(--background-color-0); // Comments, Invisible, Line Highlighting
+  --base04: var(--vivid-color-1); // Dark Foreground (Used for status bars)
+  --base05: #cdd9e5; // Default Foreground, Caret, Delimiters, Operators
+  --base06: #e7f3f4; // Light Foreground (Not often used)
+  --base07: var(--vivid-color-1); // Light Background (Not often used)
+  --base08: var(--vivid-color-5); // Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+  --base09: var(--vivid-color-5); // Integers, Boolean, Constants, XML Attributes, Markup Link Url
+  --base0a: var(--vivid-color-3); // Classes, Markup Bold, Search Text Background
+  --base0b: var(--vivid-color-5); // Strings, Inherited Class, Markup Code, Diff Inserted
+  --base0c: var(--vivid-color-2); // Support, Regular Expressions, Escape Characters, Markup Quotes
+  --base0d: var(--vivid-color-1); // Functions, Methods, Attribute IDs, Headings
+  --base0e: var(--vivid-color-2); // Keywords, Storage, Selector, Markup Italic, Diff Changed
+  --base0f: var(--vivid-color-6); // Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+}
+
+// Horizon Theme
+html[data-theme="dark"] {
+  --base00: var(--background-color-60); // Default Background
+  --base01: var(--background-color-60); // Lighter Background (Used for status bars, line number and folding marks)
+  --base02: var(--vivid-color-3); // Selection Background
+  --base03: var(--background-color-0); // Comments, Invisible, Line Highlighting
+  --base04: var(--vivid-color-1); // Dark Foreground (Used for status bars)
+  --base05: #cdd9e5; // Default Foreground, Caret, Delimiters, Operators
+  --base06: #e7f3f4; // Light Foreground (Not often used)
+  --base07: var(--vivid-color-1); // Light Background (Not often used)
+  --base08: var(--vivid-color-5); // Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+  --base09: var(--vivid-color-5); // Integers, Boolean, Constants, XML Attributes, Markup Link Url
+  --base0a: var(--vivid-color-3); // Classes, Markup Bold, Search Text Background
+  --base0b: var(--vivid-color-5); // Strings, Inherited Class, Markup Code, Diff Inserted
+  --base0c: var(--vivid-color-2); // Support, Regular Expressions, Escape Characters, Markup Quotes
+  --base0d: var(--vivid-color-1); // Functions, Methods, Attribute IDs, Headings
+  --base0e: var(--vivid-color-2); // Keywords, Storage, Selector, Markup Italic, Diff Changed
+  --base0f: var(--vivid-color-6); // Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>
+}

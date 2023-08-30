@@ -38,7 +38,7 @@ Twitch allows you to embed clips, broadcasts, and VODs using several different [
 I plan to start with option 2 because it's simpler, and I need it for clips. Options 1 and 3 don't support clips.
 
 Here's the super simple iFrame I'll be embedding. For clips, the url is: `https://clips.twitch.tv/embed?clip=<VeryLongClipTitle>&parent=streamernews.example.com`
-```
+```html
 <iframe
     src="https://player.twitch.tv/?<channel, video, or collection>&parent=streamernews.example.com"
     height="<height>"
