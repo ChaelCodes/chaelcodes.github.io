@@ -4,6 +4,7 @@ layout: post
 author: ChaelCodes
 date: 2023-06-25 00:00:00 -0000
 description: Free crochet Fibonacci shawl pattern!
+excerpt_separator: <!--more-->
 published: true
 thumbnail: /assets/img/posts/fib_shawl/wide_shawl_wingspan.JPG
 image: /assets/img/posts/fib_shawl/wide_shawl_wingspan.JPG
@@ -23,7 +24,7 @@ twitter:
 </div>
 
 The Fibonacci Shawl is a gorgeous design that attempts to express Fibonacci's sequence through yarn. Each stripe of color represents a number from Fibonacci's sequence.
-
+<!--more-->
 Let's look at teal, for familiarity. There are 13 rows split into two sections - 8 solid rows, and 5 lacy rows. In this way, we can express that 13 is the sum of 8 and 5. Each solid section is the larger of the two numbers, so as we move down the sequence, we see the lacy section become the solid section of the next number in the sequence.
 
 ![picture of the teal section](/assets/img/posts/fib_shawl/fib_teal.JPG)
