@@ -2,7 +2,7 @@
 title: Stop using `git add .`
 layout: post
 author: ChaelCodes
-date: 2023-08-24 00:00:00 -0000
+date: 2023-09-09 00:00:00 -0000
 description: 
 excerpt_separator: <!--more-->
 published: true
@@ -142,4 +142,5 @@ Ideally commits will describe one discrete change to the codebase, but realistic
 `n` for "Not yet!"
 
 ## VIDEO DEMO
-{% youtube  %}
+
+{% youtube https://youtube.com/embed/u3NG1966zso %}
