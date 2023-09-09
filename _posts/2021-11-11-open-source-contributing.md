@@ -4,6 +4,7 @@ layout: talk
 description: Do you find open-source intimidating? Let's fix that. Let's talk about how to get started in open-source.
 category: talks
 published: true
+excerpt_separator: <!--more-->
 thumbnail: /assets/img/talks/open-source-contributing.jpg
 image: /assets/img/talks/open-source-contributing.jpg
 feature-img: /assets/img/talks/open-source-contributing.jpg
@@ -16,7 +17,7 @@ Most folks get stuck in open-source on one of the three following barriers:
 * Managing feelings around the review process
 
 I want to remove those barriers for you, and give you a realistic view of how to contribute to open-source projects, and get your PRs merged.
-
+<!--more-->
 ### Watch the Recording
 
 {% youtube https://www.youtube.com/embed/ctBBrdHVbo0 %}
