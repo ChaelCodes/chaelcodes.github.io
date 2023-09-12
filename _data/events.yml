@@ -1,24 +1,16 @@
-- date: 9/9/2022
-  title: Voice Actress in One Dreamer
-  content: I played Chael in <a href="https://store.steampowered.com/app/1156380/One_Dreamer/">One Dreamer</a>, Frank's Programming mentor!
-    One Dreamer is a beautiful programming game that I've been following since its prologue days.
-    I was honored to have the opportunity to voice one of the NPCs.
+- date: 13/11/2023
+  title: RubyConf San Diego
+  content: Attending RubyConf San Diego!
+- date: 23/09/2023
+  title: Strangeloop
+  content: Attending the last Strangeloop!
+- date: 27/07/2023 
+  title: Ruby For Good DC Event
+  content: It was so cool to attend Ruby For Good's DC event! I had the opportunity to get involved with Human-Essentials, <a href="https://ruby.social/@ChaelCodes/110787381840051590">more details here.</a>
+- date: 24/4/2023
+  title: RailsConf Atlanta
+  content: Attended RailsConf Atlanta. I signed up for the Lightning talks and gave one called <a href="https://youtu.be/k55B4ydueGE?t=2908&feature=shared">Main Quests and Side Quests!</a>
 - date: 11/11/2021
-  title: Your First Open-Source Contribution at RubyConf 2021
-  content: <a href="/talks/2021/11/11/open-source-contributing.html">Your First Open-Source Contribution</a> was my first talk at RubyConf, and
-    I was so excited to share what I've learned in my experiences diving into open-source, and share more from a maintainer's perspective.
-    I really like that this talk dug into some concrete advice that often gets missed when talking about a first contribution.
-- date: 24/4/2021
-  title: ComparisonValidator merged into Rails!
-  content: I was ecstatic when <a href="https://github.com/rails/rails/pull/40095">ComparisonValidator</a> was merged into Rails!
-    Before, it was surprisingly hard to valiidate that a start_date was before an end_date in Rails,
-    which was the idea that seeded what would eventually become the ComparisonValidator.
-    Huge thanks to MatthewD on this one, who encouraged me to submit a PR when I wasn't sure if the idea was worth pursuing,
-    and redirected me away from some early bad designs. 🧡
-- date: 19/3/2021
-  title: Jekyll-Twitch released!
-  content: <a href="https://github.com/ChaelCodes/Jekyll-Twitch">Jekyll-Twitch</a> is a gem, containing a liquid tag, that embeds Twitch channels, clips, collections, and videos into a Jekyll site!
-    There's a great <a href="https://www.chael.codes/jekyll-twitch/">demo site</a> where you can see it in action!
-- date: 8/3/2019
-  title: First Twitch Livestream!
-  content: This was my first livestream on Twitch! I played Regex Crossword for 3 viewers, and I was hooked.
+  title: RubyConf Denver
+  content: I was excited to deliver my first talk at RubyConf, <a href="/talks/2021/11/11/open-source-contributing.html">Your First Open-Source Contribution</a>!
+    It was awesome to share what I've learned in my experiences diving into open-source, and share more from a maintainer's perspective.

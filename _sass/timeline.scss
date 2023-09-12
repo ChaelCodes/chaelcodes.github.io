@@ -14,58 +14,60 @@
 //   align-items:center;
 // }
 
-.timeline{
+.timeline {
   padding: 30px 20px;
-}
 
-.timeline ul{
-  list-style-type: none;
-  border-left: 2px solid var(--vivid-color-2);
-  padding: 10px 5px;
-}
+  ul {
+    list-style-type: none;
+    border-left: 2px solid var(--vivid-color-2);
+    padding: 10px 5px;
 
-.timeline ul li{
-  padding: 20px 20px;
-  position: relative;
-  transition: .5s;
-}
+    li {
+      padding: 20px 20px;
+      position: relative;
+      transition: .5s;
 
-.timeline ul li span {
-  display: inline-block;
-  background-color: var(--vivid-color-1);
-  border-radius: 25px;
-  padding: 2px 10px;
-  text-align: center;
-}
+      span {
+        display: inline-block;
+        background-color: var(--vivid-color-1);
+        border-radius: 25px;
+        padding: 2px 10px;
+        text-align: center;
+      }
 
-.timeline ul li .content h3{
-  color: var(--vivid-color-1);
-  padding-top: 5px;
-}
+      .content {
+        h3 {
+          color: var(--vivid-color-1);
+          padding-top: 5px;
+        }
 
-.timeline ul li .content p{
-  padding: 5px 0px 15px 0px;
-}
+        p {
+          padding: 5px 0px 15px 0px;
+        }
+      }
 
-.timeline ul li:before{
-  position: absolute;
-  content: '';
-  width: 10px;
-  height: 10px;
-  background-color: var(--vivid-color-2);
-  border-radius: 50%;
-  left: -11px;
-  top: 28px;
-  transition: .5s;
-}
+      &:before{
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: var(--vivid-color-2);
+        border-radius: 50%;
+        left: -11px;
+        top: 28px;
+        transition: .5s;
+      }
 
-.timeline ul li:hover{
-  background-color: var(--blockquote);
-}
+      &:hover{
+        background-color: var(--blockquote);
 
-.timeline ul li:hover:before{
-  background-color: var(--vivid-color-1);
-  box-shadow:0px 0px 10px 2px var(--vivid-color-1);
+        &:before{
+          background-color: var(--vivid-color-1);
+          box-shadow:0px 0px 10px 2px var(--vivid-color-1);
+        }
+      }
+    }
+  }
 }
 
 @media (max-width:300px){
