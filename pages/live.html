@@ -1,12 +1,27 @@
 --- 
 layout: page
 title : Live
+feature-img: "assets/img/setup.jpg"
 permalink: /live/
 ---
+
 <p>
-  I stream on 3 different Twitch channels! There's my Twitch channel, ChaelCodes. There's the RubyGalaxy Twitch channel, where I often co-host. And I also stream on the new_relic channel at least once every 2 weeks. I also host a book club on Discord, and if I go to events or conferences, they'll be listed here.
+  I stream live on Twitch every Thursday! Follow to get notified when I'm live.
 </p>
+
+<div style="height: 300px;">
+  {% twitch https://twitch.tv/ChaelCodes %}
+</div>
+
+<p>
+  Here's a calendar of events and upcoming streams!
+</p>
+
 <div>
-  <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=UTC&amp;src=bHZybTl2dWRpaWxvYW01a2UwOTVxdDVucDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%238E24AA&amp;title=ChaelCodes%20Stream%20Calendar&amp;mode=WEEK&amp;showCalendars=0&amp;showTabs=1&amp;showPrint=0&amp;showNav=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
+  <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=UTC&showCalendars=0&showPrint=0&showNav=1&src=bHZybTl2dWRpaWxvYW01a2UwOTVxdDVucDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZWNzbGIxdW9hNzRpbHZjNDF2bDhlbXFnbTQzcmczN3FAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA&color=%238E24AA" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
   </iframe>
 </div>
+
+<p>I attend various events and conferences. Past events are provided so you can get an idea of which ones I tend to attend, and I included any relevant content or context!</p>
+
+{% include timeline.html events=site.data.events %}
