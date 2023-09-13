@@ -41,3 +41,21 @@ Check your theme to understand if there are built in options for hiding pages fr
 </details>
 We didn't define a layout, which means our page won't have a header, footer, nor navigation, which is what we want!
 At this point, we have a blank page.
+
+## Step 2 - Define social links
+Jekyll supports collections which are site data stored in yml files. These are parsed by Jekyll and make it easy to iterate over structured data.
+
+```yml
+links:
+  - title: Twitch
+    link: https://twitch.tv/ChaelCodes
+    icon: fa-twitch
+  - title: YouTube
+    link: https://youtube.com/c/ChaelCodes
+    icon: fa-youtube
+  - title: GitHub
+    link: https://github.com/ChaelCodes
+    icon: fa-github
+```
+You can easily add and remove links by modifying the yml file, and there's less danger of introducing mistakes due to copy/pasting.
+My site theme supports font awesome icons, which is why mine are all `fa-github` but obviously, you can use the icon library of your choice.

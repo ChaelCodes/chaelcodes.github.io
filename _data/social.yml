@@ -4,36 +4,33 @@ links:
   - title: Twitch
     link: https://twitch.tv/ChaelCodes
     icon: fa-twitch
-  - title: Twitter
-    link: https://twitter.com/ChaelCodes
-    icon: fa-twitter
   - title: YouTube
     link: https://youtube.com/c/ChaelCodes
     icon: fa-youtube
   - title: GitHub
     link: https://github.com/ChaelCodes
     icon: fa-github
+  - title: Hachyderm.io Mastodon
+    link: https://hachyderm.io/@ChaelCodes
+    icon: fa-mastodon
+  - title: Ruby.Social Mastodon
+    link: https://ruby.social/@ChaelCodes
+    icon: fa-mastodon
+  - title: Discord
+    link: https://discord.gg/Yp9N6pF
+    icon: fa-discord
   - title: Steam
     link: https://steamcommunity.com/id/chaelcodes/
     icon: fa-steam
-  - title: Relicans
-    link: https://www.therelicans.com/chaelcodes
-    icon: fa-wordpress
   - title: Dev.To
     link: https://dev.to/chaelcodes/
     icon: fa-dev
-  - title: GitLab
-    link: https://gitlab.com/ChaelCodes
-    icon: fa-gitlab
-  - title: reddit
-    link: https://www.reddit.com/user/ChaelCodes
-    icon: fa-reddit
-  # steam:
-  # tumblr:
-  # twitter: ChaelCodes
-  # vimeo:
-  # wordpress:
-  # youtube: ChaelCodes
+  - title: Twitter
+    link: https://twitter.com/ChaelCodes
+    icon: fa-twitter
+  - title: Website Homepage
+    link: https://www.chael.codes
+    icon: fa-readme
 
 # Share button options
 share:
