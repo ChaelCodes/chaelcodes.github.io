@@ -42,7 +42,31 @@ Check your theme to understand if there are built in options for hiding pages fr
 We didn't define a layout, which means our page won't have a header, footer, nor navigation, which is what we want!
 At this point, we have a blank page.
 
-## Step 2 - Define social links
+## Step 2 - Strip out navigation and footer
+
+Chances are high that your default layout has a header and footer. We need to make a new layout called "empty" to strip those out. We still want all the meta info that's in your head - this controls livereload, fonts, scss styling (which we'll add later), and more!
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  {% include default/head.liquid %}
+  <body>
+    {{ content }}
+  </body>
+</html>
+```
+
+```frontmatter
+---
+title: Links
+description: Social media and helpful links for ChaelCodes!
+permalink: /links/
+layout: empty
+hide: true
+---
+```
+
+## Step 3 - Define social links
 Jekyll supports collections which are site data stored in yml files. These are parsed by Jekyll and make it easy to iterate over structured data.
 
 ```yml
