@@ -5,3 +5,10 @@ layout: empty
 permalink: /links/
 hide: true
 ---
+<ul>
+{% for social in site.data.social.links %}
+  <li>
+    <a href="{{social.link}}">{{social.title}}</a>
+  </li>
+{% endfor %}
+</ul>

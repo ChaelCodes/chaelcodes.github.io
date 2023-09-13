@@ -83,3 +83,23 @@ links:
 ```
 You can easily add and remove links by modifying the yml file, and there's less danger of introducing mistakes due to copy/pasting.
 My site theme supports font awesome icons, which is why mine are all `fa-github` but obviously, you can use the icon library of your choice.
+
+## Step 3 - MAKE SOME LINKS
+LET'S ADD SOME `<a>` TAGS!
+```html
+{% raw %}
+<ul>
+{% for social in site.data.social.links %}
+  <li>
+    <a href="{{social.link}}">{{social.title}}</a>
+  </li>
+{% endfor %}
+</ul>
+{% endraw %}
+```
+
+IT'S MAGNIFICENT!
+
+<img src="/assets/img/posts/links-page/newlinkspage.PNG" alt="Perfectly legible list of bullet-pointed links that your screenreader would love." />
+
+We're done! Everyone can access my links now! 🙌
