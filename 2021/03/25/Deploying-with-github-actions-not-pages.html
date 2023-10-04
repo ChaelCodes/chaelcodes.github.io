@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.4.6
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    
+    <script>
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+    </script>
+    
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    
+
+    <!-- KaTeX 0.15.2 -->
+    
+
+    <!-- Mermaid 9.1.1 -->
+    
+
+    <!-- Simple Jekyll Search 1.10.0 -->
+    <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-https://www.chael.codes';
+      const isCookieConsent = '';
+      const analyticsName = '';
+      const analyticsNameGA4 = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <meta property="og:image" content="https://www.chael.codes/assets/img/posts/Jekyll-pages.PNG">
+    
+    <meta property="og:type" content="website" />
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Deploying Jekyll with GitHub Actions, not Pages | ChaelCodes</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Deploying Jekyll with GitHub Actions, not Pages" />
+<meta name="author" content="ChaelCodes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I built a Gem that embeds Twitch clips in Jekyll Sites! Unfortunately, I can’t use it, because I’m deploying using github-pages. So let’s change the deploy process. 😏" />
+<meta property="og:description" content="I built a Gem that embeds Twitch clips in Jekyll Sites! Unfortunately, I can’t use it, because I’m deploying using github-pages. So let’s change the deploy process. 😏" />
+<link rel="canonical" href="https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html" />
+<meta property="og:url" content="https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html" />
+<meta property="og:site_name" content="ChaelCodes" />
+<meta property="og:image" content="https://www.chael.codes/assets/img/posts/Jekyll-pages.PNG" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-25T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://www.chael.codes/assets/img/posts/Jekyll-pages.PNG" />
+<meta property="twitter:title" content="Deploying Jekyll with GitHub Actions, not Pages" />
+<meta name="twitter:site" content="@ChaelCodes" />
+<meta name="twitter:creator" content="@ChaelCodes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ChaelCodes"},"dateModified":"2021-03-25T00:00:00+00:00","datePublished":"2021-03-25T00:00:00+00:00","description":"I built a Gem that embeds Twitch clips in Jekyll Sites! Unfortunately, I can’t use it, because I’m deploying using github-pages. So let’s change the deploy process. 😏","headline":"Deploying Jekyll with GitHub Actions, not Pages","image":"https://www.chael.codes/assets/img/posts/Jekyll-pages.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html"},"url":"https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="ChaelCodes" href="https://www.chael.codes/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="https://www.chael.codes/feed.xml" title="ChaelCodes" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Deploying Jekyll with GitHub Actions, not Pages">
+    <meta name="twitter:description" content="I built a Gem that embeds Twitch clips in Jekyll Sites! Unfortunately, I can’t use it, because I’m deploying using github-pages. So let’s change the deploy p...">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.chael.codes/assets/img/posts/Jekyll-pages.PNG">
+    <meta name="twitter:image:alt" content="Deploying Jekyll with GitHub Actions, not Pages">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+        <a class="site-title" aria-label="ChaelCodes" href="/">
+        ChaelCodes
+		</a>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Live" title="Live" href="/live/">
+                     Live 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Podcasts" title="Podcasts" href="/podcasts/">
+                     Podcasts 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/projects">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Talks" title="Talks" href="/talks">
+                     Talks 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="Deploying Jekyll with GitHub Actions, not Pages " aria-label="Deploying Jekyll with GitHub Actions, not Pages" onclick="themeToggle()"></a></li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image" >
+  <header id="main-area">
+    <div class="title-padder">
+      
+      <h1 id="Deploying+Jekyll+with+GitHub+Actions%2C+not+Pages" class="title">Deploying Jekyll with GitHub Actions, not Pages</h1>
+      
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      March 25, 2021
+    </p></div>
+
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+      <p>I built a <a href="https://rubygems.org/gems/jekyll-twitch">Gem</a> that embeds Twitch clips in Jekyll Sites! Unfortunately, I can’t use it, because I’m deploying using github-pages. So let’s change the deploy process. 😏</p>
+
+<h1 id="why-do-we-have-to-do-this">Why do we have to do this?</h1>
+<p><a href="https://pages.github.com/">GitHub pages</a> is where <a href="https://www.chael.codes">my site</a> is hosted. They require you to add the gh-pages gem instead of the jekyll gem, and they lock the version of Jekyll at 3.9.0. They would have to rework how gh-pages interacts with GitHub servers to support Jekyll 4.0, and that would break all the 3.9 sites out there. <em><a href="https://github.com/github/pages-gem/issues/651">They’ve decided not to upgrade instead.</a></em></p>
+
+<p>They also don’t let you add <a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#plugins">random plugins</a>. Only their allow list, and <a href="https://github.com/ChaelCodes/jekyll-twitch/">my baby Jekyll-Twitch</a> isn’t on it.</p>
+
+<h1 id="so-whats-the-plan">So, what’s the plan?</h1>
+<p>Jekyll has shared a guide on <a href="https://jekyllrb.com/docs/continuous-integration/github-actions/">deploying using GitHub Actions</a>. We’ll need a <code class="language-plaintext highlighter-rouge">github_pages.yml</code> file in <code class="language-plaintext highlighter-rouge">.github/workflows</code>. This is going to trigger every time we push to main. It’ll call out to a <a href="https://github.com/helaili/jekyll-action">jekyll-action</a> created by helaili which deploys the static site on the gh-pages branch. The jekyll-action deprecates <a href="https://github.com/helaili/jekyll-action#deprecation">JEKYLL_PAT</a>, so we should update <a href="https://github.com/jekyll/jekyll/blob/master/docs/_docs/continuous-integration/github-actions.md">their docs</a> while we do this.</p>
+
+<p>There’s some additional GitHub configuration necessary. First, the jekyll action needs a github token to push to the gh-pages branch, then GitHub needs to use the gh-pages branch instead of the main branch.</p>
+
+<p>We’ll need to include a <a href="https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository">secret</a> in our <a href="https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsenv">action</a> to store the github token.</p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/11">This was easier than I thought.</a></p>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <li class="meta">Share</li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=Deploying+Jekyll+with+GitHub+Actions%2C+not+Pages%20https%3A%2F%2Fwww.chael.codes%2F2021%2F03%2F25%2FDeploying-with-github-actions-not-pages.html"
+               target="_blank" title="">
+                <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Tweet</span>
+            </a>
+        </li>
+            
+        <li>
+            <a href="https://www.reddit.com/submit?url=https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html&title=Deploying+Jekyll+with+GitHub+Actions%2C+not+Pages%20%7C%20ChaelCodes"
+               target="_blank" title=" Reddit">
+                <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on Reddit</span>
+            </a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=Deploying Jekyll with GitHub Actions, not Pages%20%7C%20ChaelCodes&body=https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html"
+               target="_blank" title="">
+                <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Email</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+  <div class="tag-list">
+    <ul>
+      
+        <li class="meta">Tags</li>
+      
+
+      
+        <li><a class="button" href="/tags#github+actions">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> github actions</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#jekyll">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> jekyll</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#open-source">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> open-source</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#ruby">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> ruby</p>
+        </a></li>
+      
+    </ul>
+  </div>
+
+
+
+</article>
+
+<!-- Post navigation -->
+
+
+<!--Utterances-->
+
+
+<!-- Cusdis -->
+
+
+<!-- Disqus -->
+
+
+<!-- To change color of links in the page -->
+<style>
+  header#main-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+
+  
+
+  
+  header#main-area { background-image: url('/assets/img/posts/Jekyll-pages.PNG'); }
+  
+</style>
+    </div>
+    <footer class="site-footer">
+  <p class="text">
+    Cuddle your else's, Track your Performance, and Docker isn't Magic. <3
+  </p>
+  <div class="footer-icons">
+    <ul>
+      <!-- Social icons from Font Awesome, if enabled -->
+      
+  <li class="social-icon">
+      <a feed.xml href="/feed.xml"
+        title="Follow RSS feed" class="hover-rainbow">
+          <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  </li>
+
+
+
+  <li class="social-icon">
+    <a href="https://twitch.tv/ChaelCodes" title="Twitch" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://youtube.com/c/ChaelCodes" title="YouTube" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://github.com/ChaelCodes" title="GitHub" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://hachyderm.io/@ChaelCodes" title="Hachyderm.io Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://ruby.social/@ChaelCodes" title="Ruby.Social Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://discord.gg/Yp9N6pF" title="Discord" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://steamcommunity.com/id/chaelcodes/" title="Steam" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://dev.to/chaelcodes/" title="Dev.To" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://twitter.com/ChaelCodes" title="Twitter" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.chael.codes" title="Website Homepage" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-readme fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

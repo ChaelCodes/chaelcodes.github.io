@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.4.6
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    
+    <script>
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+    </script>
+    
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    
+
+    <!-- KaTeX 0.15.2 -->
+    
+
+    <!-- Mermaid 9.1.1 -->
+    
+
+    <!-- Simple Jekyll Search 1.10.0 -->
+    <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-https://www.chael.codes';
+      const isCookieConsent = '';
+      const analyticsName = '';
+      const analyticsNameGA4 = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <meta property="og:image" content="https://www.chael.codes/assets/img/posts/invisible_zoom/8-side-by-side-demo.PNG">
+    
+    <meta property="og:type" content="website" />
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Invisible Zoom Streaming method | ChaelCodes</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="The Invisible Zoom Streaming method" />
+<meta name="author" content="ChaelCodes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily adding guests and sharing screens, without cropping zoom windows." />
+<meta property="og:description" content="Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily adding guests and sharing screens, without cropping zoom windows." />
+<link rel="canonical" href="https://www.chael.codes/2021/05/22/invisible-zoom.html" />
+<meta property="og:url" content="https://www.chael.codes/2021/05/22/invisible-zoom.html" />
+<meta property="og:site_name" content="ChaelCodes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-05-22T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Invisible Zoom Streaming method" />
+<meta name="twitter:site" content="@ChaelCodes" />
+<meta name="twitter:creator" content="@ChaelCodes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ChaelCodes"},"dateModified":"2021-05-22T00:00:00+00:00","datePublished":"2021-05-22T00:00:00+00:00","description":"Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily adding guests and sharing screens, without cropping zoom windows.","headline":"The Invisible Zoom Streaming method","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.chael.codes/2021/05/22/invisible-zoom.html"},"url":"https://www.chael.codes/2021/05/22/invisible-zoom.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="ChaelCodes" href="https://www.chael.codes/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="https://www.chael.codes/feed.xml" title="ChaelCodes" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="The Invisible Zoom Streaming method">
+    <meta name="twitter:description" content="Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily...">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.chael.codes/assets/img/posts/invisible_zoom/8-side-by-side-demo.PNG">
+    <meta name="twitter:image:alt" content="The Invisible Zoom Streaming method">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+        <a class="site-title" aria-label="ChaelCodes" href="/">
+        ChaelCodes
+		</a>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Live" title="Live" href="/live/">
+                     Live 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Podcasts" title="Podcasts" href="/podcasts/">
+                     Podcasts 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/projects">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Talks" title="Talks" href="/talks">
+                     Talks 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="The Invisible Zoom Streaming method " aria-label="The Invisible Zoom Streaming method" onclick="themeToggle()"></a></li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image" >
+  <header id="main-area">
+    <div class="title-padder">
+      
+      <h1 id="The+Invisible+Zoom+Streaming+method" class="title">The Invisible Zoom Streaming method</h1>
+      
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      May 22, 2021
+    </p></div>
+
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+      <p>Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily adding guests and sharing screens, without cropping zoom windows.</p>
+
+<h1 id="hide-zoom">Hide Zoom</h1>
+<h2 id="1-join-the-zoom-call-with-your-camera">1. Join the zoom call with your camera</h2>
+<p>The first step is joining a zoom call. You must use the desktop application to follow the rest of these steps. Your video feed will run through zoom. This is much easier, and your guests will see you.</p>
+
+<h2 id="2-add-zoom-to-obs">2. Add zoom to OBS</h2>
+<p>Create a window capture in OBS, and select your zoom window. Exclude the cursor, and only capture the client area to remove any application window styling.</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/1-create-a-window-capture.PNG" alt="screenshot of OBS window settings" /></p>
+
+<h2 id="3-unmirror-your-video">3. Unmirror your video</h2>
+<p>Inside zoom, your video will display mirrored by default. This only inverts your image on your zoom instance. Now that we’re sharing that instance with the world, you want to unmirror it so text displays normally. Under video settings, ensure “Mirror my Image” is unchecked.</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/2-turn-off-mirrored-screen.png" alt="Screenshot of zoom settings" /></p>
+
+<p>Optional: Slide “Touch up my appearance” all the way into “turn my bags into smokey eyes” territory. No foundation? No problem!</p>
+
+<h2 id="4-share-your-visible-guests">4. Share your <em>visible</em> guests</h2>
+<p>You can hide everyone who has chosen not to share their video by checking hide non-video participants. This makes it easy to cue up guest changes, and also have a hidden producer running the show. If you have multiple guests, having a producer who can pass messages like “5 minutes left” or communicate with the next guest via zoom chat is really helpful.</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/3-hide-non-video-participants.png" alt="screenshot of zoom UI" /></p>
+
+<p>While you’re here, optionally uncheck “Always display participant names on their video.</p>
+
+<h2 id="5-hide-the-rest-of-the-zoom-ui">5. Hide the rest of the zoom UI</h2>
+<p>Uncheck “Always show meeting controls” to have the option of hiding zoom’s buttons.</p>
+
+<p>Alt will cycle through displaying the zoom UI, showing participant names, and hiding everything. If you want to crop zoom’s UI out, that also works. Note that hovering over the zoom UI area will bring it back, so keep your cursor above the bottom third.</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/4-no-participant-names-or-ui.PNG" alt="zoom in OBS with no participant names or UI" /></p>
+
+<p>Your Zoom window in OBS should look like this.</p>
+
+<h2 id="6-hide-zoom-in-obs">6. Hide Zoom in OBS</h2>
+<p>Chromakey works by removing everything of one color. Normally, that color is green, but we can make it Zoom Grey. Chromakey also adds a little variability to catch green shadows, but we can strip all that range out, because zoom doesn’t have lighting or shadows. Add a filter to the Zoom window source in OBS. Use a color key with a custom color of 1a1a1a, and set the similarity and smoothness all the way down to 1.
+<img src="/assets/img/posts/invisible_zoom/5-apply-chroma-key.PNG" alt="screen shot of color key window" /></p>
+
+<p>Place an image beneath the zoom window in OBS, and now you’ve got a pretty great looking setup!</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/6-invisible-zoom-demo.PNG" alt="final form of invisible zoom technique" /></p>
+
+<h1 id="screenshare-in-zoom">Screenshare in Zoom</h1>
+<p>All of this is good, but we need screensharing for the real magic of zoom to activate. Don’t worry, we won’t have separate windows and captures. Seamless transitions from a conversation to presentation.</p>
+
+<h2 id="keep-screenshare-in-one-window">Keep screenshare in one window</h2>
+<p>By default, when someone shares their screen, Zoom goes full-screen, and moves audience video into a second window, but you can set zoom to share a screen within the current view.</p>
+
+<p>Turn on side-by-side view.
+<img src="/assets/img/posts/invisible_zoom/7-turn-on-side-by-side.PNG" alt="side by side in zoom" /></p>
+
+<p>Your presentation will be on the left and your guests can be added and drop on the right!</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/8-side-by-side-demo.PNG" alt="zoom looking good with slides and screenshare" /></p>
+
+<p>Now there’s a great looking zoom presentation on an image background. You can sub in speakers without issue, and people can swap between presentations!</p>
+
+<h2 id="flaws">Flaws</h2>
+<p><em>You cannot screenshare while producing.</em> It will change your whole view. A secondary computer or your guest can screenshare.</p>
+
+<p><em>Zoom does not resize windows automatically.</em> You will need to adjust the zoom level if the user’s screen is very large or very small.</p>
+
+<h1 id="dont-forget-audio">Don’t forget audio!</h1>
+<p>Audio is a whole different challenge. When you capture audio from zoom, you will get everyone else’s audio, but not your own. Zoom doesn’t play your own audio back to you. There are two ways to handle this.</p>
+<ol>
+  <li>Have a producer who’s responsible for communicating with guests, and streaming the zoom, but doesn’t appear on-screen. This has the added benefit of giving you a moderator who’s focused on chat and production.</li>
+  <li>Stitch your audio together using loopback, voicemeeter, or two audio inputs in OBS. If you use two audio inputs in OBS, then you will have issues <a href="https://dev.to/chaelcodes/how-to-caption-your-twitch-streams-5e63">captioning</a>, because all captioning plugins that I know of use one audio input as the source.</li>
+</ol>
+
+<h1 id="summary">Summary</h1>
+<p>This isn’t the greatest and most technically proficient guest setup that has ever existed, but it is a robust, easy solution that uses technology your guests are confident in. It’s a great option for panels or small-scale live conferences and meetups. Let me know if you try this out, or come up with ways to deal with those flaws above!</p>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <li class="meta">Share</li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=The+Invisible+Zoom+Streaming+method%20https%3A%2F%2Fwww.chael.codes%2F2021%2F05%2F22%2Finvisible-zoom.html"
+               target="_blank" title="">
+                <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Tweet</span>
+            </a>
+        </li>
+            
+        <li>
+            <a href="https://www.reddit.com/submit?url=https://www.chael.codes/2021/05/22/invisible-zoom.html&title=The+Invisible+Zoom+Streaming+method%20%7C%20ChaelCodes"
+               target="_blank" title=" Reddit">
+                <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on Reddit</span>
+            </a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=The Invisible Zoom Streaming method%20%7C%20ChaelCodes&body=https://www.chael.codes/2021/05/22/invisible-zoom.html"
+               target="_blank" title="">
+                <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Email</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+  <div class="tag-list">
+    <ul>
+      
+        <li class="meta">Tags</li>
+      
+
+      
+        <li><a class="button" href="/tags#streaming">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> streaming</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#zoom">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> zoom</p>
+        </a></li>
+      
+    </ul>
+  </div>
+
+
+
+</article>
+
+<!-- Post navigation -->
+
+
+<!--Utterances-->
+
+
+<!-- Cusdis -->
+
+
+<!-- Disqus -->
+
+
+<!-- To change color of links in the page -->
+<style>
+  header#main-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+
+  
+
+  
+  header#main-area { background-image: url('/assets/img/posts/invisible_zoom/8-side-by-side-demo.PNG'); }
+  
+</style>
+    </div>
+    <footer class="site-footer">
+  <p class="text">
+    Cuddle your else's, Track your Performance, and Docker isn't Magic. <3
+  </p>
+  <div class="footer-icons">
+    <ul>
+      <!-- Social icons from Font Awesome, if enabled -->
+      
+  <li class="social-icon">
+      <a feed.xml href="/feed.xml"
+        title="Follow RSS feed" class="hover-rainbow">
+          <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  </li>
+
+
+
+  <li class="social-icon">
+    <a href="https://twitch.tv/ChaelCodes" title="Twitch" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://youtube.com/c/ChaelCodes" title="YouTube" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://github.com/ChaelCodes" title="GitHub" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://hachyderm.io/@ChaelCodes" title="Hachyderm.io Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://ruby.social/@ChaelCodes" title="Ruby.Social Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://discord.gg/Yp9N6pF" title="Discord" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://steamcommunity.com/id/chaelcodes/" title="Steam" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://dev.to/chaelcodes/" title="Dev.To" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://twitter.com/ChaelCodes" title="Twitter" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.chael.codes" title="Website Homepage" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-readme fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

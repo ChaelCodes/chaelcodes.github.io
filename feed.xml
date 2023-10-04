@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://www.chael.codes/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.chael.codes/" rel="alternate" type="text/html" /><updated>2023-10-04T19:23:17+00:00</updated><id>https://www.chael.codes/feed.xml</id><title type="html">ChaelCodes</title><subtitle>Rachael wants to share the joy and beauty of programming through programming games and regular open-source streams on Twitch. She's been a professional dev since 2012, 3x Team Lead, and manages an open-source repo for playing games of Monster of the Week. Currently, she works as a Developer Relations Engineer for New Relic.</subtitle><author><name>Rachael</name></author><entry><title type="html">Links Page in Jekyll</title><link href="https://www.chael.codes/2023/10/04/jekyll-links-page.html" rel="alternate" type="text/html" title="Links Page in Jekyll" /><published>2023-10-04T00:00:00+00:00</published><updated>2023-10-04T00:00:00+00:00</updated><id>https://www.chael.codes/2023/10/04/jekyll-links-page</id><content type="html" xml:base="https://www.chael.codes/2023/10/04/jekyll-links-page.html"><![CDATA[<p>As a content creator, I love the look and feel of “link in bio” pages.
+They’re such an easy and mobile-friendly way to share various social medias and projects.
+However, as a developer, I am frankly offended at the idea of needing a SAAS app to create a static page of links.
+The idea of <em>paying</em> for such a service, or sharing <em>my</em> page with their branding is simply abhorrent.
+Thankfully I have a Jekyll site and the ability to create <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> tags, so I’m able to avoid that dismal fate.❤️
+<!--more--></p>
+
+<h2 id="step-1---create-a-links-page">Step 1 - Create a links page</h2>
+<p>Let’s create a new page in the <code class="language-plaintext highlighter-rouge">/pages</code> folder called links.html. We want html, because we’re going to be adding a lot of customizations.</p>
+<pre><code class="language-frontmatter">---
+title: Links
+description: Social media and helpful links for ChaelCodes!
+permalink: /links/
+hide: true
+---
+</code></pre>
+<p>We want a title for the tab title when it’s viewed in a browser. I’m happy with “Links” even though it’s not very descriptive.
+The description is what’ll show up in link previews on other sites.
+Our permalink will be the link they access. In my case it’ll look like <a href="https://www.chael.codes/links">chael.codes/links/</a> which is very slick.</p>
+<summary>My theme - type-on-strap - hides pages from the navbar with the frontmatter tag <code>hide: true</code>.</summary>
+<details>
+Inside the navbar there's <a href="https://github.com/sylhare/Type-on-Strap/blob/ed32cecbf56d58810f1d3883290b9ac091d78cb8/_includes/default/navbar.liquid#L25-L36">some custom code</a> to hide certain site pages.
+
+For Minima, this functionality is missing, and it'd need to be added to the <a href="https://github.com/jekyll/minima/blob/master/_includes/header.html">header</a>.
+Check your theme to understand if there are built in options for hiding pages from the navigation.
+</details>
+<p>We didn’t define a layout, which means our page won’t have a header, footer, nor navigation, which is what we want!
+At this point, we have a blank page.</p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/ad1488f8b3479e6287559efad237addaf8a03b7a">Commit</a></p>
+
+<h2 id="step-2---strip-out-navigation-and-footer">Step 2 - Strip out navigation and footer</h2>
+
+<p>Chances are high that your default layout has a header and footer. We need to make a new layout called “empty” to strip those out. We still want all the meta info that’s in your head - this controls livereload, fonts, scss styling (which we’ll add later), and more!</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  {% include default/head.liquid %}
+  <span class="nt">&lt;body&gt;</span>
+    {{ content }}
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre></div></div>
+
+<pre><code class="language-frontmatter">---
+title: Links
+description: Social media and helpful links for ChaelCodes!
+permalink: /links/
+layout: empty
+hide: true
+---
+</code></pre>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/94b62078635bda15e107838b13e5d02cf38edf2b">Commit</a></p>
+
+<h2 id="step-3---define-social-links">Step 3 - Define social links</h2>
+<p>Jekyll supports collections which are site data stored in yml files. These are parsed by Jekyll and make it easy to iterate over structured data.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">links</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Twitch</span>
+    <span class="na">link</span><span class="pi">:</span> <span class="s">https://twitch.tv/ChaelCodes</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">fa-twitch</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">YouTube</span>
+    <span class="na">link</span><span class="pi">:</span> <span class="s">https://youtube.com/c/ChaelCodes</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">fa-youtube</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">GitHub</span>
+    <span class="na">link</span><span class="pi">:</span> <span class="s">https://github.com/ChaelCodes</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">fa-github</span>
+</code></pre></div></div>
+<p>You can easily add and remove links by modifying the yml file, and there’s less danger of introducing mistakes due to copy/pasting.
+My site theme supports font awesome icons, which is why mine are all <code class="language-plaintext highlighter-rouge">fa-github</code> or <code class="language-plaintext highlighter-rouge">fa-&lt;whatever&gt;</code> but obviously, you can use the icon library of your choice.</p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/59f20b32573697062b89811f5d9d49ba940db7fa">Commit</a></p>
+
+<h2 id="step-3---make-some-links">Step 3 - MAKE SOME LINKS</h2>
+<p>LET’S ADD SOME <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> TAGS!</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;ul&gt;</span>
+{% for social in site.data.social.links %}
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{social.link}}"</span><span class="nt">&gt;</span>{{social.title}}<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+{% endfor %}
+<span class="nt">&lt;/ul&gt;</span>
+
+</code></pre></div></div>
+
+<p>IT’S MAGNIFICENT!</p>
+
+<p><img src="/assets/img/posts/links-page/newlinkspage.PNG" alt="Perfectly legible list of bullet-pointed links that your screenreader would love." /></p>
+
+<p>We’re done! Everyone can access my links now! 🙌</p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/f4601419199b9131a78190255f4cf60a40e74cbd">Commit</a></p>
+
+<h2 id="step-4---add-some-buttons">Step 4 - Add some <em>buttons</em></h2>
+
+<p>We’re going to add an id to that ul to isolate it from other content on our site, then we’ll create an scss file - links.scss for our styling!</p>
+
+<summary>Make sure to import this new file in your theme's main scss file.</summary>
+<details>Mine uses _custom.scss to add additional files and styling.
+<pre>
+  <code>
+    @import 'pages/links';
+  </code>
+</pre>
+</details>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"links"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* --- links page styling -- */</span>
+<span class="nn">#links</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0em</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nv">$font-family-headings</span><span class="p">;</span> <span class="c1">// override text to use heading text instead of body</span>
+
+  <span class="nt">li</span> <span class="p">{</span>
+    <span class="nt">a</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="m">1em</span> <span class="m">2em</span><span class="p">;</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="nv">$padding-small</span><span class="p">;</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">vivid-color-1</span><span class="p">);</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>It’s plain, but not we have a links page with a list of buttons!</p>
+
+<p><img src="/assets/img/posts/links-page/buttons.PNG" alt="Bullet pointed links have been turned into a list of rectangular buttons with no bullet point styling." /></p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/43f2dedec7bfdfe2ea228afadb814b43297c836b">Commit</a></p>
+
+<h2 id="step-5---add-a-friendly-face-to-the-links-page">Step 5 - Add a friendly face to the links page</h2>
+<p>I think it’s really helpful to give people a little greeting and show them your avatar to reassure them that they’ve ended up on the right page.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"links-profile"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"avatar"</span> <span class="na">src=</span><span class="s">"/assets/img/profile_pic.jpg"</span> <span class="na">alt=</span><span class="s">"profile pic of Chael smiling and wearing fib shawl"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>To be honest, I can't keep track of all the places I'm active either.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nn">#links-profile</span> <span class="p">{</span>
+    <span class="nn">#avatar</span> <span class="p">{</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+      <span class="nl">border</span><span class="p">:</span> <span class="mi">.2em</span> <span class="nb">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">vivid-color-2</span><span class="p">);</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="m">1em</span> <span class="nb">auto</span><span class="p">;</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+</code></pre></div></div>
+<p>This is probably enough, right?
+<img src="/assets/img/posts/links-page/profile_pic_link_page.PNG" alt="Avatar with a little blue circle has been added to the top of the page, and the text 'To be honest, I can't keep track of all the places I'm active either.'" /></p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/ee4da2c52908f23e2a4e29fd3da49a09bc19d331">Commit</a></p>
+
+<h2 id="step-6---fix-desktop-view">Step 6 - Fix desktop view</h2>
+<p>Let’s just pop into desktop view for a fun screenshot!
+<img src="/assets/img/posts/links-page/Desktop_view.PNG" alt="Giant picture of my avatar that fills the entire screen." />
+Huh. It’s just my face.</p>
+
+<p>That’s not ideal.
+<img src="/assets/img/posts/links-page/desktop_view_2.PNG" alt="Giant buttons that are perfectly legible to a screenreader, but have tiny unreadable text." />
+The buttons aren’t much better. We’ve only got 5 on the page.</p>
+
+<p>Let’s give this page a maximum width and center it!</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"links-profile"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"avatar"</span> <span class="na">src=</span><span class="s">"/assets/img/profile_pic.jpg"</span> <span class="na">alt=</span><span class="s">"profile pic of Chael smiling and wearing fib shawl"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>To be honest, I can't keep track of all the places I'm active either.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"links"</span><span class="nt">&gt;</span>
+    {% for social in site.data.social.links %}
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{social.link}}"</span><span class="nt">&gt;</span>{{social.title}}<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    {% endfor %}
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</code></pre></div></div>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.column</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>And now we have a perfectly functional and pleasant links page built in Jekyll!</p>
+
+<p><img src="/assets/img/posts/links-page/basic_links_page.PNG" /></p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/2e76953ad94a5a97a576c48a2c68e576ea38efec">Commit</a></p>
+
+<h2 id="step----entirely-unnecessary-futzing-to-impress-other-developers">Step ∞ - Entirely Unnecessary Futzing to impress other developers</h2>
+<p>These are all going to be links to commits. You can see the result on my <a href="/links">links page.</a> I’ll add any additional futzing I do to this list.</p>
+<h3 id="add-icons">Add Icons</h3>
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/dd91c015e4e35b961946f7fb71d44ece8e619c20">Commit</a></p>
+
+<h3 id="gradient-background-to-add-definition-to-column">Gradient Background to add Definition to Column</h3>
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/5db0871796d40df4bc9714ca3683034369b1629e">Commit</a></p>
+
+<h3 id="animated-hover-buttons">Animated hover buttons</h3>
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/332d64f1aa33c1054680bd8d91ee7176108bd13e">Commit</a></p>
+
+<h3 id="open-links-in-new-tab">Open links in new tab</h3>
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/1882be76a2c89c93973ad7f1ed312ea6cd25371f">Commit</a></p>]]></content><author><name>ChaelCodes</name></author><summary type="html"><![CDATA[As a content creator, I love the look and feel of “link in bio” pages. They’re such an easy and mobile-friendly way to share various social medias and projects. However, as a developer, I am frankly offended at the idea of needing a SAAS app to create a static page of links. The idea of paying for such a service, or sharing my page with their branding is simply abhorrent. Thankfully I have a Jekyll site and the ability to create &lt;a&gt; tags, so I’m able to avoid that dismal fate.❤️]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/links-page/linkinbiopage.PNG" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/links-page/linkinbiopage.PNG" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Stop using `git add .`</title><link href="https://www.chael.codes/2023/09/09/stop-git-add-dot.html" rel="alternate" type="text/html" title="Stop using `git add .`" /><published>2023-09-09T00:00:00+00:00</published><updated>2023-09-09T00:00:00+00:00</updated><id>https://www.chael.codes/2023/09/09/stop-git-add-dot</id><content type="html" xml:base="https://www.chael.codes/2023/09/09/stop-git-add-dot.html"><![CDATA[<p><code class="language-plaintext highlighter-rouge">git add .</code> sets you up for failure, and it’s most prevalent in the community that it’s worst suited for: git beginners. Fixing a commit with unwanted changes in it is significantly harder than being intentional about what you commit to begin with. This article will go over how to make intentional commits, and then discuss the most common examples where I see <code class="language-plaintext highlighter-rouge">git add .</code> trip up developers.
+<!--more--></p>
+
+<p><code class="language-plaintext highlighter-rouge">git add .</code> adds everything from your current folder.</p>
+<ul>
+  <li>version changes to lockfiles</li>
+  <li>editor config files</li>
+  <li>debugging statements</li>
+  <li>random unwanted whitespace changes</li>
+  <li>changes you actually want</li>
+  <li>changes you thought you wanted, but don’t</li>
+</ul>
+
+<p>Instead, I want you to intentionally add changes to your commit using <code class="language-plaintext highlighter-rouge">git add -p</code>, and I want you to add new files using <code class="language-plaintext highlighter-rouge">git add filename</code> or <code class="language-plaintext highlighter-rouge">git add foldername</code>.</p>
+
+<h2 id="intentional-git-commits">Intentional Git Commits</h2>
+<p>1 - <code class="language-plaintext highlighter-rouge">git status</code></p>
+
+<summary>Start by looking at what changes git sees in your repo.</summary>
+<details>
+This command lists all the changes git sees. The first section is staged changes, which means they'll be included in the next commit you make. The next section is changes git sees to files that are tracked in git. The last section is important, these are untracked files. Git isn't looking at these files for changes yet. If you have files in the untracked section that you would never want to commit (node_modules or editor configs) you can add them to your .gitignore file and they'll no longer show up.
+</details>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> git status
+On branch main
+Your branch is up to <span class="nb">date </span>with <span class="s1">'origin/main'</span><span class="nb">.</span>
+
+Changes to be committed:
+  <span class="o">(</span>use <span class="s2">"git restore --staged &lt;file&gt;..."</span> to unstage<span class="o">)</span>
+        modified:   _config.yml
+
+Changes not staged <span class="k">for </span>commit:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to update what will be committed<span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">"git restore &lt;file&gt;..."</span> to discard changes <span class="k">in </span>working directory<span class="o">)</span>
+        modified:   Gemfile.lock
+        modified:   _layouts/stretch.html
+        modified:   _posts/2023-06-25-fibonacci-shawl-pattern.md
+        modified:   _sass/layouts/_stretch.scss
+
+Untracked files:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to include <span class="k">in </span>what will be committed<span class="o">)</span>
+        _posts/2023-07-09-stop-git-add-dot.md
+        _posts/vim-commands.md
+        _sass/base/
+        assets/img/profile_pic.JPG
+</code></pre></div></div>
+
+<p>2 - <code class="language-plaintext highlighter-rouge">git add &lt;filename|foldername&gt;</code></p>
+<summary>Add any files that you want that are currently untracked.</summary>
+<details>git isn't going to surface these files in the next step. They're untracked, which means git doesn't see them as part of your changes. `git add filename|foldername` both work, but you can also use `git add -N filename` to indicate that you want to track this file, but not stage it yet.
+</details>
+
+<p>3 - <code class="language-plaintext highlighter-rouge">git commit -p</code></p>
+<summary>Patch add changes then commit.</summary>
+<details>Reviewing each of your changes individually allows you to be intentional about your commits. You can break your commits down into smaller, more concise pieces, and exclude anything unnecessary, whether that's extra whitespace, debugging statements, or lockfile changes.</details>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> git commit <span class="nt">-p</span>
+diff <span class="nt">--git</span> a/Gemfile.lock b/Gemfile.lock
+index 8a0eca6..e94d073 100644
+<span class="nt">---</span> a/Gemfile.lock
++++ b/Gemfile.lock
+@@ <span class="nt">-43</span>,6 +43,7 @@ GEM
+       listen <span class="o">(</span>~&gt; 3.0<span class="o">)</span>
+     jekyll-youtube <span class="o">(</span>1.0.0<span class="o">)</span>
+       jekyll
++    json <span class="o">(</span>2.6.3<span class="o">)</span>
+     kramdown <span class="o">(</span>2.4.0<span class="o">)</span>
+       rexml
+     kramdown-parser-gfm <span class="o">(</span>1.1.0<span class="o">)</span>
+<span class="o">(</span>1/3<span class="o">)</span> Stage this hunk <span class="o">[</span>y,n,q,a,d,j,J,g,/,e,?]
+<span class="o">&gt;</span>
+</code></pre></div></div>
+
+<p>There are a lot of different options for the hunk you’re working for. Use <code class="language-plaintext highlighter-rouge">?</code> to see a printed list of them and select the best one for the situation. Some of my favorites are <code class="language-plaintext highlighter-rouge">y</code> for “yes, I want this hunk”, <code class="language-plaintext highlighter-rouge">n</code> for “no, I don’t want this hunk”, <code class="language-plaintext highlighter-rouge">d</code> for “don’t ask me again about this file”, and <code class="language-plaintext highlighter-rouge">e</code> for “edit”.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>1/3<span class="o">)</span> Stage this hunk <span class="o">[</span>y,n,q,a,d,j,J,g,/,e,?]? ?
+y - stage this hunk
+n - <span class="k">do </span>not stage this hunk
+q - quit<span class="p">;</span> <span class="k">do </span>not stage this hunk or any of the remaining ones
+a - stage this hunk and all later hunks <span class="k">in </span>the file
+d - <span class="k">do </span>not stage this hunk or any of the later hunks <span class="k">in </span>the file
+g - <span class="k">select </span>a hunk to go to
+/ - search <span class="k">for </span>a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+e - manually edit the current hunk
+? - print <span class="nb">help</span>
+</code></pre></div></div>
+
+<h3 id="generated-files">Generated Files</h3>
+<p>We’re often using scaffolds or generate commands to create new files or the application. I recommend creating a commit immediately after running that command with the command as the commit message. Then all your future commits will be covered by patch adding, and you’ll have a history of what the command generated vs what’s hand-crafted.</p>
+
+<h2 id="when-git-add--doesnt-cut-it">When <code class="language-plaintext highlighter-rouge">git add .</code> Doesn’t Cut It</h2>
+
+<h3 id="unwanted-untracked-files">Unwanted Untracked Files</h3>
+<p>Sometimes I’ll have files locally that I don’t want to commit. node_modules, editor configs, and logfiles immediately come to mind. You can permanently exclude these by adding them to your .gitignore, but accidentally duplicated and renamed files, blog posts that aren’t ready yet, or scaffolded files I don’t need are all examples of files that can’t go into gitignore, but I don’t want them yet.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git add .</code> throws all of these into the commit without so much as a warning, but you’ll never have this issue if you’re intentionally adding files.</p>
+
+<h3 id="lockfile-updates">Lockfile Updates</h3>
+<p>I see this one all the time and it’s especially nasty. During the course of regular development and installing dependences, the version manager’s lockfile gets updated with some patch changes. Your pull request isn’t about version changes. <code class="language-plaintext highlighter-rouge">git add .</code> will add those changes anyway, in the same commit as the changes you actually want. This one is especially nasty because everyone tends to get these patch updates at the same time, and then there’s merge conflicts galore, even if you reverse the changes in a second commit. Especially if you reverse the changes in a second commit.</p>
+
+<p><code class="language-plaintext highlighter-rouge">d</code> for “Don’t add the lockfile”.</p>
+
+<h3 id="unintentional-whitespace">Unintentional Whitespace</h3>
+<p>It’s really hard to see extra whitespace at the end of a line in your editor. <code class="language-plaintext highlighter-rouge">git add -p</code> highlights that whitespace in red, you can remove it from the commit without exiting by using the <strong>e</strong>dit option.</p>
+
+<p><img src="/assets/img/posts/git_patch_add/gitAddWhitespace.PNG" alt="extra whitespace at the end of the line highlighted in red from patch add. I'm not sure if this red highlighting is read by screenreaders - sorry." /></p>
+
+<p><code class="language-plaintext highlighter-rouge">e</code> for “Edit out extra whitespace!”</p>
+
+<h3 id="debugging-statements">Debugging Statements</h3>
+<p>In the course of problem-solving, we dump debugging statements, commented out debugging statements, and tiny code changes to make debugging easier throughout the application. Skip all those, or edit them out of the final commit, and have beautiful, clean, readable commits that don’t cause merge conflicts or break the build.</p>
+
+<p><code class="language-plaintext highlighter-rouge">n</code> for “Not this console.log…”</p>
+
+<p><code class="language-plaintext highlighter-rouge">e</code> for “Edit that out!”</p>
+
+<h3 id="local-environment-changes">Local Environment Changes</h3>
+<p>I use WSL with Docker and Rails’s default filechecker doesn’t like that, so I have to override it and use a less performant version in all the apps I work with. This is an unusual development setup, and I don’t expect every app I work with to adopt my filechecker. I just skip this change whenever I make a commit with <code class="language-plaintext highlighter-rouge">git add -p</code>. Another common scenario is replacing an API key in your local environment and leaving the original in higher environments. Sometimes you need to tweak things locally, but it might not be appropriate to update the repo with that tweak.</p>
+
+<p><code class="language-plaintext highlighter-rouge">n</code> for “Never add this.”</p>
+
+<h3 id="separate-commits-with-discrete-changes">Separate commits with discrete changes</h3>
+<p>Ideally commits will describe one discrete change to the codebase, but realistically we make lots of little changes at the same time. In order to create discrete changes with <code class="language-plaintext highlighter-rouge">git add .</code>, you have to remove any extraneous changes, or be disciplined about committing after every change and only working on one change at a time. <code class="language-plaintext highlighter-rouge">git add -p</code> lets you be more flexible and extract out one discrete change at the end. These discrete commits are easier to cherry-pick into other branches, and make your PR easier to review for other developers.</p>
+
+<p><code class="language-plaintext highlighter-rouge">n</code> for “Not yet!”</p>
+
+<h2 id="video-demo">VIDEO DEMO</h2>
+
+<iframe src="https://youtube.com/embed/u3NG1966zso" title="YouTube video player" height="780" width="1280" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+      </iframe>]]></content><author><name>ChaelCodes</name></author><summary type="html"><![CDATA[git add . sets you up for failure, and it’s most prevalent in the community that it’s worst suited for: git beginners. Fixing a commit with unwanted changes in it is significantly harder than being intentional about what you commit to begin with. This article will go over how to make intentional commits, and then discuss the most common examples where I see git add . trip up developers.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/git_patch_add/patchAddOptions.PNG" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/git_patch_add/patchAddOptions.PNG" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Fibonacci Shawl Pattern</title><link href="https://www.chael.codes/2023/06/25/fibonacci-shawl-pattern.html" rel="alternate" type="text/html" title="Fibonacci Shawl Pattern" /><published>2023-06-25T00:00:00+00:00</published><updated>2023-06-25T00:00:00+00:00</updated><id>https://www.chael.codes/2023/06/25/fibonacci-shawl-pattern</id><content type="html" xml:base="https://www.chael.codes/2023/06/25/fibonacci-shawl-pattern.html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#history" id="markdown-toc-history">History</a></li>
+  <li><a href="#pattern" id="markdown-toc-pattern">Pattern</a>    <ul>
+      <li><a href="#yarn" id="markdown-toc-yarn">Yarn</a></li>
+      <li><a href="#stitches" id="markdown-toc-stitches">Stitches</a></li>
+      <li><a href="#pattern-concept" id="markdown-toc-pattern-concept">Pattern Concept</a></li>
+      <li><a href="#rows" id="markdown-toc-rows">Rows</a></li>
+    </ul>
+  </li>
+</ul>
+
+<div style="text-align:center">
+  <img src="/assets/img/posts/fib_shawl/fib_shawl_joy.JPG" alt="me looking exhultant, but I actually just fixed my hair while wearing shawl" style="width:32%;padding:1%" />
+  <img src="/assets/img/posts/fib_shawl/fib_shawl_light.JPG" alt="light catching the shawl held aloft" style="width:32%;padding:1%" />
+  <img src="/assets/img/posts/fib_shawl/fib_shawl_toss.JPG" alt="shawl in the air, being tossed over my shoulder" style="width:32%;padding:1%" />
+  <img src="/assets/img/posts/fib_shawl/wearing_fib_shawl_drama.JPG" alt="gently holding shawl ends, looking melodramatic" style="width:90%;padding:1%" />
+</div>
+
+<p>The Fibonacci Shawl is a gorgeous design that attempts to express Fibonacci’s sequence through yarn. Each stripe of color represents a number from Fibonacci’s sequence.
+<!--more-->
+Let’s look at teal, for familiarity. There are 13 rows split into two sections - 8 solid rows, and 5 lacy rows. In this way, we can express that 13 is the sum of 8 and 5. Each solid section is the larger of the two numbers, so as we move down the sequence, we see the lacy section become the solid section of the next number in the sequence.</p>
+
+<p><img src="/assets/img/posts/fib_shawl/fib_teal.JPG" alt="picture of the teal section" /></p>
+
+<p>Instead of constructing the shawl from the bottom up, or top-down, it’s a right triangle with one straight side. I felt this better expressed the concept of a number sequence because we’re starting from a straight line (0) and expanding in a single direction. Without the mirrored effect, it’s easier to see how the sequence increases as well, but this does mean I need more numbers from the sequence to make a big enough shawl to wear.</p>
+
+<p><img src="/assets/img/posts/fib_shawl/fib_right_triangle.JPG" alt="right triangle perspective of shawl" /></p>
+
+<p>This also allowed me to have a 0 to orient the work from. On each row, each stitch that’s a Fibonacci number is reversed which adds the tiniest visible stripe in the solid sections.</p>
+
+<p>Finally, I reinforced the concept of 0 (and tidied the edges) by adding a border on the two sides that would represent 0. The bottom, where the color sequence begins, and the side, where our row count begins.</p>
+
+<p>The result is a beautiful shawl that’s secretly hiding a detailed math lesson. ❤️</p>
+
+<p><img src="/assets/img/posts/fib_shawl/how_dare_you.JPG" alt="Me looking feisty while wearing the shawl" /></p>
+
+<h2 id="history">History</h2>
+<p>This all started with Toni Lipsey’s <a href="https://tlycblog.com/rancher-shawl-tunisian-crochet-boomerang-wrap/">Rancher shawl</a>. It’s GORGEOUS, with an amazing fade from warm to cool that’s only possible with that specific colorway that was unfortunately unavailable. This got me thinking about a shawl with small stripes of color, which made me think of Fibonacci’s number sequence!</p>
+
+<p id="Fibonacci">Fibonacci’s number sequence is a sequence of numbers where each number is the sum of the two previous numbers!</p>
+<p>1, 1, 2 (1+1), 3 (2+1), 5 (3+2), 8 (5+3)…. and so on and so forth.
+In software development, we like to use generating it as an easy puzzle, and we use the sequence itself to estimate the complexity of work (because we like to be complicated).</p>
+
+<p>Searching for <a href="https://www.bloglovin.com/blogs/nobleknits-knitting-blog-13039743/10-stunning-fibonacci-shawl-knitting-patterns-7395738467">existing patterns</a> yielded disappointing results. They are all knitting, and I can only crochet, but more importantly, none of them scream Fibonacci sequence to me. The interchanging striped colors really muddy the message for me. Why do they do that?</p>
+
+<p>Well, all shawls are constructed the same way. They start with a small triangle and increase to a larger triangle. You use the least amount of yarn per row at the beginning of the shawl, and the most per row at the end. If I started my shawl at 1, (or if they did) then we’d have 2 lonely little stitches in one color before the next color change, and final stripe would be 55 rows of 89-143 stitches. My yarn usage and color balance would be way off!</p>
+
+<p>The other patterns solve this by having interchanging stripes of Fibonacci’s sequence, but we’ll fix it by reversing the sequence! This means that our final number of the sequence needs to come first, and as soon as that section is done, we’re locked in on the shawl size. There was a lot of math and planning and Google spreadsheets, and a brief period where I thought about expressing recursion using marling, but ultimately, I landed on 55 starting rows, with a final row count of 143. This was a little small for a shawl, but the alternative was 232!!</p>
+
+<p><img src="/assets/img/posts/fib_shawl/spreadsheet.PNG" alt="spreadsheet with lots of row counts and shawl colors laid out" /></p>
+
+<p>The next modification was to the shape. Instead of the obtuse triangle expanding on both sides, I wanted to use a right triangle to make it easier to convey as a number sequence. The straight edge makes it feel more like an expanding number sequence, because it’s not mirrored or angled.</p>
+
+<p>I found a good example of how to make a <a href="https://www.anniedesigncrochet.com/beginner-triangle-crochet-shawl/">simple triangle shawl</a>, but I wasn’t loving the mesh. Too complicated, hard to convey my sequence, and it’d be too chilly in the evenings. That’s when the <a href="https://tlycblog.com/bronwyn-shawl">bronwyn shawl</a> brought my next inspiration. The beautiful sections of solid and lacy space had me thinking about how I could convey which numbers summed to equal my Fibonacci number! I thought it would look best if I had the larger number be the solid section, and that section always come first. I was really excited for the lacy section (the smaller number) to equal the size of the solid section (the larger number) of the next number in the sequence! Unfortunately, due to the half-double crochets in the lacy section, this didn’t pan out in reality. This is the number one thing I’d change if I was making this shawl again.</p>
+
+<p>Now that I’d settled on a design, it was time to buy yarn! I selected some lion brand truboo yarn for the softness and sustainability. Unfortunately their color choices are… limited. The green section is actually cotton bamboo because I hated all the greens from truboo. The cotton bamboo was a joy to work with. It was smooth, the yarn didn’t split, and the color has a lot of depth. The truboo was spitty, shiny, and is already fuzzy. If I made this again, I’d make it with cotton bamboo. It’s wonderfully soft and plush with great stitch definition.</p>
+
+<p><img src="/assets/img/posts/fib_shawl/leftover_yarns.JPG" alt="leftover yarns - there's a lot of each skein left, enough for at least 2 more shawls" /></p>
+
+<h2 id="pattern">Pattern</h2>
+<h3 id="yarn">Yarn</h3>
+<ul>
+  <li><a href="https://www.lionbrand.com/products/truboo-yarn?variant=39322448592989">Truboo Sienna</a></li>
+  <li><a href="https://www.lionbrand.com/products/truboo-yarn?variant=39322446626909">Truboo Cameo</a></li>
+  <li><a href="https://www.lionbrand.com/products/lb-collection-cotton-bamboo-yarn?variant=32420943102045">Cotton Bamboo Snapdragon</a></li>
+  <li><a href="https://www.lionbrand.com/products/truboo-yarn?variant=32421797953629">Truboo Seafoam</a></li>
+  <li><a href="https://www.lionbrand.com/products/truboo-yarn?variant=32421797789789">Truboo Aqua</a></li>
+  <li><a href="https://www.lionbrand.com/products/truboo-yarn?variant=32421797920861">Truboo Blue</a></li>
+  <li>Border - <a href="https://www.lionbrand.com/products/lb-collection-cotton-bamboo-yarn?variant=32420942839901">Cotton Bamboo Magnolia</a></li>
+</ul>
+
+<h3 id="stitches">Stitches</h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>ch</td>
+      <td>chain</td>
+    </tr>
+    <tr>
+      <td>sc</td>
+      <td>Single crochet</td>
+    </tr>
+    <tr>
+      <td>2sc</td>
+      <td>Single crochet increase, put 2 single crochets in one stitch from the previous row</td>
+    </tr>
+    <tr>
+      <td>rsc</td>
+      <td>Reversed single crochet, make your single crochet in the wrong side instead of the right side of the fabric</td>
+    </tr>
+    <tr>
+      <td>2rsc</td>
+      <td>Reversed single crochet increase, put 2 reversed single crochets in one stitch from the previous row</td>
+    </tr>
+    <tr>
+      <td>hdc</td>
+      <td>half-double crochet</td>
+    </tr>
+    <tr>
+      <td>2hdc</td>
+      <td>Half-double crochet increase, put 2 half-double crochets in one stitch from the previous row</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pattern-concept">Pattern Concept</h3>
+
+<p>You’re going to increase on one side every row. For each Fibonacci number, counting from the non-increase side, you’ll reverse the single crochet. Each stripe of color is split into 2 sections - solid single crochets for the larger number, and alternating rows of single crochets and half-double crochets for the smaller number. Always start with a row of hdc/ch when changing to the next number. Ignore all the turning chains, just use them in the border, or pretend they don’t exist.</p>
+
+<p>Here’s a table of when you swap colors and start with the lacy hdc/ch section.</p>
+
+<table class="color-table">
+  <thead>
+    <tr>
+      <th>Total Rows</th>
+      <th>Last Row</th>
+      <th>First Hdc row</th>
+      <th>Total Solid Rows</th>
+      <th>Total Lacy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>55</td>
+      <td>55</td>
+      <td>35</td>
+      <td>34</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>89</td>
+      <td>77</td>
+      <td>21</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>110</td>
+      <td>103</td>
+      <td>13</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>12</td>
+      <td>119</td>
+      <td>8</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>131</td>
+      <td>129</td>
+      <td>5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>136</td>
+      <td>135</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>139</td>
+      <td>139</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>141</td>
+      <td>141</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>142</td>
+      <td>-</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>143</td>
+      <td>-</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="rows">Rows</h3>
+
+<ul>
+  <li>Row 0: Make a magic circle, ch 2.</li>
+  <li>Row 1: rsc 2 in magic circle, ch 2, turn (2)</li>
+  <li>Row 2: 2rsc, rsc, ch 2, turn (3)</li>
+  <li>Row 3: rsc 2, rsc and sc in last rsc of previous row, ch 2, turn (4)</li>
+  <li>Row 4: rsc and sc in last sc of previous row, rsc 3, ch 2, turn (5)</li>
+  <li>Row 5: rsc 3, sc, rsc and sc in last sc of previous row, ch 2, turn (6)</li>
+  <li>Row 6: 2sc, rsc, sc, rsc 3, ch 2, turn (7)</li>
+  <li>Row 7: rsc 3, sc, rsc, sc, sc and rsc in last sc of previous row, ch 2, turn (8)</li>
+  <li>Row 8: sc and rsc in last rsc of previous row, sc 2, rsc, sc, rsc 3, ch 2, turn (9)</li>
+  <li>…</li>
+  <li>Row 34: sc and rsc in last sc of previous row, sc 12, rsc, sc 7, rsc, sc 4, rsc, sc 2, rsc, sc, rsc 3, ch 2, turn (35)</li>
+  <li>Row 35: <em>hdc, ch and skip a stitch</em> <em>repeat 16 times</em> hdc, ch but do not skip a stitch, hdc, ch 2, turn</li>
+  <li>Row 36: 2sc, rsc, sc 12, rsc, sc 7, rsc, sc 4, rsc, sc 2, rsc, sc, rsc 3, ch 2, turn (37)</li>
+  <li>Row 37: <em>hdc, ch and skip a stitch</em> <em>repeat 17 times</em> hdc, ch but do not skip a stitch, hdc, ch 2, turn</li>
+  <li>…</li>
+  <li>Row 55: <em>hdc, ch and skip a stitch</em> <em>repeat 26 times</em> hdc, ch but do not skip a stitch, hdc, tie off (56)</li>
+  <li>Row 56: This row is a color change. The honorable thing to do is work in reverse towards the straight edge, but you can start back at 0 because it’s a color change, so that’s what we’ll do.</li>
+  <li>Row 56: rsc 3, sc, rsc, sc 2, rsc, sc 4, rsc, sc 7, rsc, sc 12, rsc, sc 20, rsc and sc in the hdc from the previous row, ch 2, turn</li>
+  <li>Row 57: 2sc, rsc, sc 20, rsc, sc 12, rsc, sc 7, rsc, sc 4, rsc, sc 2, rsc, sc, rsc 3, ch 2, turn</li>
+</ul>
+
+<p>Hopefully at this point, you can use the instructions and color chart to finish the pattern!</p>
+
+<p>Border:</p>
+<ul>
+  <li>Start at the first row, go along the straight side of the shawl, put one sc in each row. 2sc in the last row, turn the work so the last row is ready to work. Place one sc in each stitch of the last row. ch 2, turn.</li>
+  <li>sc in each stitch along one side. 2sc in the center of your 2sc from the previous row. sc in each stitch of the other side. ch2, turn.</li>
+  <li><em>hdc, ch and skip a stich</em> repeat for each stitch on one side. 2hdc in the center of your 2sc from the previous row. <em>ch and skip a stitch, hdc</em> repeat for each stitch on this side. ch 2, turn.</li>
+  <li>sc in each stitch along one side. 2sc in the center of your 2hdc from the previous row. sc in each stitch of the other side. ch2, turn.</li>
+</ul>
+
+<style>
+.color-table tbody tr:nth-child(even) {
+  background-color: #0098ce;
+}
+
+.color-table tbody tr:nth-child(odd) {
+  background-color: #00B8B8;
+}
+
+.color-table tbody tr:nth-child(1) {
+  background-color: #e17859;
+}
+
+.color-table tbody tr:nth-child(2) {
+  background-color: #d5819c;
+}
+
+.color-table tbody tr:nth-child(3) {
+  background-color: green;
+}
+
+.color-table tbody tr:nth-child(4) {
+  background-color: #5aaca5;5aaca5;5aaca5;5aaca5;5aaca5;
+}
+</style>]]></content><author><name>ChaelCodes</name></author><summary type="html"><![CDATA[Free crochet Fibonacci shawl pattern!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/fib_shawl/wide_shawl_wingspan.JPG" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/fib_shawl/wide_shawl_wingspan.JPG" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Your First Open-source Contribution</title><link href="https://www.chael.codes/talks/2021/11/11/open-source-contributing.html" rel="alternate" type="text/html" title="Your First Open-source Contribution" /><published>2021-11-11T00:00:00+00:00</published><updated>2021-11-11T00:00:00+00:00</updated><id>https://www.chael.codes/talks/2021/11/11/open-source-contributing</id><content type="html" xml:base="https://www.chael.codes/talks/2021/11/11/open-source-contributing.html"><![CDATA[<p>Most folks get stuck in open-source on one of the three following barriers:</p>
+<ul>
+  <li>Getting Started</li>
+  <li>Building the PR on a Forked Repo</li>
+  <li>Managing feelings around the review process</li>
+</ul>
+
+<p>I want to remove those barriers for you, and give you a realistic view of how to contribute to open-source projects, and get your PRs merged.
+<!--more--></p>
+<h3 id="watch-the-recording">Watch the Recording</h3>
+
+<iframe src="https://www.youtube.com/embed/ctBBrdHVbo0" title="YouTube video player" height="780" width="1280" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+      </iframe>
+
+<h3 id="slides">Slides</h3>
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRuBxBr1WP21hJh5mBagxHXZ3lYBVHrHZgmSYJWcDGYFb-H7imHwwOpXSu_CWn6L9Tm8I1K9q3yQaxN/embed?start=true&amp;loop=true&amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<h3 id="references">References</h3>
+
+<p>I don’t recommend picking an issue based on it being a “Good First Issue” but these sites are good to identify your “Good First Repo”.</p>
+<ul>
+  <li><a href="https://goodfirstissue.dev/">Good First Issue</a></li>
+  <li><a href="https://goodfirstissues.com/">Good First Issues</a></li>
+</ul>
+
+<p>Here are a few of the PRs I’ve worked on that I mentioned in my talk.</p>
+<ul>
+  <li><a href="https://github.com/rails/rails/pull/40095">ComparisonValidator</a> is a nice example of extending functionality.</li>
+  <li><a href="https://github.com/rails/rails/pull/42074/files">Documentation</a> is hard, but always needed. Here’s <a href="https://github.com/rails/rails/pull/43018">documentation</a> explaining how Rails’s <code class="language-plaintext highlighter-rouge">order</code> works.</li>
+  <li>Let’s add <a href="https://github.com/forem/forem/pull/10577">Liquid Tags</a> to Forem! This taught me about Liquid tags so I was ready for <a href="https://github.com/ChaelCodes/jekyll-twitch">Jekyll-Twitch.</a></li>
+  <li><a href="https://github.com/ChaelCodes/BlaysModsDocs">Unloved PR</a> that taught me about Forked Repos.</li>
+  <li><a href="https://github.com/rubyforgood/casa/pull/1998">CASA</a> has small focused issues. This leads to small <a href="https://github.com/rubyforgood/casa/pull/2001">PRs</a>.</li>
+</ul>
+
+<p>Here are a few Ruby Repos I mentioned and recommend.</p>
+<ul>
+  <li><a href="https://github.com/rubyforgood/casa">CASA</a> is a Ruby For Good Rails app that organizes volunteers for foster youth. They have GREAT issues, amazing response time, and are incredibly welcoming.</li>
+  <li><a href="https://github.com/ChaelCodes/ConfBuddies">ConfBuddies</a> is a Rails app that helps you attend conferences with your friends! I’m the maintainer, so if you need a friendly face, this is a good place to start.</li>
+  <li><a href="https://github.com/forem/forem">Forem</a>, the platform supporting Dev.To and CodeNewbies, has a welcoming community, and are incredibly responsive to new PRs, however, I’ve had issues with their Docker dev setup.</li>
+  <li><a href="https://github.com/rails/rails">Rails</a> is a web application framework in Ruby. I’m not going to lie to you. Getting a PR merged here is challenging. There’s a lot of feedback, a lot of contributors, and not a lot of maintainers. But you can have a lot of impact.</li>
+  <li><a href="https://github.com/ChaelCodes/jekyll-twitch">Jekyll-Twitch</a> was mentioned, but is actually feature complete. You can make your own gem though!</li>
+</ul>]]></content><author><name>Rachael</name></author><category term="talks" /><summary type="html"><![CDATA[Do you find open-source intimidating? Let's fix that. Let's talk about how to get started in open-source.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/talks/open-source-contributing.jpg" /><media:content medium="image" url="https://www.chael.codes/assets/img/talks/open-source-contributing.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Software Architecture: Different vs Wrong with Casey Dement</title><link href="https://www.chael.codes/podcast/2021/07/07/polyglot-casey-dement.html" rel="alternate" type="text/html" title="Software Architecture: Different vs Wrong with Casey Dement" /><published>2021-07-07T00:00:00+00:00</published><updated>2021-07-07T00:00:00+00:00</updated><id>https://www.chael.codes/podcast/2021/07/07/polyglot-casey-dement</id><content type="html" xml:base="https://www.chael.codes/podcast/2021/07/07/polyglot-casey-dement.html"><![CDATA[<p>I met Casey at one of my previous jobs and admire the way he designs systems and discusses architecture. He’s a long-time software architect who has been designing solutions for businesses of all sizes for 26 years. I’ve always wanted to be a software architect, but the timing has never worked out. This was a really fun podcast though! Casey has a bunch of great stories to share about designing systems, unintended advertising side effects, and technology hottakes!</p>
+
+<blockquote>
+  <p>Casey: All the time. Pretty much any time you try to take the initiative and do something new and cool, there’s always going to be lots of unintended consequences.</p>
+</blockquote>
+
+<blockquote>
+  <p>Rachael: One of the challenges of having power is the fact that you are not the person who is doing the thing. It’s really easy to tell a computer, “I would like you to do this thing, go do this thing.” And it’ll do exactly what you told it to do. If you tell a person that, you can hope that what they bring back to you is that thing, […]But at the end of the day, you can’t make them do that thing. You can just repeatedly tell them over and over and over again, “I would like you to do this thing. Please do this thing in the way that I have drawn out in the pretty diagram.”</p>
+
+  <p>Casey: Well, and so much of it is there’s some perspective that you have because you’re looking at a certain set of concerns, and there’s some perspective they have because they’re looking at a certain set of concerns. And I take it as a given that two bright people looking at the same set of information will come to reasonably compatible conclusions.</p>
+</blockquote>
+
+<blockquote>
+  <p>Casey: And when they go out and build their piece of it, it all fits together. Legos don’t work if one person is making bricks with circles and another one’s making bricks with squares.</p>
+</blockquote>
+
+<h2 id="technology-review">Technology Review</h2>
+<blockquote>
+  <p>Casey: Yep. Rust is interesting. Rust is a language that can give you the low-level capabilities and performance of C or C++ without the existential threat to your life that comes from choosing to use C as the programming language that you’re going to work in because C is the language where you can make a very, very small hard-to-find mistake that allows national security to be undermined.</p>
+</blockquote>
+
+<blockquote>
+  <p>Casey: I’ve actually found that I get a really good advantage out of coupling MongoDB and a relational database together and representing the actual structured, detailed objects in Mongo and then putting the relationships between things in the relational database. And then, I do my queries in the relational database, get back a list of the objects that I need, then go fetch those objects from Mongo, and use those to populate whatever interface or interaction I’m dealing with.</p>
+</blockquote>
+
+<blockquote>
+  <p>Casey: So I’ll answer that question this way, the Weather Channel originally was built on top of Oracle. They were paying a lot of money to Oracle and had full Oracle enterprise support. And The Weather Channel dumped Oracle and went to MySQL. Ironically, Oracle later bought MySQL. What they found is that when they had a problem with the database, and they were dealing with the MySQL open-source community, the level of expertise that they could access and the rapidity, the latency with which they would get responses back was much better than what they were getting paying Oracle for expert support.</p>
+</blockquote>
+
+<p>I have to stop now. I want to quote this whole podcast!</p>
+
+<p><a href="https://www.therelicans.com/mandymoore/software-architecture-different-vs-wrong-with-casey-dement-190b" rel="noopener noreferrer" target="_blank">Listen to the Podcast</a></p>]]></content><author><name>Rachael</name></author><category term="podcast" /><summary type="html"><![CDATA[An interview with Chief Architect with Rex on what it takes to be an architect and what the job entails.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/podcasts/caseydement_polyglot.jpg" /><media:content medium="image" url="https://www.chael.codes/assets/img/podcasts/caseydement_polyglot.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Slaying Dragons – Inside A Dark Room with Amir Rajan</title><link href="https://www.chael.codes/podcast/2021/06/16/amir-rajan-polyglot.html" rel="alternate" type="text/html" title="Slaying Dragons – Inside A Dark Room with Amir Rajan" /><published>2021-06-16T00:00:00+00:00</published><updated>2021-06-16T00:00:00+00:00</updated><id>https://www.chael.codes/podcast/2021/06/16/amir-rajan-polyglot</id><content type="html" xml:base="https://www.chael.codes/podcast/2021/06/16/amir-rajan-polyglot.html"><![CDATA[<p><a href="https://twitter.com/amirrajan">Amir Rajan</a> is a hyperpolyglot with over 15 years of industry experience. Amir is also the creator of <a href="https://apps.apple.com/us/app/a-dark-room/id736683061">A Dark Room iOS</a>. This RPG conquered the world and took over the Number 1 spot in the App Store, and placed in the Top 10 paid apps across 70 countries. He’s also the CEO of <a href="https://dragonruby.org/">DragonRuby LLP</a>, creators of <a href="https://dragonruby.itch.io/dragonruby-gtk">DragonRuby Game Toolkit</a> and <a href="http://www.rubymotion.com/">RubyMotion</a>, which is what we’re here to talk about today.</p>
+
+<p><a href="https://www.therelicans.com/mandymoore/slaying-dragons-inside-a-dark-room-with-amir-rajan-ga" rel="noopener noreferrer" target="_blank">Listen to the Podcast</a></p>]]></content><author><name>Rachael</name></author><category term="podcast" /><summary type="html"><![CDATA[Amir Rajan describes how DragonRuby live-reloads a game made in Ruby.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/podcasts/amirrajan_polyglot.jpg" /><media:content medium="image" url="https://www.chael.codes/assets/img/podcasts/amirrajan_polyglot.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Docker isn’t Magic</title><link href="https://www.chael.codes/talks/2021/05/27/docker-isnt-magic.html" rel="alternate" type="text/html" title="Docker isn’t Magic" /><published>2021-05-27T00:00:00+00:00</published><updated>2021-05-27T00:00:00+00:00</updated><id>https://www.chael.codes/talks/2021/05/27/docker-isnt-magic</id><content type="html" xml:base="https://www.chael.codes/talks/2021/05/27/docker-isnt-magic.html"><![CDATA[<p>An exploration of 4 open-source docker setups, why Docker isn’t magic, and why it’s worth it to use it anyway.</p>
+
+<h3 id="watch-the-recording">Watch the Recording</h3>
+<iframe src="https://www.youtube.com/embed/p9c1IrBfu0I" title="YouTube video player" height="780" width="1280" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+      </iframe>
+
+<h3 id="slides">Slides</h3>
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTmNN5NM2u4a4u288rssIDpFlYwnrjI8bFE9q9UOan7dX2uxLy5z1PLiNG7L1IzBqFkrWYybtdqjHoO/embed?start=true&amp;loop=true&amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<h3 id="references">References</h3>]]></content><author><name>Rachael</name></author><category term="talks" /><summary type="html"><![CDATA[An exploration of 4 open-source docker setups, why Docker isn't magic, and why it's worth it to use it anyway.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/docker-isn't-magic.png" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/docker-isn't-magic.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The Invisible Zoom Streaming method</title><link href="https://www.chael.codes/2021/05/22/invisible-zoom.html" rel="alternate" type="text/html" title="The Invisible Zoom Streaming method" /><published>2021-05-22T00:00:00+00:00</published><updated>2021-05-22T00:00:00+00:00</updated><id>https://www.chael.codes/2021/05/22/invisible-zoom</id><content type="html" xml:base="https://www.chael.codes/2021/05/22/invisible-zoom.html"><![CDATA[<p>Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily adding guests and sharing screens, without cropping zoom windows.</p>
+
+<h1 id="hide-zoom">Hide Zoom</h1>
+<h2 id="1-join-the-zoom-call-with-your-camera">1. Join the zoom call with your camera</h2>
+<p>The first step is joining a zoom call. You must use the desktop application to follow the rest of these steps. Your video feed will run through zoom. This is much easier, and your guests will see you.</p>
+
+<h2 id="2-add-zoom-to-obs">2. Add zoom to OBS</h2>
+<p>Create a window capture in OBS, and select your zoom window. Exclude the cursor, and only capture the client area to remove any application window styling.</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/1-create-a-window-capture.PNG" alt="screenshot of OBS window settings" /></p>
+
+<h2 id="3-unmirror-your-video">3. Unmirror your video</h2>
+<p>Inside zoom, your video will display mirrored by default. This only inverts your image on your zoom instance. Now that we’re sharing that instance with the world, you want to unmirror it so text displays normally. Under video settings, ensure “Mirror my Image” is unchecked.</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/2-turn-off-mirrored-screen.png" alt="Screenshot of zoom settings" /></p>
+
+<p>Optional: Slide “Touch up my appearance” all the way into “turn my bags into smokey eyes” territory. No foundation? No problem!</p>
+
+<h2 id="4-share-your-visible-guests">4. Share your <em>visible</em> guests</h2>
+<p>You can hide everyone who has chosen not to share their video by checking hide non-video participants. This makes it easy to cue up guest changes, and also have a hidden producer running the show. If you have multiple guests, having a producer who can pass messages like “5 minutes left” or communicate with the next guest via zoom chat is really helpful.</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/3-hide-non-video-participants.png" alt="screenshot of zoom UI" /></p>
+
+<p>While you’re here, optionally uncheck “Always display participant names on their video.</p>
+
+<h2 id="5-hide-the-rest-of-the-zoom-ui">5. Hide the rest of the zoom UI</h2>
+<p>Uncheck “Always show meeting controls” to have the option of hiding zoom’s buttons.</p>
+
+<p>Alt will cycle through displaying the zoom UI, showing participant names, and hiding everything. If you want to crop zoom’s UI out, that also works. Note that hovering over the zoom UI area will bring it back, so keep your cursor above the bottom third.</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/4-no-participant-names-or-ui.PNG" alt="zoom in OBS with no participant names or UI" /></p>
+
+<p>Your Zoom window in OBS should look like this.</p>
+
+<h2 id="6-hide-zoom-in-obs">6. Hide Zoom in OBS</h2>
+<p>Chromakey works by removing everything of one color. Normally, that color is green, but we can make it Zoom Grey. Chromakey also adds a little variability to catch green shadows, but we can strip all that range out, because zoom doesn’t have lighting or shadows. Add a filter to the Zoom window source in OBS. Use a color key with a custom color of 1a1a1a, and set the similarity and smoothness all the way down to 1.
+<img src="/assets/img/posts/invisible_zoom/5-apply-chroma-key.PNG" alt="screen shot of color key window" /></p>
+
+<p>Place an image beneath the zoom window in OBS, and now you’ve got a pretty great looking setup!</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/6-invisible-zoom-demo.PNG" alt="final form of invisible zoom technique" /></p>
+
+<h1 id="screenshare-in-zoom">Screenshare in Zoom</h1>
+<p>All of this is good, but we need screensharing for the real magic of zoom to activate. Don’t worry, we won’t have separate windows and captures. Seamless transitions from a conversation to presentation.</p>
+
+<h2 id="keep-screenshare-in-one-window">Keep screenshare in one window</h2>
+<p>By default, when someone shares their screen, Zoom goes full-screen, and moves audience video into a second window, but you can set zoom to share a screen within the current view.</p>
+
+<p>Turn on side-by-side view.
+<img src="/assets/img/posts/invisible_zoom/7-turn-on-side-by-side.PNG" alt="side by side in zoom" /></p>
+
+<p>Your presentation will be on the left and your guests can be added and drop on the right!</p>
+
+<p><img src="/assets/img/posts/invisible_zoom/8-side-by-side-demo.PNG" alt="zoom looking good with slides and screenshare" /></p>
+
+<p>Now there’s a great looking zoom presentation on an image background. You can sub in speakers without issue, and people can swap between presentations!</p>
+
+<h2 id="flaws">Flaws</h2>
+<p><em>You cannot screenshare while producing.</em> It will change your whole view. A secondary computer or your guest can screenshare.</p>
+
+<p><em>Zoom does not resize windows automatically.</em> You will need to adjust the zoom level if the user’s screen is very large or very small.</p>
+
+<h1 id="dont-forget-audio">Don’t forget audio!</h1>
+<p>Audio is a whole different challenge. When you capture audio from zoom, you will get everyone else’s audio, but not your own. Zoom doesn’t play your own audio back to you. There are two ways to handle this.</p>
+<ol>
+  <li>Have a producer who’s responsible for communicating with guests, and streaming the zoom, but doesn’t appear on-screen. This has the added benefit of giving you a moderator who’s focused on chat and production.</li>
+  <li>Stitch your audio together using loopback, voicemeeter, or two audio inputs in OBS. If you use two audio inputs in OBS, then you will have issues <a href="https://dev.to/chaelcodes/how-to-caption-your-twitch-streams-5e63">captioning</a>, because all captioning plugins that I know of use one audio input as the source.</li>
+</ol>
+
+<h1 id="summary">Summary</h1>
+<p>This isn’t the greatest and most technically proficient guest setup that has ever existed, but it is a robust, easy solution that uses technology your guests are confident in. It’s a great option for panels or small-scale live conferences and meetups. Let me know if you try this out, or come up with ways to deal with those flaws above!</p>]]></content><author><name>ChaelCodes</name></author><category term="streaming" /><category term="zoom" /><summary type="html"><![CDATA[Your stream guests know and love zoom, but it doesn’t look very professional to just share a zoom window on your stream. This technique will allow for easily adding guests and sharing screens, without cropping zoom windows.]]></summary></entry><entry><title type="html">Jekyll Talks Page</title><link href="https://www.chael.codes/2021/05/14/talks-page-in-jekyll.html" rel="alternate" type="text/html" title="Jekyll Talks Page" /><published>2021-05-14T00:00:00+00:00</published><updated>2021-05-14T00:00:00+00:00</updated><id>https://www.chael.codes/2021/05/14/talks-page-in-jekyll</id><content type="html" xml:base="https://www.chael.codes/2021/05/14/talks-page-in-jekyll.html"><![CDATA[<p>I’m giving a talk at <a href="https://bit.ly/futurestack-relicans">FutureStack</a>! I want to share my new talk with people on my portfolio site, because SpeakerDeck and SlideShare cost money. I’m a developer, why do I need to pay a company and expose you to ads to share my slides?</p>
+
+<h1 id="requirements">Requirements</h1>
+<p>I want to share as much contextual information as possible, and expose the talk in as many formats as possible. The key things I need to share are:</p>
+
+<ul>
+  <li>Talk title</li>
+  <li>Description of the talk</li>
+  <li>Slides embedded in the page</li>
+  <li>YouTube video embedded in the talk page</li>
+  <li>Salient points summarized in text</li>
+</ul>
+
+<p>I also want to make sure that the talk is easy to share, so we’ll give it some good SEO, and a nice Twitter card.</p>
+
+<p>We’ll need a separate page to aggregate the talks. I want this page to be responsive, and expose the talk front page and description.</p>
+
+<h1 id="technical-plan---show-page">Technical Plan - Show Page</h1>
+<p>Let’s start with a plan for how to build the show page for talks. A show page will show one talk, and all its details.</p>
+
+<h2 id="page-type">Page Type</h2>
+<p>Jekyll has three ways to create new pages on your site: Pages, Posts, and Collections.</p>
+
+<p>Pages are standalone content that exists at a permalink. It’s good for <code class="language-plaintext highlighter-rouge">/about</code>, <code class="language-plaintext highlighter-rouge">/pricing</code>, and <code class="language-plaintext highlighter-rouge">/talks</code> pages. If we stored talks here, then we’d have urls like <code class="language-plaintext highlighter-rouge">/docker-isn't-magic</code> and <code class="language-plaintext highlighter-rouge">indoor-hazards-and-plants-that-cure-them</code>, but we’d have to create a data structure to hold all these talks for the talks page.</p>
+
+<p>Posts are used for blog posts! They’re automatically added to your RSS Feed, if you have one. They must always be associated with a date, which is why they’re commonly located at <code class="language-plaintext highlighter-rouge">/&lt;year&gt;/&lt;month&gt;/&lt;day&gt;/&lt;post-title&gt;</code> and must have a filename like <code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title</code>. If you’re viewing this page at <a href="https://www.chael.codes/2021-05-14-talks-page-in-jekyll.md">chael.codes</a> instead of Dev.To or the Relicans, then you’re looking at a Post page. These posts are in a collection called <code class="language-plaintext highlighter-rouge">site.posts</code>. You can also assign a category (or categories) to a post. If you assign a category in the frontmatter, then you can query by that category from liquid.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% for talk in site.categories.talk %}
+    Title: {{talk.title}}
+    Description: {{talk.excerpt}}
+{% endfor %}
+</code></pre></div></div>
+
+<p>The last type is a collection of pages. These do not need to be associated with a date, and can be queried. These do not update on the RSS Feed, but can have a separate RSS Feed. The nice part about this is that we’d be able to cut off the date part of the url.</p>
+
+<p>After evaluating the options, I plan to share these as normal posts. We can use the date of the conference to release it on the date of. The date in the url is a little inconvenient, but I love the idea of sharing new talks in the RSS Feed, and I don’t want to deal with the hassle of making an array for pages. The category feature will make our talks index page easy.</p>
+
+<h2 id="slides">Slides</h2>
+<p>I build my slides out on Google Slides, and they have <a href="https://support.google.com/docs/answer/183965#zippy=%2Cembed-a-document-spreadsheet-or-presentation">an embed</a>. Normally, I would be focused on turning this into a liquid embed, but I need to get this set up quick, and I don’t have time before futurestack, so I’ll be embedding it directly in the file.</p>
+
+<blockquote>
+  <p>I didn’t use slide share or speakerdeck. SpeakerDeck wants to put their branding on my slide deck unless I pay a fee. SlideShare is also trying to make money from hosting slides. Why? Why are we paying these companies money to display our own content on their site? It is because it’s pretty? Why does link.tree exist? Let’s build our own.</p>
+</blockquote>
+
+<h2 id="youtube">YouTube</h2>
+<p>We’ll pull in YouTube using the <a href="https://github.com/dommmel/jekyll-youtube">Jekyll-Youtube</a> gem. This gives us access to a liquid tag for YouTube, so we can embed the recording of the talk.</p>
+
+<h2 id="talks-index-page">Talks Index Page</h2>
+<p>An index page will list all our talks. Let’s build this from scratch with fresh new SCSS and LOTS of advice from chat. We’ll have an image of the first slide, and then the description of the talk excerpt in a card shape. I want to use flexbox to make the list responsive.</p>
+
+<h2 id="sharing">Sharing</h2>
+<p>Jekyll-Seo is the main gem for managing seo and sharing. We can add frontmatter to the page that will update how Twitter cards look.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+description: &lt;talk description&gt;
+image: &lt;image of first slide&gt;
+twitter:
+  card: summary_large_image
+---
+</code></pre></div></div>
+
+<p>At this point, we should have two new pages, one for showing off all my talks, and another page that’ll host my very first talk. &lt;3</p>]]></content><author><name>ChaelCodes</name></author><category term="ruby" /><category term="jekyll" /><category term="talks" /><summary type="html"><![CDATA[I made my first talk, Docker isn't Magic. It will not be good, because it's my first talk, but it still deserves love! Let's build a talk page on the site to highlight different talks.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/docker-isn't-magic.png" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/docker-isn't-magic.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Jekyll-Twitch Demo!</title><link href="https://www.chael.codes/2021/04/22/jekyll-plugin-demo.html" rel="alternate" type="text/html" title="Jekyll-Twitch Demo!" /><published>2021-04-22T00:00:00+00:00</published><updated>2021-04-22T00:00:00+00:00</updated><id>https://www.chael.codes/2021/04/22/jekyll-plugin-demo</id><content type="html" xml:base="https://www.chael.codes/2021/04/22/jekyll-plugin-demo.html"><![CDATA[<p>Let’s build a simple demo website in our Jekyll-Twitch gem! This will allow us to test inside the repo, and demonstrate the plugin live to users. It’ll serve as documentation, demo, and local testing environment!</p>
+
+<blockquote>
+  <p>This blog is a companion guide to a <a href="https://twitch.tv/ChaelCodes">Twitch stream</a> that will happen 04/23 at 15:00 UTC.</p>
+</blockquote>
+
+<p>About a month ago, I created a <a href="https://jekyllrb.com/">Jekyll</a> plugin called <a href="https://github.com/ChaelCodes/jekyll-twitch">Jekyll-Twitch</a> that adds a Jekyll Liquid tag to a repo. This <a href="https://shopify.github.io/liquid/">liquid</a> tag lets users embed a Twitch clip in their sites using only a clip url. Right now, it’s difficult to test, because I have to connect it to my personal site which is in a different repo, and there’s no way for potential users to see it working.</p>
+
+<h3 id="create-a-project-site-in-github-pages">Create a Project Site in GitHub Pages</h3>
+
+<p>GitHub Pages offers a really nice way to handle this! GitHub pages lets you create a documentation site inside of a git repo at /docs. This is called a [Project site], and would be hosted at <code class="language-plaintext highlighter-rouge">http(s)://&lt;username&gt;.github.io/&lt;repository&gt;</code> which would be <code class="language-plaintext highlighter-rouge">https://chaelcodes.github.io/jekyll-twitch</code>. This will allow every fork to be deployed to the contributer’s account. We’re gong to use the default theme to keep this as simple and lightweight as possible.</p>
+
+<p>Inside the Jekyll-Twitch repo, we’ll do the following:</p>
+<ol>
+  <li>Open the repo at the top-level</li>
+  <li>Install jekyll - <code class="language-plaintext highlighter-rouge">gem install jekyll</code></li>
+  <li>Create a docs Jekyll site <code class="language-plaintext highlighter-rouge">jekyll new docs</code> This must be called docs to deploy to GitHub Pages</li>
+  <li>Test the site using <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> (use <code class="language-plaintext highlighter-rouge">--livereload</code> to see changes instantly!)</li>
+  <li>Create a page for each plugin.</li>
+</ol>
+
+<h3 id="create-a-page-for-each-plugin">Create a page for each Plugin</h3>
+
+<p>Now we want to demonstrate the capabilities of our plugin. For Jekyll-Twitch, we have 3 Configurations: Clip, Broadcast, and VoD (Highlight), so we’ll create 3 pages to demonstrate each config. We’ll include the example using raw tags that let you show the liquid syntax with embedding it.
+<code class="language-plaintext highlighter-rouge">{% twitch https://www.twitch.tv/chaelcodes/clip/DeterminedSweetRedpandaDoritosChip-pQiRlDz6rQ9uvuuq %}</code>
+Then we need to include the plugin as a gem. We’re going to reference the gem using GitHub instead of rubygems, and reference the branch to make it easy for users to test their own branch, and test the current version on main, instead of the latest released version. We’ll also put it in <code class="language-plaintext highlighter-rouge">jekyll_plugins</code>, so Jekyll knows to use it.</p>
+
+<ol>
+  <li>Add your gem to the <code class="language-plaintext highlighter-rouge">Gemfile</code> to the jekyll_plugins group using GitHub
+    <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
+  <span class="n">gem</span> <span class="s1">'jekyll-twitch'</span><span class="p">,</span> <span class="s1">'https://github.com/sparklemotion/nokogiri.git'</span><span class="p">,</span> <span class="ss">branch: </span><span class="s1">'main'</span>
+<span class="k">end</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Add your plugin to Jekyll’s <code class="language-plaintext highlighter-rouge">_config.yml</code>
+    <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-twitch</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Install the gem - <code class="language-plaintext highlighter-rouge">bundle install</code> inside your <code class="language-plaintext highlighter-rouge">/docs/</code> folder</li>
+  <li>Restart the server - <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> (use <code class="language-plaintext highlighter-rouge">--livereload</code> to see changes instantly!)</li>
+</ol>
+
+<h3 id="deploying-the-example-repo">Deploying the Example repo</h3>
+
+<p>If you tried to deploy the last site to GitHub pages using their automatic deployment, then you quickly ran into issues.</p>
+
+<ol>
+  <li>GitHub Pages does not support custom gems</li>
+  <li>GitHub Pages is stuck on Jekyll 3</li>
+</ol>
+
+<p>That’s okay though, we can deploy the site to the gh-pages branch using GitHub actions. helaili/jekyll-action@v2 supports deploying a project site to a gh-pages branch. <a href="https://www.chael.codes/2021/03/25/Deploying-with-github-actions-not-pages.html">I’ve done this previously for my portfolio site.</a></p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Build and deploy Jekyll site to GitHub Pages</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">main</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">github-pages</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">helaili/jekyll-action@v2</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">jekyll_src</span><span class="pi">:</span> <span class="s1">'</span><span class="s">docs'</span>
+          <span class="na">target_branch</span><span class="pi">:</span> <span class="s1">'</span><span class="s">gh-pages'</span>
+          <span class="na">token</span><span class="pi">:</span> <span class="s">$</span>
+</code></pre></div></div>
+
+<p>At this point, we should have a demo site that automatically deploys on new pushes to <code class="language-plaintext highlighter-rouge">main</code>, and works great as a testing environment!</p>
+
+<blockquote>
+  <p>This blog is a companion guide to a <a href="https://twitch.tv/ChaelCodes">Twitch stream</a> that will happen 04/23 at 15:00 UTC.</p>
+</blockquote>]]></content><author><name>ChaelCodes</name></author><category term="ruby" /><category term="jekyll" /><category term="open-source" /><category term="gem" /><summary type="html"><![CDATA[Let's build a demo website in our Jekyll-Twitch gem! This will allow us to test inside the repo, and demonstrate the plugin live to users. It'll serve as documentation, demo, and local testing environment!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://www.chael.codes/assets/img/posts/Jekyll-Twitch%20Demo.jpg" /><media:content medium="image" url="https://www.chael.codes/assets/img/posts/Jekyll-Twitch%20Demo.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

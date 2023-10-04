@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.4.6
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    
+    <script>
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+    </script>
+    
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    
+
+    <!-- KaTeX 0.15.2 -->
+    
+
+    <!-- Mermaid 9.1.1 -->
+    
+
+    <!-- Simple Jekyll Search 1.10.0 -->
+    <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-https://www.chael.codes';
+      const isCookieConsent = '';
+      const analyticsName = '';
+      const analyticsNameGA4 = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <meta property="og:image" content="https://www.chael.codes/assets/img/setup.jpg">
+    
+    <meta property="og:type" content="website" />
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Live | ChaelCodes</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Live" />
+<meta name="author" content="Rachael" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Rachael wants to share the joy and beauty of programming through programming games and regular open-source streams on Twitch. She’s been a professional dev since 2012, 3x Team Lead, and manages an open-source repo for playing games of Monster of the Week. Currently, she works as a Developer Relations Engineer for New Relic." />
+<meta property="og:description" content="Rachael wants to share the joy and beauty of programming through programming games and regular open-source streams on Twitch. She’s been a professional dev since 2012, 3x Team Lead, and manages an open-source repo for playing games of Monster of the Week. Currently, she works as a Developer Relations Engineer for New Relic." />
+<link rel="canonical" href="https://www.chael.codes/live/" />
+<meta property="og:url" content="https://www.chael.codes/live/" />
+<meta property="og:site_name" content="ChaelCodes" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Live" />
+<meta name="twitter:site" content="@ChaelCodes" />
+<meta name="twitter:creator" content="@ChaelCodes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rachael"},"description":"Rachael wants to share the joy and beauty of programming through programming games and regular open-source streams on Twitch. She’s been a professional dev since 2012, 3x Team Lead, and manages an open-source repo for playing games of Monster of the Week. Currently, she works as a Developer Relations Engineer for New Relic.","headline":"Live","url":"https://www.chael.codes/live/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="ChaelCodes" href="https://www.chael.codes/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="https://www.chael.codes/feed.xml" title="ChaelCodes" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Live">
+    <meta name="twitter:description" content="  I stream live on Twitch every Thursday! Follow to get notified when I'm live.  {% twitch https://twitch.tv/ChaelCodes %}  Here's a calendar of events and u...">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.chael.codes/assets/img/setup.jpg">
+    <meta name="twitter:image:alt" content="Live">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+        <a class="site-title" aria-label="ChaelCodes" href="/">
+        ChaelCodes
+		</a>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Live" title="Live" href="/live/">
+                     Live 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Podcasts" title="Podcasts" href="/podcasts/">
+                     Podcasts 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/projects">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Talks" title="Talks" href="/talks">
+                     Talks 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="Live " aria-label="Live" onclick="themeToggle()"></a></li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+
+  <header id="main" style="background-image: url('/assets/img/setup.jpg')">
+    <div class="title-padder">
+      
+        <h1 id="Live" class="title"> Live</h1>
+        
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+	<p>
+  I stream live on Twitch every Thursday! Follow to get notified when I'm live.
+</p>
+
+<div style="height: 300px;">
+  <iframe
+        src="https://player.twitch.tv/?channel=ChaelCodes&autoplay=false&parent=www.chael.codes"
+        height="100%"
+        width="100%"
+        allowfullscreen="true">
+      </iframe>
+</div>
+
+<p>
+  Here's a calendar of events and upcoming streams!
+</p>
+
+<div>
+  <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=UTC&showCalendars=0&showPrint=0&showNav=1&src=bHZybTl2dWRpaWxvYW01a2UwOTVxdDVucDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZWNzbGIxdW9hNzRpbHZjNDF2bDhlbXFnbTQzcmczN3FAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%238E24AA&color=%238E24AA" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no">
+  </iframe>
+</div>
+
+<p>I attend various events and conferences. Past events are provided so you can get an idea of which ones I tend to attend, and I included any relevant content or context!</p>
+
+<div class="timeline">
+  <ul>
+    
+    <li>
+      <span>Nov 13th, 2023</span>
+      <div class="content">
+        <h3>RubyConf San Diego</h3>
+        <p>Attending RubyConf San Diego!</p>
+      </div>
+    </li>
+    
+    <li>
+      <span>Sep 23rd, 2023</span>
+      <div class="content">
+        <h3>Strangeloop</h3>
+        <p>Attending the last Strangeloop!</p>
+      </div>
+    </li>
+    
+    <li>
+      <span>Jul 27th, 2023</span>
+      <div class="content">
+        <h3>Ruby For Good DC Event</h3>
+        <p>It was so cool to attend Ruby For Good's DC event! I had the opportunity to get involved with Human-Essentials, <a href="https://ruby.social/@ChaelCodes/110787381840051590">more details here.</a></p>
+      </div>
+    </li>
+    
+    <li>
+      <span>Apr 24th, 2023</span>
+      <div class="content">
+        <h3>RailsConf Atlanta</h3>
+        <p>Attended RailsConf Atlanta. I signed up for the Lightning talks and gave one called <a href="https://youtu.be/k55B4ydueGE?t=2908&feature=shared">Main Quests and Side Quests!</a></p>
+      </div>
+    </li>
+    
+    <li>
+      <span>Nov 11th, 2021</span>
+      <div class="content">
+        <h3>RubyConf Denver</h3>
+        <p>I was excited to deliver my first talk at RubyConf, <a href="/talks/2021/11/11/open-source-contributing.html">Your First Open-Source Contribution</a>! It was awesome to share what I've learned in my experiences diving into open-source, and share more from a maintainer's perspective.</p>
+      </div>
+    </li>
+    
+  </ul>
+</div>
+
+  
+  </section>
+
+
+  <!-- Tag list for portfolio -->
+  
+  
+
+
+  <div class="tag-list"></div>
+
+
+
+</article>
+
+    </div>
+    <footer class="site-footer">
+  <p class="text">
+    Cuddle your else's, Track your Performance, and Docker isn't Magic. <3
+  </p>
+  <div class="footer-icons">
+    <ul>
+      <!-- Social icons from Font Awesome, if enabled -->
+      
+  <li class="social-icon">
+      <a feed.xml href="/feed.xml"
+        title="Follow RSS feed" class="hover-rainbow">
+          <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  </li>
+
+
+
+  <li class="social-icon">
+    <a href="https://twitch.tv/ChaelCodes" title="Twitch" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://youtube.com/c/ChaelCodes" title="YouTube" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://github.com/ChaelCodes" title="GitHub" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://hachyderm.io/@ChaelCodes" title="Hachyderm.io Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://ruby.social/@ChaelCodes" title="Ruby.Social Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://discord.gg/Yp9N6pF" title="Discord" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://steamcommunity.com/id/chaelcodes/" title="Steam" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://dev.to/chaelcodes/" title="Dev.To" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://twitter.com/ChaelCodes" title="Twitter" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.chael.codes" title="Website Homepage" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-readme fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

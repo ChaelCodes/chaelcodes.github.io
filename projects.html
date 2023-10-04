@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.4.6
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    
+    <script>
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+    </script>
+    
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    
+
+    <!-- KaTeX 0.15.2 -->
+    
+
+    <!-- Mermaid 9.1.1 -->
+    
+
+    <!-- Simple Jekyll Search 1.10.0 -->
+    <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-https://www.chael.codes';
+      const isCookieConsent = '';
+      const analyticsName = '';
+      const analyticsNameGA4 = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <meta property="og:image" content="https://www.chael.codes//assets/img/fib_phone_banner.JPG">
+    
+    <meta property="og:type" content="website" />
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Projects | ChaelCodes</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Projects" />
+<meta name="author" content="Rachael" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Rachael wants to share the joy and beauty of programming through programming games and regular open-source streams on Twitch. She’s been a professional dev since 2012, 3x Team Lead, and manages an open-source repo for playing games of Monster of the Week. Currently, she works as a Developer Relations Engineer for New Relic." />
+<meta property="og:description" content="Rachael wants to share the joy and beauty of programming through programming games and regular open-source streams on Twitch. She’s been a professional dev since 2012, 3x Team Lead, and manages an open-source repo for playing games of Monster of the Week. Currently, she works as a Developer Relations Engineer for New Relic." />
+<link rel="canonical" href="https://www.chael.codes/projects" />
+<meta property="og:url" content="https://www.chael.codes/projects" />
+<meta property="og:site_name" content="ChaelCodes" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Projects" />
+<meta name="twitter:site" content="@ChaelCodes" />
+<meta name="twitter:creator" content="@ChaelCodes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Rachael"},"description":"Rachael wants to share the joy and beauty of programming through programming games and regular open-source streams on Twitch. She’s been a professional dev since 2012, 3x Team Lead, and manages an open-source repo for playing games of Monster of the Week. Currently, she works as a Developer Relations Engineer for New Relic.","headline":"Projects","url":"https://www.chael.codes/projects"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="ChaelCodes" href="https://www.chael.codes/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="https://www.chael.codes/feed.xml" title="ChaelCodes" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Projects">
+    <meta name="twitter:description" content="I have too many projects to keep track of. Here they are:  {% for project in site.data.projects %}      {{project.name}}    {{project.description}}    {% end...">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.chael.codes//assets/img/fib_phone_banner.JPG">
+    <meta name="twitter:image:alt" content="Projects">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+        <a class="site-title" aria-label="ChaelCodes" href="/">
+        ChaelCodes
+		</a>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Live" title="Live" href="/live/">
+                     Live 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Podcasts" title="Podcasts" href="/podcasts/">
+                     Podcasts 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/projects">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Talks" title="Talks" href="/talks">
+                     Talks 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="Projects " aria-label="Projects" onclick="themeToggle()"></a></li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+
+  <header id="main" style="background-image: url('')">
+    <div class="title-padder">
+      
+        <h1 id="Projects" class="title"> Projects</h1>
+        
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+	<p>I have too many projects to keep track of. Here they are:</p>
+
+<ul class="projects">
+  
+  <li>
+    <a href="https://www.chael.codes/jekyll-twitch"><strong>Jekyll-Twitch</strong></a>
+    <p>This is a liquid tag that lets folks embed twitch clips, broadcasts, etc in their Jekyll sites.</p>
+  </li>
+  
+  <li>
+    <a href="https://chaelcodes.itch.io/sscs-game"><strong>Sadistic Self-Care Survival Simulator(SSCSS)</strong></a>
+    <p>A game, built with DragonRuby, that kills the player for neglecting their body's basic needs. Drink water or die.</p>
+  </li>
+  
+  <li>
+    <a href="http://hunters-keepers.herokuapp.com/"><strong>HuntersKeepers</strong></a>
+    <p>The first live-coded app Chael built on stream. Started in October 2018, this Rails app manages games of Monster of the Week.</p>
+  </li>
+  
+</ul>
+
+<style>
+.projects li {
+  list-style: none;
+}
+
+</style>
+
+
+  
+  </section>
+
+
+  <!-- Tag list for portfolio -->
+  
+  
+
+
+  <div class="tag-list"></div>
+
+
+
+</article>
+
+    </div>
+    <footer class="site-footer">
+  <p class="text">
+    Cuddle your else's, Track your Performance, and Docker isn't Magic. <3
+  </p>
+  <div class="footer-icons">
+    <ul>
+      <!-- Social icons from Font Awesome, if enabled -->
+      
+  <li class="social-icon">
+      <a feed.xml href="/feed.xml"
+        title="Follow RSS feed" class="hover-rainbow">
+          <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  </li>
+
+
+
+  <li class="social-icon">
+    <a href="https://twitch.tv/ChaelCodes" title="Twitch" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://youtube.com/c/ChaelCodes" title="YouTube" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://github.com/ChaelCodes" title="GitHub" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://hachyderm.io/@ChaelCodes" title="Hachyderm.io Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://ruby.social/@ChaelCodes" title="Ruby.Social Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://discord.gg/Yp9N6pF" title="Discord" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://steamcommunity.com/id/chaelcodes/" title="Steam" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://dev.to/chaelcodes/" title="Dev.To" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://twitter.com/ChaelCodes" title="Twitter" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.chael.codes" title="Website Homepage" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-readme fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

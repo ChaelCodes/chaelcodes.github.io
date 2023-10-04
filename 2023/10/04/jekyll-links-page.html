@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.4.6
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    
+    <script>
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+    </script>
+    
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    
+
+    <!-- KaTeX 0.15.2 -->
+    
+
+    <!-- Mermaid 9.1.1 -->
+    
+
+    <!-- Simple Jekyll Search 1.10.0 -->
+    <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-https://www.chael.codes';
+      const isCookieConsent = '';
+      const analyticsName = '';
+      const analyticsNameGA4 = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <meta property="og:image" content="https://www.chael.codes//assets/img/posts/links-page/linkinbiopage.PNG">
+    
+    <meta property="og:type" content="website" />
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Links Page in Jekyll | ChaelCodes</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Links Page in Jekyll" />
+<meta name="author" content="ChaelCodes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As a content creator, I love the look and feel of “link in bio” pages. They’re such an easy and mobile-friendly way to share various social medias and projects. However, as a developer, I am frankly offended at the idea of needing a SAAS app to create a static page of links. The idea of paying for such a service, or sharing my page with their branding is simply abhorrent. Thankfully I have a Jekyll site and the ability to create &lt;a&gt; tags, so I’m able to avoid that dismal fate.❤️" />
+<meta property="og:description" content="As a content creator, I love the look and feel of “link in bio” pages. They’re such an easy and mobile-friendly way to share various social medias and projects. However, as a developer, I am frankly offended at the idea of needing a SAAS app to create a static page of links. The idea of paying for such a service, or sharing my page with their branding is simply abhorrent. Thankfully I have a Jekyll site and the ability to create &lt;a&gt; tags, so I’m able to avoid that dismal fate.❤️" />
+<link rel="canonical" href="https://www.chael.codes/2023/10/04/jekyll-links-page.html" />
+<meta property="og:url" content="https://www.chael.codes/2023/10/04/jekyll-links-page.html" />
+<meta property="og:site_name" content="ChaelCodes" />
+<meta property="og:image" content="https://www.chael.codes/assets/img/posts/links-page/linkinbiopage.PNG" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-04T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.chael.codes/assets/img/posts/links-page/linkinbiopage.PNG" />
+<meta property="twitter:title" content="Links Page in Jekyll" />
+<meta name="twitter:site" content="@ChaelCodes" />
+<meta name="twitter:creator" content="@ChaelCodes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ChaelCodes"},"dateModified":"2023-10-04T00:00:00+00:00","datePublished":"2023-10-04T00:00:00+00:00","description":"As a content creator, I love the look and feel of “link in bio” pages. They’re such an easy and mobile-friendly way to share various social medias and projects. However, as a developer, I am frankly offended at the idea of needing a SAAS app to create a static page of links. The idea of paying for such a service, or sharing my page with their branding is simply abhorrent. Thankfully I have a Jekyll site and the ability to create &lt;a&gt; tags, so I’m able to avoid that dismal fate.❤️","headline":"Links Page in Jekyll","image":"https://www.chael.codes/assets/img/posts/links-page/linkinbiopage.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.chael.codes/2023/10/04/jekyll-links-page.html"},"url":"https://www.chael.codes/2023/10/04/jekyll-links-page.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="ChaelCodes" href="https://www.chael.codes/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="https://www.chael.codes/feed.xml" title="ChaelCodes" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Links Page in Jekyll">
+    <meta name="twitter:description" content="As a content creator, I love the look and feel of “link in bio” pages.They’re such an easy and mobile-friendly way to share various social medias and project...">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.chael.codes//assets/img/posts/links-page/linkinbiopage.PNG">
+    <meta name="twitter:image:alt" content="Links Page in Jekyll">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+        <a class="site-title" aria-label="ChaelCodes" href="/">
+        ChaelCodes
+		</a>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Live" title="Live" href="/live/">
+                     Live 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Podcasts" title="Podcasts" href="/podcasts/">
+                     Podcasts 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/projects">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Talks" title="Talks" href="/talks">
+                     Talks 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="Links Page in Jekyll " aria-label="Links Page in Jekyll" onclick="themeToggle()"></a></li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image" >
+  <header id="main-area">
+    <div class="title-padder">
+      
+      <h1 id="Links+Page+in+Jekyll" class="title">Links Page in Jekyll</h1>
+      
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      October 04, 2023
+    </p></div>
+
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+      <p>As a content creator, I love the look and feel of “link in bio” pages.
+They’re such an easy and mobile-friendly way to share various social medias and projects.
+However, as a developer, I am frankly offended at the idea of needing a SAAS app to create a static page of links.
+The idea of <em>paying</em> for such a service, or sharing <em>my</em> page with their branding is simply abhorrent.
+Thankfully I have a Jekyll site and the ability to create <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> tags, so I’m able to avoid that dismal fate.❤️
+<!--more--></p>
+
+<h2 id="step-1---create-a-links-page">Step 1 - Create a links page</h2>
+<p>Let’s create a new page in the <code class="language-plaintext highlighter-rouge">/pages</code> folder called links.html. We want html, because we’re going to be adding a lot of customizations.</p>
+<pre><code class="language-frontmatter">---
+title: Links
+description: Social media and helpful links for ChaelCodes!
+permalink: /links/
+hide: true
+---
+</code></pre>
+<p>We want a title for the tab title when it’s viewed in a browser. I’m happy with “Links” even though it’s not very descriptive.
+The description is what’ll show up in link previews on other sites.
+Our permalink will be the link they access. In my case it’ll look like <a href="https://www.chael.codes/links">chael.codes/links/</a> which is very slick.</p>
+<summary>My theme - type-on-strap - hides pages from the navbar with the frontmatter tag <code>hide: true</code>.</summary>
+<details>
+Inside the navbar there's <a href="https://github.com/sylhare/Type-on-Strap/blob/ed32cecbf56d58810f1d3883290b9ac091d78cb8/_includes/default/navbar.liquid#L25-L36">some custom code</a> to hide certain site pages.
+
+For Minima, this functionality is missing, and it'd need to be added to the <a href="https://github.com/jekyll/minima/blob/master/_includes/header.html">header</a>.
+Check your theme to understand if there are built in options for hiding pages from the navigation.
+</details>
+<p>We didn’t define a layout, which means our page won’t have a header, footer, nor navigation, which is what we want!
+At this point, we have a blank page.</p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/ad1488f8b3479e6287559efad237addaf8a03b7a">Commit</a></p>
+
+<h2 id="step-2---strip-out-navigation-and-footer">Step 2 - Strip out navigation and footer</h2>
+
+<p>Chances are high that your default layout has a header and footer. We need to make a new layout called “empty” to strip those out. We still want all the meta info that’s in your head - this controls livereload, fonts, scss styling (which we’ll add later), and more!</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  {% include default/head.liquid %}
+  <span class="nt">&lt;body&gt;</span>
+    {{ content }}
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre></div></div>
+
+<pre><code class="language-frontmatter">---
+title: Links
+description: Social media and helpful links for ChaelCodes!
+permalink: /links/
+layout: empty
+hide: true
+---
+</code></pre>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/94b62078635bda15e107838b13e5d02cf38edf2b">Commit</a></p>
+
+<h2 id="step-3---define-social-links">Step 3 - Define social links</h2>
+<p>Jekyll supports collections which are site data stored in yml files. These are parsed by Jekyll and make it easy to iterate over structured data.</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">links</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Twitch</span>
+    <span class="na">link</span><span class="pi">:</span> <span class="s">https://twitch.tv/ChaelCodes</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">fa-twitch</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">YouTube</span>
+    <span class="na">link</span><span class="pi">:</span> <span class="s">https://youtube.com/c/ChaelCodes</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">fa-youtube</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">GitHub</span>
+    <span class="na">link</span><span class="pi">:</span> <span class="s">https://github.com/ChaelCodes</span>
+    <span class="na">icon</span><span class="pi">:</span> <span class="s">fa-github</span>
+</code></pre></div></div>
+<p>You can easily add and remove links by modifying the yml file, and there’s less danger of introducing mistakes due to copy/pasting.
+My site theme supports font awesome icons, which is why mine are all <code class="language-plaintext highlighter-rouge">fa-github</code> or <code class="language-plaintext highlighter-rouge">fa-&lt;whatever&gt;</code> but obviously, you can use the icon library of your choice.</p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/59f20b32573697062b89811f5d9d49ba940db7fa">Commit</a></p>
+
+<h2 id="step-3---make-some-links">Step 3 - MAKE SOME LINKS</h2>
+<p>LET’S ADD SOME <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> TAGS!</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;ul&gt;</span>
+{% for social in site.data.social.links %}
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{social.link}}"</span><span class="nt">&gt;</span>{{social.title}}<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+{% endfor %}
+<span class="nt">&lt;/ul&gt;</span>
+
+</code></pre></div></div>
+
+<p>IT’S MAGNIFICENT!</p>
+
+<p><img src="/assets/img/posts/links-page/newlinkspage.PNG" alt="Perfectly legible list of bullet-pointed links that your screenreader would love." /></p>
+
+<p>We’re done! Everyone can access my links now! 🙌</p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/f4601419199b9131a78190255f4cf60a40e74cbd">Commit</a></p>
+
+<h2 id="step-4---add-some-buttons">Step 4 - Add some <em>buttons</em></h2>
+
+<p>We’re going to add an id to that ul to isolate it from other content on our site, then we’ll create an scss file - links.scss for our styling!</p>
+
+<summary>Make sure to import this new file in your theme's main scss file.</summary>
+<details>Mine uses _custom.scss to add additional files and styling.
+<pre>
+  <code>
+    @import 'pages/links';
+  </code>
+</pre>
+</details>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"links"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* --- links page styling -- */</span>
+<span class="nn">#links</span> <span class="p">{</span>
+  <span class="nl">list-style-type</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0em</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="nv">$font-family-headings</span><span class="p">;</span> <span class="c1">// override text to use heading text instead of body</span>
+
+  <span class="nt">li</span> <span class="p">{</span>
+    <span class="nt">a</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="m">1em</span> <span class="m">2em</span><span class="p">;</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="nv">$padding-small</span><span class="p">;</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">vivid-color-1</span><span class="p">);</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>It’s plain, but not we have a links page with a list of buttons!</p>
+
+<p><img src="/assets/img/posts/links-page/buttons.PNG" alt="Bullet pointed links have been turned into a list of rectangular buttons with no bullet point styling." /></p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/43f2dedec7bfdfe2ea228afadb814b43297c836b">Commit</a></p>
+
+<h2 id="step-5---add-a-friendly-face-to-the-links-page">Step 5 - Add a friendly face to the links page</h2>
+<p>I think it’s really helpful to give people a little greeting and show them your avatar to reassure them that they’ve ended up on the right page.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"links-profile"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"avatar"</span> <span class="na">src=</span><span class="s">"/assets/img/profile_pic.jpg"</span> <span class="na">alt=</span><span class="s">"profile pic of Chael smiling and wearing fib shawl"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>To be honest, I can't keep track of all the places I'm active either.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nn">#links-profile</span> <span class="p">{</span>
+    <span class="nn">#avatar</span> <span class="p">{</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+      <span class="nl">border</span><span class="p">:</span> <span class="mi">.2em</span> <span class="nb">solid</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">vivid-color-2</span><span class="p">);</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="m">1em</span> <span class="nb">auto</span><span class="p">;</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+</code></pre></div></div>
+<p>This is probably enough, right?
+<img src="/assets/img/posts/links-page/profile_pic_link_page.PNG" alt="Avatar with a little blue circle has been added to the top of the page, and the text 'To be honest, I can't keep track of all the places I'm active either.'" /></p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/ee4da2c52908f23e2a4e29fd3da49a09bc19d331">Commit</a></p>
+
+<h2 id="step-6---fix-desktop-view">Step 6 - Fix desktop view</h2>
+<p>Let’s just pop into desktop view for a fun screenshot!
+<img src="/assets/img/posts/links-page/Desktop_view.PNG" alt="Giant picture of my avatar that fills the entire screen." />
+Huh. It’s just my face.</p>
+
+<p>That’s not ideal.
+<img src="/assets/img/posts/links-page/desktop_view_2.PNG" alt="Giant buttons that are perfectly legible to a screenreader, but have tiny unreadable text." />
+The buttons aren’t much better. We’ve only got 5 on the page.</p>
+
+<p>Let’s give this page a maximum width and center it!</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"column"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"links-profile"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">id=</span><span class="s">"avatar"</span> <span class="na">src=</span><span class="s">"/assets/img/profile_pic.jpg"</span> <span class="na">alt=</span><span class="s">"profile pic of Chael smiling and wearing fib shawl"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>To be honest, I can't keep track of all the places I'm active either.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"links"</span><span class="nt">&gt;</span>
+    {% for social in site.data.social.links %}
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{social.link}}"</span><span class="nt">&gt;</span>{{social.title}}<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    {% endfor %}
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</code></pre></div></div>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.column</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">500px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>And now we have a perfectly functional and pleasant links page built in Jekyll!</p>
+
+<p><img src="/assets/img/posts/links-page/basic_links_page.PNG" /></p>
+
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/2e76953ad94a5a97a576c48a2c68e576ea38efec">Commit</a></p>
+
+<h2 id="step----entirely-unnecessary-futzing-to-impress-other-developers">Step ∞ - Entirely Unnecessary Futzing to impress other developers</h2>
+<p>These are all going to be links to commits. You can see the result on my <a href="/links">links page.</a> I’ll add any additional futzing I do to this list.</p>
+<h3 id="add-icons">Add Icons</h3>
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/dd91c015e4e35b961946f7fb71d44ece8e619c20">Commit</a></p>
+
+<h3 id="gradient-background-to-add-definition-to-column">Gradient Background to add Definition to Column</h3>
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/5db0871796d40df4bc9714ca3683034369b1629e">Commit</a></p>
+
+<h3 id="animated-hover-buttons">Animated hover buttons</h3>
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/332d64f1aa33c1054680bd8d91ee7176108bd13e">Commit</a></p>
+
+<h3 id="open-links-in-new-tab">Open links in new tab</h3>
+<p><a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/89/commits/1882be76a2c89c93973ad7f1ed312ea6cd25371f">Commit</a></p>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <li class="meta">Share</li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=Links+Page+in+Jekyll%20https%3A%2F%2Fwww.chael.codes%2F2023%2F10%2F04%2Fjekyll-links-page.html"
+               target="_blank" title="">
+                <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Tweet</span>
+            </a>
+        </li>
+            
+        <li>
+            <a href="https://www.reddit.com/submit?url=https://www.chael.codes/2023/10/04/jekyll-links-page.html&title=Links+Page+in+Jekyll%20%7C%20ChaelCodes"
+               target="_blank" title=" Reddit">
+                <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on Reddit</span>
+            </a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=Links Page in Jekyll%20%7C%20ChaelCodes&body=https://www.chael.codes/2023/10/04/jekyll-links-page.html"
+               target="_blank" title="">
+                <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Email</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+  <div class="tag-list"></div>
+
+
+
+</article>
+
+<!-- Post navigation -->
+
+
+<!--Utterances-->
+
+
+<!-- Cusdis -->
+
+
+<!-- Disqus -->
+
+
+<!-- To change color of links in the page -->
+<style>
+  header#main-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+
+  
+
+  
+  header#main-area { background-image: url('/assets/img/posts/links-page/linkinbiopage.PNG'); }
+  
+</style>
+    </div>
+    <footer class="site-footer">
+  <p class="text">
+    Cuddle your else's, Track your Performance, and Docker isn't Magic. <3
+  </p>
+  <div class="footer-icons">
+    <ul>
+      <!-- Social icons from Font Awesome, if enabled -->
+      
+  <li class="social-icon">
+      <a feed.xml href="/feed.xml"
+        title="Follow RSS feed" class="hover-rainbow">
+          <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  </li>
+
+
+
+  <li class="social-icon">
+    <a href="https://twitch.tv/ChaelCodes" title="Twitch" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://youtube.com/c/ChaelCodes" title="YouTube" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://github.com/ChaelCodes" title="GitHub" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://hachyderm.io/@ChaelCodes" title="Hachyderm.io Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://ruby.social/@ChaelCodes" title="Ruby.Social Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://discord.gg/Yp9N6pF" title="Discord" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://steamcommunity.com/id/chaelcodes/" title="Steam" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://dev.to/chaelcodes/" title="Dev.To" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://twitter.com/ChaelCodes" title="Twitter" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.chael.codes" title="Website Homepage" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-readme fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

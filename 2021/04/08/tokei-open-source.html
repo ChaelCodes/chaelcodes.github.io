@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.4.6
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    
+    <script>
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+    </script>
+    
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    
+
+    <!-- KaTeX 0.15.2 -->
+    
+
+    <!-- Mermaid 9.1.1 -->
+    
+
+    <!-- Simple Jekyll Search 1.10.0 -->
+    <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-https://www.chael.codes';
+      const isCookieConsent = '';
+      const analyticsName = '';
+      const analyticsNameGA4 = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <meta property="og:image" content="https://www.chael.codes//assets/img/posts/Tokei-no-color.JPG">
+    
+    <meta property="og:type" content="website" />
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Lending some color to Tokei Open-Source | ChaelCodes</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Lending some color to Tokei Open-Source" />
+<meta name="author" content="ChaelCodes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Time for another open-source adventure! We’ll be joined by Max Jacobson as we visit the Rust cli-tool Tokei. Tokei generates statistics around your code and language usage. For example, chael.codes looks like:" />
+<meta property="og:description" content="Time for another open-source adventure! We’ll be joined by Max Jacobson as we visit the Rust cli-tool Tokei. Tokei generates statistics around your code and language usage. For example, chael.codes looks like:" />
+<link rel="canonical" href="https://www.chael.codes/2021/04/08/tokei-open-source.html" />
+<meta property="og:url" content="https://www.chael.codes/2021/04/08/tokei-open-source.html" />
+<meta property="og:site_name" content="ChaelCodes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-04-08T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Lending some color to Tokei Open-Source" />
+<meta name="twitter:site" content="@ChaelCodes" />
+<meta name="twitter:creator" content="@ChaelCodes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ChaelCodes"},"dateModified":"2021-04-08T00:00:00+00:00","datePublished":"2021-04-08T00:00:00+00:00","description":"Time for another open-source adventure! We’ll be joined by Max Jacobson as we visit the Rust cli-tool Tokei. Tokei generates statistics around your code and language usage. For example, chael.codes looks like:","headline":"Lending some color to Tokei Open-Source","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.chael.codes/2021/04/08/tokei-open-source.html"},"url":"https://www.chael.codes/2021/04/08/tokei-open-source.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="ChaelCodes" href="https://www.chael.codes/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="https://www.chael.codes/feed.xml" title="ChaelCodes" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Lending some color to Tokei Open-Source">
+    <meta name="twitter:description" content="Time for another open-source adventure! We’ll be joined by Max Jacobson as we visit the Rust cli-tool Tokei. Tokei generates statistics around your code and ...">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.chael.codes//assets/img/posts/Tokei-no-color.JPG">
+    <meta name="twitter:image:alt" content="Lending some color to Tokei Open-Source">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+        <a class="site-title" aria-label="ChaelCodes" href="/">
+        ChaelCodes
+		</a>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Live" title="Live" href="/live/">
+                     Live 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Podcasts" title="Podcasts" href="/podcasts/">
+                     Podcasts 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/projects">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Talks" title="Talks" href="/talks">
+                     Talks 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="Lending some color to Tokei Open-Source " aria-label="Lending some color to Tokei Open-Source" onclick="themeToggle()"></a></li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image" >
+  <header id="main-area">
+    <div class="title-padder">
+      
+      <h1 id="Lending+some+color+to+Tokei+Open-Source" class="title">Lending some color to Tokei Open-Source</h1>
+      
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      April 08, 2021
+    </p></div>
+
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+      <p>Time for another open-source adventure! We’ll be joined by <a href="https://twitter.com/maxjacobson">Max Jacobson</a> as we visit the Rust cli-tool <a href="https://github.com/XAMPPRocky/tokei">Tokei</a>. Tokei generates statistics around your code and language usage. For example, <a href="https://www.chael.codes/2021/04/07/tokei-open-source.html">chael.codes</a> looks like:
+<img src="/assets/img/posts/Tokei-no-color.JPG" alt="tokei code analysis" /></p>
+
+<p>Forem, the repo behind therelicans.com and dev.to, looks like this:
+<img src="/assets/img/posts/tokei-forem-no-color.JPG" alt="tokei code analysis of Forem" /></p>
+
+<p>We’re going to pick up <a href="https://github.com/XAMPPRocky/tokei/issues/419">an issue</a> with a lot of discussion that hasn’t been touched in 10 months that I personally like. Those screenshots before weren’t very engaging, right? Let’s add some lovely color to Tokei’s terminal output!</p>
+
+<blockquote>
+  <p>There are some requirements listed out in the issue above.</p>
+  <ul>
+    <li>It must look good in light and dark mode terminals</li>
+    <li>A crate should manage colorizing the output</li>
+    <li>A color flag should manage color output <code class="language-plaintext highlighter-rouge">--color (always|auto|never)</code></li>
+    <li>thick rows === should be bold and the thin rows — dimmed</li>
+  </ul>
+</blockquote>
+
+<p>I think it’d look nice to give all the languages a cyan color, and emphasize the subtotals.</p>
+
+<p>First step is identifying how we’ll cover color output, and the issue points us to <a href="https://crates.io/crates/colored">colored</a> which is based on a Ruby gem of <a href="https://github.com/defunkt/colored">the same name</a>. Usage is very straightforward. <code class="language-plaintext highlighter-rouge">println!("Hello, {}!", "world".green().bold())</code> will use the terminal’s colors, and bold the text.
+<img src="/assets/img/posts/terminal-color.JPG" alt="the world in hello, world is green and bold" /></p>
+<blockquote>
+  <p>Note that “cyan” or “green” may not always be cyan or green, they’re just roles in your terminal color scheme.</p>
+</blockquote>
+
+<p>Next, it’s time to think about how and where to output these colors. Tokei implements a printer interface in <a href="https://github.com/XAMPPRocky/tokei/blob/611de1fc7b33027b918e97127c67825cc7408273/src/cli_utils.rs">cli_utils.rs</a> which is where I found the <a href="https://github.com/XAMPPRocky/tokei/blob/611de1fc7b33027b918e97127c67825cc7408273/src/cli_utils.rs#L150-L164">headers!</a></p>
+
+<p>With some lovely colors and style implemented in Tokei, it’s time to think about those command line args and turning off color. Some people (like other computers) prefer not to have color. I think we handle this in <a href="https://github.com/XAMPPRocky/tokei/blob/611de1fc7b33027b918e97127c67825cc7408273/src/cli.rs#L10-L26">cli.rs</a>. <a href="https://docs.rs/colored/2.0.0/colored/control/struct.ShouldColorize.html">ShouldColorize</a> respects environment variables like NOCOLOR and CLICOLOR, but flags seem helpful too. We should document this regardless.</p>
+
+<blockquote>
+  <p>This is the technical plan for a <a href="https://twitch.tv/ChaelCodes">stream</a> on 4/9. We’ll start with project setup, and testing out Tokei at 1500UTC, then we’ll be joined by Max Jacobson at 1800 UTC to complete the work of creating our changes and PR.</p>
+</blockquote>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <li class="meta">Share</li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=Lending+some+color+to+Tokei+Open-Source%20https%3A%2F%2Fwww.chael.codes%2F2021%2F04%2F08%2Ftokei-open-source.html"
+               target="_blank" title="">
+                <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Tweet</span>
+            </a>
+        </li>
+            
+        <li>
+            <a href="https://www.reddit.com/submit?url=https://www.chael.codes/2021/04/08/tokei-open-source.html&title=Lending+some+color+to+Tokei+Open-Source%20%7C%20ChaelCodes"
+               target="_blank" title=" Reddit">
+                <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on Reddit</span>
+            </a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=Lending some color to Tokei Open-Source%20%7C%20ChaelCodes&body=https://www.chael.codes/2021/04/08/tokei-open-source.html"
+               target="_blank" title="">
+                <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Email</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+  <div class="tag-list">
+    <ul>
+      
+        <li class="meta">Tags</li>
+      
+
+      
+        <li><a class="button" href="/tags#maxjacobson">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> maxjacobson</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#open-source">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> open-source</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#rust">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> rust</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#tokei">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> tokei</p>
+        </a></li>
+      
+    </ul>
+  </div>
+
+
+
+</article>
+
+<!-- Post navigation -->
+
+
+<!--Utterances-->
+
+
+<!-- Cusdis -->
+
+
+<!-- Disqus -->
+
+
+<!-- To change color of links in the page -->
+<style>
+  header#main-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+
+  
+
+  
+  header#main-area { background-image: url('/assets/img/posts/Tokei-no-color.JPG'); }
+  
+</style>
+    </div>
+    <footer class="site-footer">
+  <p class="text">
+    Cuddle your else's, Track your Performance, and Docker isn't Magic. <3
+  </p>
+  <div class="footer-icons">
+    <ul>
+      <!-- Social icons from Font Awesome, if enabled -->
+      
+  <li class="social-icon">
+      <a feed.xml href="/feed.xml"
+        title="Follow RSS feed" class="hover-rainbow">
+          <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  </li>
+
+
+
+  <li class="social-icon">
+    <a href="https://twitch.tv/ChaelCodes" title="Twitch" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://youtube.com/c/ChaelCodes" title="YouTube" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://github.com/ChaelCodes" title="GitHub" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://hachyderm.io/@ChaelCodes" title="Hachyderm.io Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://ruby.social/@ChaelCodes" title="Ruby.Social Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://discord.gg/Yp9N6pF" title="Discord" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://steamcommunity.com/id/chaelcodes/" title="Steam" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://dev.to/chaelcodes/" title="Dev.To" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://twitter.com/ChaelCodes" title="Twitter" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.chael.codes" title="Website Homepage" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-readme fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

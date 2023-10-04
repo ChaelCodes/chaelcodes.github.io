@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.4.6
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    
+    <script>
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+    </script>
+    
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    
+
+    <!-- KaTeX 0.15.2 -->
+    
+
+    <!-- Mermaid 9.1.1 -->
+    
+
+    <!-- Simple Jekyll Search 1.10.0 -->
+    <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-https://www.chael.codes';
+      const isCookieConsent = '';
+      const analyticsName = '';
+      const analyticsNameGA4 = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <meta property="og:image" content="https://www.chael.codes/assets/img/website.png">
+    
+    <meta property="og:type" content="website" />
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Building Jekyll-Twitch, the gem | ChaelCodes</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Building Jekyll-Twitch, the gem" />
+<meta name="author" content="ChaelCodes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I’m really happy with my new website! But I can’t embed Twitch clips. In fact, no one can embed Twitch clips in Jekyll, because there’s no liquid tag for it. But we can fix that, not just for us, but for everyone!" />
+<meta property="og:description" content="I’m really happy with my new website! But I can’t embed Twitch clips. In fact, no one can embed Twitch clips in Jekyll, because there’s no liquid tag for it. But we can fix that, not just for us, but for everyone!" />
+<link rel="canonical" href="https://www.chael.codes/2021/03/11/jekyll-twitch-the-gem.html" />
+<meta property="og:url" content="https://www.chael.codes/2021/03/11/jekyll-twitch-the-gem.html" />
+<meta property="og:site_name" content="ChaelCodes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-03-11T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Building Jekyll-Twitch, the gem" />
+<meta name="twitter:site" content="@ChaelCodes" />
+<meta name="twitter:creator" content="@ChaelCodes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ChaelCodes"},"dateModified":"2021-03-11T00:00:00+00:00","datePublished":"2021-03-11T00:00:00+00:00","description":"I’m really happy with my new website! But I can’t embed Twitch clips. In fact, no one can embed Twitch clips in Jekyll, because there’s no liquid tag for it. But we can fix that, not just for us, but for everyone!","headline":"Building Jekyll-Twitch, the gem","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.chael.codes/2021/03/11/jekyll-twitch-the-gem.html"},"url":"https://www.chael.codes/2021/03/11/jekyll-twitch-the-gem.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="ChaelCodes" href="https://www.chael.codes/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="https://www.chael.codes/feed.xml" title="ChaelCodes" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Building Jekyll-Twitch, the gem">
+    <meta name="twitter:description" content="I’m really happy with my new website! But I can’t embed Twitch clips. In fact, no one can embed Twitch clips in Jekyll, because there’s no liquid tag for it....">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://www.chael.codes/assets/img/website.png">
+    <meta name="twitter:image:alt" content="Building Jekyll-Twitch, the gem">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+        <a class="site-title" aria-label="ChaelCodes" href="/">
+        ChaelCodes
+		</a>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Live" title="Live" href="/live/">
+                     Live 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Podcasts" title="Podcasts" href="/podcasts/">
+                     Podcasts 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/projects">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Talks" title="Talks" href="/talks">
+                     Talks 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="Building Jekyll-Twitch, the gem " aria-label="Building Jekyll-Twitch, the gem" onclick="themeToggle()"></a></li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image" >
+  <header id="main-area">
+    <div class="title-padder">
+      
+      <h1 id="Building+Jekyll-Twitch%2C+the+gem" class="title">Building Jekyll-Twitch, the gem</h1>
+      
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      March 11, 2021
+    </p></div>
+
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+      <p>I’m really happy with my new website! But I can’t embed Twitch clips. In fact, no one can embed Twitch clips in Jekyll, because there’s no liquid tag for it. But we can fix that, not just for us, but for everyone!</p>
+
+<blockquote>
+  <p>This article is the technical plan for a stream on Friday, 3/19 where I’ll create a new gem.</p>
+</blockquote>
+
+<p>This project breaks down into 3 distinct problems:</p>
+<ul>
+  <li>Creating a Jekyll Liquid Tag</li>
+  <li>Embedding a Twitch Broadcast, Clip, or VOD</li>
+  <li>Creating a Gem, and publishing it to Ruby Gems</li>
+</ul>
+
+<h2 id="creating-a-jekyll-liquid-tag">Creating a Jekyll Liquid Tag</h2>
+<p>Jekyll liquid tags allow you to embed user-generated content safely. You might be okay with letting your users embed youtube videos, but you don’t want them executing random javascript on your website. <a href="https://shopify.dev/docs/themes/liquid/reference/basics">Liquids</a> are an extensible templating library designed by Shopify. You specify a tag type, and then pass your url or id, and the tag sanitizes it and embeds the content.</p>
+
+<blockquote>
+  <h4 id="examples">Examples:</h4>
+  <ul>
+    <li><a href="https://github.com/dommmel/jekyll-youtube">Jekyll-YouTube</a></li>
+    <li><a href="https://github.com/rob-murray/jekyll-twitter-plugin">Jekyll-Twitter</a></li>
+    <li><a href="https://github.com/jekyll/jekyll-gist">Jekyll-Gist</a> (This one is maintained by Jekyll)</li>
+  </ul>
+</blockquote>
+
+<p>We’ll start with Jekyll’s guide to <a href="https://jekyllrb.com/docs/plugins/tags/">liquid tags.</a> They say we should create a <code class="language-plaintext highlighter-rouge">TwitchTag</code> class inside the <code class="language-plaintext highlighter-rouge">Jekyll</code> module, and add a render method for the embeds. We also need to register the tag, <code class="language-plaintext highlighter-rouge">Liquid::Template.register_tag('twitch', Jekyll::TwitchTag)</code>, so Jekyll knows that it can use this tag.</p>
+
+<h2 id="embedding-a-twitch-broadcast-clip-or-vod">Embedding a Twitch broadcast, clip, or VOD</h2>
+<p>Twitch allows you to embed clips, broadcasts, and VODs using several different <a href="https://dev.twitch.tv/docs/embed">embeds</a>. They require that all embeds be served over SSL, and they want to know the parent domain.</p>
+
+<p><a href="https://dev.twitch.tv/docs/embed/everything">Option 1</a> - Twitch offers an embed that includes chat, login, subscription, and everything normally available on the Twitch site. Unfortunately, it serves everything through JavaScript, and requires you to embed their script on your site.</p>
+
+<p><a href="https://dev.twitch.tv/docs/embed/video-and-clips#non-interactive-inline-frames-for-live-streams-and-vods">Option 2</a> - This is a simple, non-interactive iframe for Twitch that works for VODs and Livestreams. The viewer will have to continue to Twitch to follow or subscribe. This will also <a href="https://dev.twitch.tv/docs/embed/video-and-clips#non-interactive-iframes-for-clips">work for clips</a> if we customize the url.</p>
+
+<p><a href="https://dev.twitch.tv/docs/embed/video-and-clips#interactive-frames-for-live-streams-and-vods">Option 3</a> - This option asks you to embed the same script as option 1, but they’ve used the player instead of the embed. The documentation doesn’t make the differences clear.</p>
+
+<p>I plan to start with option 2 because it’s simpler, and I need it for clips. Options 1 and 3 don’t support clips.</p>
+
+<p>Here’s the super simple iFrame I’ll be embedding. For clips, the url is: <code class="language-plaintext highlighter-rouge">https://clips.twitch.tv/embed?clip=&lt;VeryLongClipTitle&gt;&amp;parent=streamernews.example.com</code></p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;iframe</span>
+    <span class="na">src=</span><span class="s">"https://player.twitch.tv/?&lt;channel, video, or collection&gt;&amp;parent=streamernews.example.com"</span>
+    <span class="na">height=</span><span class="s">"&lt;height&gt;"</span>
+    <span class="na">width=</span><span class="s">"&lt;width&gt;"</span>
+    <span class="na">allowfullscreen=</span><span class="s">"&lt;allowfullscreen&gt;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/iframe&gt;</span>
+</code></pre></div></div>
+<p>I’ve embedded this before for Forem, so I’m looking forward to improving it.</p>
+
+<h2 id="how-to-create-a-gem">How to Create a Gem</h2>
+<p>We can create the gem using the same tool we use for managing versions: <a href="https://bundler.io/v2.0/guides/creating_gem.html">Bundler.</a> Then, I plan to <a href="https://guides.rubygems.org/publishing/">publish it on RubyGems.</a> I’m really excited about this!</p>
+
+<h2 id="files-ill-need">Files I’ll need</h2>
+<ul>
+  <li>lib/twitch_tag.rb - this is going to handle formatting and rendering the twitch embed</li>
+  <li>lib/spec/twitch_tag_spec.rb - this is where all our tests around the twitch embed will live.</li>
+</ul>
+
+<h2 id="gems-ill-use">Gems I’ll use</h2>
+<ul>
+  <li><a href="https://github.com/rspec/rspec">RSpec</a> This is my favorite testing gem. I love how readable and well-organized the tests are.</li>
+  <li><a href="https://github.com/ruby/rdoc">RDoc</a> We’ll use this gem to document our TwitchTag.rb class.</li>
+  <li><a href="https://github.com/rubocop/rubocop">Rubocop</a> Just for fun, let’s add this one too. It’ll keep our styles consistent.</li>
+</ul>
+
+<p>None of these gems will be dependencies. I can run them exclusively in development.</p>
+
+<h2 id="cicd">CI/CD</h2>
+
+<p>Let’s reuse the <a href="https://github.com/ChaelCodes/chaelcodes.github.io/pull/1">GitHub actions</a> from last week.
+Then we’ll add a new one to run RSpec, and verify that tests pass.</p>
+
+<p>Once I have the entire repository set up, and the gem built, I’ll want to add it to my own site.</p>
+
+<h2 id="adding-the-gem-to-chaelcodes">Adding the Gem to <a href="https://www.chael.codes">chael.codes</a></h2>
+<p>The Jekyll docs say that GitHub pages excludes gems using the <code class="language-plaintext highlighter-rouge">--safe</code> option, but they also say that you can skip that by including it in <code class="language-plaintext highlighter-rouge">jekyll-plugins</code>. Let’s see if it works!</p>
+
+<blockquote>
+  <p>This article is the technical plan for a stream on Friday, 3/19 where I’ll create a new gem, and hopefully embed it in <a href="https://www.chael.codes">chael.codes</a>. You can check it out at <a href="https://twitch.tv/ChaelCodes?utm_source=blog&amp;utm_medium=theRelicans&amp;utm_campaign=DevRel">https://twitch.tv/ChaelCodes</a>.</p>
+</blockquote>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <li class="meta">Share</li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=Building+Jekyll-Twitch%2C+the+gem%20https%3A%2F%2Fwww.chael.codes%2F2021%2F03%2F11%2Fjekyll-twitch-the-gem.html"
+               target="_blank" title="">
+                <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Tweet</span>
+            </a>
+        </li>
+            
+        <li>
+            <a href="https://www.reddit.com/submit?url=https://www.chael.codes/2021/03/11/jekyll-twitch-the-gem.html&title=Building+Jekyll-Twitch%2C+the+gem%20%7C%20ChaelCodes"
+               target="_blank" title=" Reddit">
+                <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on Reddit</span>
+            </a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=Building Jekyll-Twitch, the gem%20%7C%20ChaelCodes&body=https://www.chael.codes/2021/03/11/jekyll-twitch-the-gem.html"
+               target="_blank" title="">
+                <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Email</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+  <div class="tag-list">
+    <ul>
+      
+        <li class="meta">Tags</li>
+      
+
+      
+        <li><a class="button" href="/tags#gem">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> gem</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#jekyll">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> jekyll</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#ruby">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> ruby</p>
+        </a></li>
+      
+        <li><a class="button" href="/tags#twitch">
+          <p><i class="fas fa-tag fa-fw fa-sm"></i> twitch</p>
+        </a></li>
+      
+    </ul>
+  </div>
+
+
+
+</article>
+
+<!-- Post navigation -->
+
+
+<!--Utterances-->
+
+
+<!-- Cusdis -->
+
+
+<!-- Disqus -->
+
+
+<!-- To change color of links in the page -->
+<style>
+  header#main-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+
+  
+
+  
+  header#main-area { background-image: url('/assets/img/website.png'); }
+  
+</style>
+    </div>
+    <footer class="site-footer">
+  <p class="text">
+    Cuddle your else's, Track your Performance, and Docker isn't Magic. <3
+  </p>
+  <div class="footer-icons">
+    <ul>
+      <!-- Social icons from Font Awesome, if enabled -->
+      
+  <li class="social-icon">
+      <a feed.xml href="/feed.xml"
+        title="Follow RSS feed" class="hover-rainbow">
+          <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  </li>
+
+
+
+  <li class="social-icon">
+    <a href="https://twitch.tv/ChaelCodes" title="Twitch" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://youtube.com/c/ChaelCodes" title="YouTube" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://github.com/ChaelCodes" title="GitHub" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://hachyderm.io/@ChaelCodes" title="Hachyderm.io Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://ruby.social/@ChaelCodes" title="Ruby.Social Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://discord.gg/Yp9N6pF" title="Discord" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://steamcommunity.com/id/chaelcodes/" title="Steam" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://dev.to/chaelcodes/" title="Dev.To" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://twitter.com/ChaelCodes" title="Twitter" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.chael.codes" title="Website Homepage" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-readme fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>

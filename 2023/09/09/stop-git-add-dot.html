@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.4.6
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+    <!-- Theme Mode-->
+    
+    <script>
+        const isAutoTheme = true;
+        document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme'))
+    </script>
+    
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+
+    
+
+    <!-- KaTeX 0.15.2 -->
+    
+
+    <!-- Mermaid 9.1.1 -->
+    
+
+    <!-- Simple Jekyll Search 1.10.0 -->
+    <script src="/assets/js/vendor/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-https://www.chael.codes';
+      const isCookieConsent = '';
+      const analyticsName = '';
+      const analyticsNameGA4 = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <meta property="og:image" content="https://www.chael.codes//assets/img/posts/git_patch_add/patchAddOptions.PNG">
+    
+    <meta property="og:type" content="website" />
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Stop using git add . | ChaelCodes</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Stop using git add ." />
+<meta name="author" content="ChaelCodes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="git add . sets you up for failure, and it’s most prevalent in the community that it’s worst suited for: git beginners. Fixing a commit with unwanted changes in it is significantly harder than being intentional about what you commit to begin with. This article will go over how to make intentional commits, and then discuss the most common examples where I see git add . trip up developers." />
+<meta property="og:description" content="git add . sets you up for failure, and it’s most prevalent in the community that it’s worst suited for: git beginners. Fixing a commit with unwanted changes in it is significantly harder than being intentional about what you commit to begin with. This article will go over how to make intentional commits, and then discuss the most common examples where I see git add . trip up developers." />
+<link rel="canonical" href="https://www.chael.codes/2023/09/09/stop-git-add-dot.html" />
+<meta property="og:url" content="https://www.chael.codes/2023/09/09/stop-git-add-dot.html" />
+<meta property="og:site_name" content="ChaelCodes" />
+<meta property="og:image" content="https://www.chael.codes/assets/img/posts/git_patch_add/patchAddOptions.PNG" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-09-09T00:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.chael.codes/assets/img/posts/git_patch_add/patchAddOptions.PNG" />
+<meta property="twitter:title" content="Stop using git add ." />
+<meta name="twitter:site" content="@ChaelCodes" />
+<meta name="twitter:creator" content="@ChaelCodes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"ChaelCodes"},"dateModified":"2023-09-09T00:00:00+00:00","datePublished":"2023-09-09T00:00:00+00:00","description":"git add . sets you up for failure, and it’s most prevalent in the community that it’s worst suited for: git beginners. Fixing a commit with unwanted changes in it is significantly harder than being intentional about what you commit to begin with. This article will go over how to make intentional commits, and then discuss the most common examples where I see git add . trip up developers.","headline":"Stop using git add .","image":"https://www.chael.codes/assets/img/posts/git_patch_add/patchAddOptions.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.chael.codes/2023/09/09/stop-git-add-dot.html"},"url":"https://www.chael.codes/2023/09/09/stop-git-add-dot.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="ChaelCodes" href="https://www.chael.codes/feed.xml"/>
+    <link type="application/atom+xml" rel="alternate" href="https://www.chael.codes/feed.xml" title="ChaelCodes" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Stop using `git add .`">
+    <meta name="twitter:description" content="git add . sets you up for failure, and it’s most prevalent in the community that it’s worst suited for: git beginners. Fixing a commit with unwanted changes ...">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.chael.codes//assets/img/posts/git_patch_add/patchAddOptions.PNG">
+    <meta name="twitter:image:alt" content="Stop using `git add .`">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+        <a class="site-title" aria-label="ChaelCodes" href="/">
+        ChaelCodes
+		</a>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fas fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Live" title="Live" href="/live/">
+                     Live 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Podcasts" title="Podcasts" href="/podcasts/">
+                     Podcasts 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/projects">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Talks" title="Talks" href="/talks">
+                     Talks 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        
+        
+        <li class="separator"> | </li>
+        <li><a id="theme-toggle" title="Stop using `git add .` " aria-label="Stop using `git add .`" onclick="themeToggle()"></a></li>
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image" >
+  <header id="main-area">
+    <div class="title-padder">
+      
+      <h1 id="Stop+using+%60git+add+.%60" class="title">Stop using `git add .`</h1>
+      
+
+
+<div class="post-info">
+    <p class="meta">
+      
+      
+      September 09, 2023
+    </p></div>
+
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+      <p><code class="language-plaintext highlighter-rouge">git add .</code> sets you up for failure, and it’s most prevalent in the community that it’s worst suited for: git beginners. Fixing a commit with unwanted changes in it is significantly harder than being intentional about what you commit to begin with. This article will go over how to make intentional commits, and then discuss the most common examples where I see <code class="language-plaintext highlighter-rouge">git add .</code> trip up developers.
+<!--more--></p>
+
+<p><code class="language-plaintext highlighter-rouge">git add .</code> adds everything from your current folder.</p>
+<ul>
+  <li>version changes to lockfiles</li>
+  <li>editor config files</li>
+  <li>debugging statements</li>
+  <li>random unwanted whitespace changes</li>
+  <li>changes you actually want</li>
+  <li>changes you thought you wanted, but don’t</li>
+</ul>
+
+<p>Instead, I want you to intentionally add changes to your commit using <code class="language-plaintext highlighter-rouge">git add -p</code>, and I want you to add new files using <code class="language-plaintext highlighter-rouge">git add filename</code> or <code class="language-plaintext highlighter-rouge">git add foldername</code>.</p>
+
+<h2 id="intentional-git-commits">Intentional Git Commits</h2>
+<p>1 - <code class="language-plaintext highlighter-rouge">git status</code></p>
+
+<summary>Start by looking at what changes git sees in your repo.</summary>
+<details>
+This command lists all the changes git sees. The first section is staged changes, which means they'll be included in the next commit you make. The next section is changes git sees to files that are tracked in git. The last section is important, these are untracked files. Git isn't looking at these files for changes yet. If you have files in the untracked section that you would never want to commit (node_modules or editor configs) you can add them to your .gitignore file and they'll no longer show up.
+</details>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> git status
+On branch main
+Your branch is up to <span class="nb">date </span>with <span class="s1">'origin/main'</span><span class="nb">.</span>
+
+Changes to be committed:
+  <span class="o">(</span>use <span class="s2">"git restore --staged &lt;file&gt;..."</span> to unstage<span class="o">)</span>
+        modified:   _config.yml
+
+Changes not staged <span class="k">for </span>commit:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to update what will be committed<span class="o">)</span>
+  <span class="o">(</span>use <span class="s2">"git restore &lt;file&gt;..."</span> to discard changes <span class="k">in </span>working directory<span class="o">)</span>
+        modified:   Gemfile.lock
+        modified:   _layouts/stretch.html
+        modified:   _posts/2023-06-25-fibonacci-shawl-pattern.md
+        modified:   _sass/layouts/_stretch.scss
+
+Untracked files:
+  <span class="o">(</span>use <span class="s2">"git add &lt;file&gt;..."</span> to include <span class="k">in </span>what will be committed<span class="o">)</span>
+        _posts/2023-07-09-stop-git-add-dot.md
+        _posts/vim-commands.md
+        _sass/base/
+        assets/img/profile_pic.JPG
+</code></pre></div></div>
+
+<p>2 - <code class="language-plaintext highlighter-rouge">git add &lt;filename|foldername&gt;</code></p>
+<summary>Add any files that you want that are currently untracked.</summary>
+<details>git isn't going to surface these files in the next step. They're untracked, which means git doesn't see them as part of your changes. `git add filename|foldername` both work, but you can also use `git add -N filename` to indicate that you want to track this file, but not stage it yet.
+</details>
+
+<p>3 - <code class="language-plaintext highlighter-rouge">git commit -p</code></p>
+<summary>Patch add changes then commit.</summary>
+<details>Reviewing each of your changes individually allows you to be intentional about your commits. You can break your commits down into smaller, more concise pieces, and exclude anything unnecessary, whether that's extra whitespace, debugging statements, or lockfile changes.</details>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> git commit <span class="nt">-p</span>
+diff <span class="nt">--git</span> a/Gemfile.lock b/Gemfile.lock
+index 8a0eca6..e94d073 100644
+<span class="nt">---</span> a/Gemfile.lock
++++ b/Gemfile.lock
+@@ <span class="nt">-43</span>,6 +43,7 @@ GEM
+       listen <span class="o">(</span>~&gt; 3.0<span class="o">)</span>
+     jekyll-youtube <span class="o">(</span>1.0.0<span class="o">)</span>
+       jekyll
++    json <span class="o">(</span>2.6.3<span class="o">)</span>
+     kramdown <span class="o">(</span>2.4.0<span class="o">)</span>
+       rexml
+     kramdown-parser-gfm <span class="o">(</span>1.1.0<span class="o">)</span>
+<span class="o">(</span>1/3<span class="o">)</span> Stage this hunk <span class="o">[</span>y,n,q,a,d,j,J,g,/,e,?]
+<span class="o">&gt;</span>
+</code></pre></div></div>
+
+<p>There are a lot of different options for the hunk you’re working for. Use <code class="language-plaintext highlighter-rouge">?</code> to see a printed list of them and select the best one for the situation. Some of my favorites are <code class="language-plaintext highlighter-rouge">y</code> for “yes, I want this hunk”, <code class="language-plaintext highlighter-rouge">n</code> for “no, I don’t want this hunk”, <code class="language-plaintext highlighter-rouge">d</code> for “don’t ask me again about this file”, and <code class="language-plaintext highlighter-rouge">e</code> for “edit”.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>1/3<span class="o">)</span> Stage this hunk <span class="o">[</span>y,n,q,a,d,j,J,g,/,e,?]? ?
+y - stage this hunk
+n - <span class="k">do </span>not stage this hunk
+q - quit<span class="p">;</span> <span class="k">do </span>not stage this hunk or any of the remaining ones
+a - stage this hunk and all later hunks <span class="k">in </span>the file
+d - <span class="k">do </span>not stage this hunk or any of the later hunks <span class="k">in </span>the file
+g - <span class="k">select </span>a hunk to go to
+/ - search <span class="k">for </span>a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+e - manually edit the current hunk
+? - print <span class="nb">help</span>
+</code></pre></div></div>
+
+<h3 id="generated-files">Generated Files</h3>
+<p>We’re often using scaffolds or generate commands to create new files or the application. I recommend creating a commit immediately after running that command with the command as the commit message. Then all your future commits will be covered by patch adding, and you’ll have a history of what the command generated vs what’s hand-crafted.</p>
+
+<h2 id="when-git-add--doesnt-cut-it">When <code class="language-plaintext highlighter-rouge">git add .</code> Doesn’t Cut It</h2>
+
+<h3 id="unwanted-untracked-files">Unwanted Untracked Files</h3>
+<p>Sometimes I’ll have files locally that I don’t want to commit. node_modules, editor configs, and logfiles immediately come to mind. You can permanently exclude these by adding them to your .gitignore, but accidentally duplicated and renamed files, blog posts that aren’t ready yet, or scaffolded files I don’t need are all examples of files that can’t go into gitignore, but I don’t want them yet.</p>
+
+<p><code class="language-plaintext highlighter-rouge">git add .</code> throws all of these into the commit without so much as a warning, but you’ll never have this issue if you’re intentionally adding files.</p>
+
+<h3 id="lockfile-updates">Lockfile Updates</h3>
+<p>I see this one all the time and it’s especially nasty. During the course of regular development and installing dependences, the version manager’s lockfile gets updated with some patch changes. Your pull request isn’t about version changes. <code class="language-plaintext highlighter-rouge">git add .</code> will add those changes anyway, in the same commit as the changes you actually want. This one is especially nasty because everyone tends to get these patch updates at the same time, and then there’s merge conflicts galore, even if you reverse the changes in a second commit. Especially if you reverse the changes in a second commit.</p>
+
+<p><code class="language-plaintext highlighter-rouge">d</code> for “Don’t add the lockfile”.</p>
+
+<h3 id="unintentional-whitespace">Unintentional Whitespace</h3>
+<p>It’s really hard to see extra whitespace at the end of a line in your editor. <code class="language-plaintext highlighter-rouge">git add -p</code> highlights that whitespace in red, you can remove it from the commit without exiting by using the <strong>e</strong>dit option.</p>
+
+<p><img src="/assets/img/posts/git_patch_add/gitAddWhitespace.PNG" alt="extra whitespace at the end of the line highlighted in red from patch add. I'm not sure if this red highlighting is read by screenreaders - sorry." /></p>
+
+<p><code class="language-plaintext highlighter-rouge">e</code> for “Edit out extra whitespace!”</p>
+
+<h3 id="debugging-statements">Debugging Statements</h3>
+<p>In the course of problem-solving, we dump debugging statements, commented out debugging statements, and tiny code changes to make debugging easier throughout the application. Skip all those, or edit them out of the final commit, and have beautiful, clean, readable commits that don’t cause merge conflicts or break the build.</p>
+
+<p><code class="language-plaintext highlighter-rouge">n</code> for “Not this console.log…”</p>
+
+<p><code class="language-plaintext highlighter-rouge">e</code> for “Edit that out!”</p>
+
+<h3 id="local-environment-changes">Local Environment Changes</h3>
+<p>I use WSL with Docker and Rails’s default filechecker doesn’t like that, so I have to override it and use a less performant version in all the apps I work with. This is an unusual development setup, and I don’t expect every app I work with to adopt my filechecker. I just skip this change whenever I make a commit with <code class="language-plaintext highlighter-rouge">git add -p</code>. Another common scenario is replacing an API key in your local environment and leaving the original in higher environments. Sometimes you need to tweak things locally, but it might not be appropriate to update the repo with that tweak.</p>
+
+<p><code class="language-plaintext highlighter-rouge">n</code> for “Never add this.”</p>
+
+<h3 id="separate-commits-with-discrete-changes">Separate commits with discrete changes</h3>
+<p>Ideally commits will describe one discrete change to the codebase, but realistically we make lots of little changes at the same time. In order to create discrete changes with <code class="language-plaintext highlighter-rouge">git add .</code>, you have to remove any extraneous changes, or be disciplined about committing after every change and only working on one change at a time. <code class="language-plaintext highlighter-rouge">git add -p</code> lets you be more flexible and extract out one discrete change at the end. These discrete commits are easier to cherry-pick into other branches, and make your PR easier to review for other developers.</p>
+
+<p><code class="language-plaintext highlighter-rouge">n</code> for “Not yet!”</p>
+
+<h2 id="video-demo">VIDEO DEMO</h2>
+
+<iframe src="https://youtube.com/embed/u3NG1966zso" title="YouTube video player" height="780" width="1280" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+      </iframe>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <li class="meta">Share</li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=Stop+using+%60git+add+.%60%20https%3A%2F%2Fwww.chael.codes%2F2023%2F09%2F09%2Fstop-git-add-dot.html"
+               target="_blank" title="">
+                <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Tweet</span>
+            </a>
+        </li>
+            
+        <li>
+            <a href="https://www.reddit.com/submit?url=https://www.chael.codes/2023/09/09/stop-git-add-dot.html&title=Stop+using+%60git+add+.%60%20%7C%20ChaelCodes"
+               target="_blank" title=" Reddit">
+                <i class="fab fa-reddit-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Share on Reddit</span>
+            </a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=Stop using `git add .`%20%7C%20ChaelCodes&body=https://www.chael.codes/2023/09/09/stop-git-add-dot.html"
+               target="_blank" title="">
+                <i class="fas fa-envelope-square fa-2x" aria-hidden="true"></i>
+                <span class="sr-only">Email</span></a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+  <div class="tag-list"></div>
+
+
+
+</article>
+
+<!-- Post navigation -->
+
+
+<!--Utterances-->
+
+
+<!-- Cusdis -->
+
+
+<!-- Disqus -->
+
+
+<!-- To change color of links in the page -->
+<style>
+  header#main-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+  }
+
+  
+
+  
+  header#main-area { background-image: url('/assets/img/posts/git_patch_add/patchAddOptions.PNG'); }
+  
+</style>
+    </div>
+    <footer class="site-footer">
+  <p class="text">
+    Cuddle your else's, Track your Performance, and Docker isn't Magic. <3
+  </p>
+  <div class="footer-icons">
+    <ul>
+      <!-- Social icons from Font Awesome, if enabled -->
+      
+  <li class="social-icon">
+      <a feed.xml href="/feed.xml"
+        title="Follow RSS feed" class="hover-rainbow">
+          <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+          </span>
+      </a>
+  </li>
+
+
+
+  <li class="social-icon">
+    <a href="https://twitch.tv/ChaelCodes" title="Twitch" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://youtube.com/c/ChaelCodes" title="YouTube" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://github.com/ChaelCodes" title="GitHub" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://hachyderm.io/@ChaelCodes" title="Hachyderm.io Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://ruby.social/@ChaelCodes" title="Ruby.Social Mastodon" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://discord.gg/Yp9N6pF" title="Discord" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://steamcommunity.com/id/chaelcodes/" title="Steam" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-steam fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://dev.to/chaelcodes/" title="Dev.To" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-dev fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://twitter.com/ChaelCodes" title="Twitter" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+  <li class="social-icon">
+    <a href="https://www.chael.codes" title="Website Homepage" class="hover-rainbow">
+		  <span class="fa-stack fa-lg">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-readme fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</footer>
+  </body>
+</html>
