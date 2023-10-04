@@ -1,2 +1,39 @@
 @import 'layouts/stretch';
+@import 'pages/links';
 @import 'timeline';
+
+@keyframes background-rainbow {
+  0%  {background-color: var(--vivid-color-1)}
+  30%  {background-color: var(--vivid-color-2)}
+  60%  {background-color: var(--vivid-color-3)}
+  80%  {background-color: var(--vivid-color-4)}
+  90%  {background-color: var(--vivid-color-5)}
+  100% {background-color: var(--vivid-color-6)}
+}
+
+@keyframes rainbow {
+  0%  {color: var(--vivid-color-1)}
+  30%  {color: var(--vivid-color-2)}
+  60%  {color: var(--vivid-color-3)}
+  80%  {color: var(--vivid-color-4)}
+  90%  {color: var(--vivid-color-5)}
+  100% {color: var(--vivid-color-6)}
+}
+
+.hover-background-rainbow {
+  &:hover {
+    animation: background-rainbow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+.hover-rainbow {
+  &:hover {
+    animation: rainbow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
