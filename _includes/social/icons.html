@@ -1,7 +1,7 @@
 {% if site.data.social.rss or site.theme_settings.rss %}
   <li class="social-icon">
       <a feed.xml href="{{ site.data.social.feed.path | default: 'feed.xml' | relative_url }}"
-        title="{{ site.data.language.str_rss_follow | default: "Follow RSS feed" }}">
+        title="{{ site.data.language.str_rss_follow | default: "Follow RSS feed" }}" class="hover-rainbow">
           <span class="fa-stack fa-lg">
               <i class="fas fa-circle fa-stack-2x"></i>
               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
@@ -12,7 +12,7 @@
 
 {% for social in site.data.social.links %}
   <li class="social-icon">
-    <a href="{{ social.link }}" title="{{ social.title }}">
+    <a href="{{ social.link }}" title="{{ social.title }}" class="hover-rainbow">
 		  <span class="fa-stack fa-lg">
         <i class="fas fa-circle fa-stack-2x"></i>
         <i class="fab {{ social.icon }} fa-stack-1x fa-inverse"></i>
