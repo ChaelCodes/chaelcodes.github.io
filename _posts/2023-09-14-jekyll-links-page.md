@@ -145,3 +145,33 @@ It's plain, but not we have a links page with a list of buttons!
 
 <img src="/assets/img/posts/links-page/buttons.PNG" alt="Bullet pointed links have been turned into a list of rectangular buttons with no bullet point styling." />
 
+## Step 5 - Add a friendly face to the links page
+I think it's really helpful to give people a little greeting and show them your avatar to reassure them that they've ended up on the right page.
+
+```html
+  <div id="links-profile">
+    <img id="avatar" src="/assets/img/profile_pic.jpg" alt="profile pic of Chael smiling and wearing fib shawl"/>
+    <p>To be honest, I can't keep track of all the places I'm active either.</p>
+  </div>
+```
+
+```scss
+  #links-profile {
+    #avatar {
+      border-radius: 50%;
+      border: .2em solid var(--vivid-color-2);
+      width: 50%;
+      margin: 1em auto;
+      display: block;
+      padding: 0;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+```
+This is probably enough, right?
+<img src="/assets/img/posts/links-page/profile_pic_link_page.PNG" alt="Avatar with a little blue circle has been added to the top of the page, and the text 'To be honest, I can't keep track of all the places I'm active either.'">
+

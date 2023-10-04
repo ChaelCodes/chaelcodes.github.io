@@ -1,4 +1,19 @@
 /* --- links page styling -- */
+#links-profile {
+  #avatar {
+    border-radius: 50%;
+    border: .2em solid var(--vivid-color-2);
+    width: 50%;
+    margin: 1em auto;
+    display: block;
+    padding: 0;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
 #links {
   list-style-type: none;
   margin-left: 0em;
