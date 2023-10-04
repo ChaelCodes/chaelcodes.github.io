@@ -5,9 +5,9 @@ author: ChaelCodes
 date: 2023-10-04 00:00:00 -0000
 excerpt_separator: <!--more-->
 published: true
-thumbnail: /assets/img/posts/git_patch_add/patchAddOptions.PNG
-image: /assets/img/posts/git_patch_add/patchAddOptions.PNG
-feature-img: /assets/img/posts/git_patch_add/patchAddOptions.PNG
+thumbnail: /assets/img/posts/links-page/linkinbiopage.PNG
+image: /assets/img/posts/links-page/linkinbiopage.PNG
+feature-img: /assets/img/posts/links-page/linkinbiopage.PNG
 twitter:
   card: summary_large_image
 ---
