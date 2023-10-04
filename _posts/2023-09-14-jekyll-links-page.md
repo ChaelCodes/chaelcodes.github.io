@@ -220,3 +220,4 @@ These are all going to be links to commits. You can see the result on my [links 
 
 ### Animated hover buttons
 
+### Open links in new tab
