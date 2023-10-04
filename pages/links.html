@@ -5,19 +5,21 @@ layout: empty
 permalink: /links/
 hide: true
 ---
-<div class="column">
-  <div id="links-profile">
-    <img id="avatar" src="/assets/img/profile_pic.jpg" alt="profile pic of Chael smiling and wearing fib shawl"/>
-    <p>To be honest, I can't keep track of all the places I'm active either.</p>
+<div id="links-page">
+  <div class="column">
+    <div id="links-profile">
+      <img id="avatar" src="/assets/img/profile_pic.jpg" alt="profile pic of Chael smiling and wearing fib shawl"/>
+      <p>To be honest, I can't keep track of all the places I'm active either.</p>
+    </div>
+    <ul id="links">
+      {% for social in site.data.social.links %}
+        <li>
+          <a href="{{social.link}}">
+            <i class="fab {{ social.icon }}"></i>
+            {{social.title}}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
-  <ul id="links">
-    {% for social in site.data.social.links %}
-      <li>
-        <a href="{{social.link}}">
-          <i class="fab {{ social.icon }}"></i>
-          {{social.title}}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
 </div>

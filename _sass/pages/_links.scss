@@ -1,4 +1,13 @@
 /* --- links page styling -- */
+#links-page {
+  background: conic-gradient(from 125deg, var(--vivid-color-1), var(--vivid-color-2), var(--vivid-color-3), var(--vivid-color-4), var(--vivid-color-5), var(--vivid-color-1));
+  background-attachment: fixed;
+  margin-top: -1em;
+  margin-bottom: -1em;
+  padding-top: $padding-small;
+  padding-bottom: $padding-small;
+}
+
 #links-profile {
   #avatar {
     border-radius: 50%;
@@ -32,6 +41,9 @@
 }
 
 .column {
+  background-color: var(--background);
   max-width: 500px;
   margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }

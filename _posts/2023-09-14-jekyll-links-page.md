@@ -216,4 +216,6 @@ And now we have a perfectly functional and pleasant links page built in Jekyll!
 These are all going to be links to commits. You can see the result on my [links page.](/links)
 ### Add Icons
 
+### Gradient Background to add Definition to Column
+
 
