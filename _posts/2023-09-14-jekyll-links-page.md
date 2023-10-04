@@ -175,3 +175,40 @@ I think it's really helpful to give people a little greeting and show them your 
 This is probably enough, right?
 <img src="/assets/img/posts/links-page/profile_pic_link_page.PNG" alt="Avatar with a little blue circle has been added to the top of the page, and the text 'To be honest, I can't keep track of all the places I'm active either.'">
 
+## Step 6 - Fix desktop view
+Let's just pop into desktop view for a fun screenshot!
+<img src="/assets/img/posts/links-page/desktop_view_2.PNG" alt="Giant picture of my avatar that fills the entire screen.">
+Huh. It's just my face.
+
+That's not ideal.
+<img src="/assets/img/posts/links-page/desktop_view_2.PNG" alt="Giant buttons that are perfectly legible to a screenreader, but have tiny unreadable text.">
+The buttons aren't much better. We've only got 5 on the page.
+
+Let's give this page a maximum width and center it!
+```html
+{% raw %}
+<div class="column">
+  <div id="links-profile">
+    <img id="avatar" src="/assets/img/profile_pic.jpg" alt="profile pic of Chael smiling and wearing fib shawl"/>
+    <p>To be honest, I can't keep track of all the places I'm active either.</p>
+  </div>
+  <ul id="links">
+    {% for social in site.data.social.links %}
+      <li>
+        <a href="{{social.link}}">{{social.title}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endraw %}
+```
+```scss
+.column {
+  max-width: 500px;
+  margin: 0 auto;
+}
+```
+And now we have a perfectly functional and pleasant links page built in Jekyll!
+
+<img src="/assets/img/posts/links-page/basic_links_page.PNG">
+
