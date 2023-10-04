@@ -103,3 +103,45 @@ IT'S MAGNIFICENT!
 <img src="/assets/img/posts/links-page/newlinkspage.PNG" alt="Perfectly legible list of bullet-pointed links that your screenreader would love." />
 
 We're done! Everyone can access my links now! 🙌
+
+## Step 4 - Add some _buttons_
+
+We're going to add an id to that ul to isolate it from other content on our site, then we'll create an scss file - links.scss for our styling!
+
+<summary>Make sure to import this new file in your theme's main scss file.</summary>
+<details>Mine uses _custom.scss to add additional files and styling.
+<pre>
+  <code>
+    @import 'pages/links';
+  </code>
+</pre>
+</details>
+
+```html
+<ul id="links">
+```
+
+```scss
+/* --- links page styling -- */
+#links {
+  list-style-type: none;
+  margin-left: 0em;
+  font-family: $font-family-headings; // override text to use heading text instead of body
+
+  li {
+    a {
+      display: block;
+      margin: 1em 2em;
+      padding: $padding-small;
+      text-align: center;
+      background-color: var(--vivid-color-1);
+      color: white;
+    }
+  }
+}
+```
+
+It's plain, but not we have a links page with a list of buttons!
+
+<img src="/assets/img/posts/links-page/buttons.PNG" alt="Bullet pointed links have been turned into a list of rectangular buttons with no bullet point styling." />
+
