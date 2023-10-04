@@ -212,3 +212,8 @@ And now we have a perfectly functional and pleasant links page built in Jekyll!
 
 <img src="/assets/img/posts/links-page/basic_links_page.PNG">
 
+## Step ∞ - Entirely Unnecessary Futzing to impress other developers
+These are all going to be links to commits. You can see the result on my [links page.](/links)
+### Add Icons
+
+

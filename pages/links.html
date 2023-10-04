@@ -13,7 +13,10 @@ hide: true
   <ul id="links">
     {% for social in site.data.social.links %}
       <li>
-        <a href="{{social.link}}">{{social.title}}</a>
+        <a href="{{social.link}}">
+          <i class="fab {{ social.icon }}"></i>
+          {{social.title}}
+        </a>
       </li>
     {% endfor %}
   </ul>
