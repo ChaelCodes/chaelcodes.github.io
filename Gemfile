@@ -3,9 +3,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
-ruby '2.7.8'
+ruby File.read('.ruby-version').strip
 
-gem 'jekyll', '~> 4.2.0'
+gem 'jekyll', '~> 4.3.0'
 # This is your Jekyll Theme
 gem 'type-on-strap', '~> 2.4.5'
 
