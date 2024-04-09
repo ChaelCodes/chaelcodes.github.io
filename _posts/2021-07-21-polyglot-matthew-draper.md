@@ -12,10 +12,10 @@ excerpt_separator: <!--more-->
 Hello, everyone, and welcome to the Polyglot. Today I'm speaking with Matthew Draper who is a Principal Engineer at Buildkite as well as a long-time contributor to Ruby on Rails and a member of the Rails Core team. Hi, Matthew, and welcome.
 <!--more-->
 
-- https://github.com/matthewd/
-- https://md.dev
-- https://gel.dev/
-- https://github.com/gel-rb/gel
+- [https://github.com/matthewd/](https://github.com/matthewd/)
+- [https://md.dev](https://md.dev)
+- [https://gel.dev/](https://gel.dev/)
+- [https://github.com/gel-rb/gel](https://github.com/gel-rb/gel)
 
 > This podcast was released 07/21/2021 as part of the Polyglot Podcast - a series from The New Relic Relicans - both the series and team that created it have been dismantled. It was so much fun while it lasted, and I've recovered as much as possible from the Internet Archive.
 >
