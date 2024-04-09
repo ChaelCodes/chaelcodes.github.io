@@ -23,6 +23,8 @@ Recorded at RubyConf 2023 in San Diego.
 
 May I recommend [AntennaPod](https://antennapod.org/)? No login, no ads, [open-source](https://github.com/AntennaPod/AntennaPod), and you can subscribe to any podcast via RSS feed!
 
+![Photo from the Recording Room](/assets/img/podcasts/SoftwareSessionsSelfie.jpg)
+
 ## Teasers
 
 > Jeremy: Because in your professional life, you do software development work. So I wonder, what is it about being in a game format where you're like, I'm in it. I can do it more. And this time, I'm not even being paid. I'm just doing it for fun.
