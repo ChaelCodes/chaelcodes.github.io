@@ -11,9 +11,9 @@ excerpt_separator: <!--more-->
 Relicans host, Kirk Haines, talks to former Relican, Chael Wright-Munn, about how programming is just as human as art, poetry, and music where you're following certain rules and certain conventions to create something that didn't exist before, making habits and systems versus trying to keep things in your head, and how she feels about the Rust programming languages compared to other languages.
 <!--more-->
 
-- https://chael.codes/
-- https://chael.codes/links
-- https://twitch.tv/ChaelCodes
+- [https://chael.codes/](https://chael.codes/)
+- [https://chael.codes/links](https://chael.codes/links)
+- [https://twitch.tv/ChaelCodes](https://twitch.tv/ChaelCodes)
 
 > This podcast was released 01/19/2022 as part of the Polyglot Podcast - a series from The New Relic Relicans - both the series and team that created it have been dismantled. It was so much fun while it lasted, and I've recovered as much as possible from the Internet Archive.
 >
