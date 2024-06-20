@@ -3,7 +3,7 @@ name: Lint Code
 on: [push]
 
 jobs:
-  test:
+  lint:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -12,3 +12,10 @@ jobs:
         bundler-cache: true
     - name: Rubocop
       run: bundle exec rubocop
+  a11y:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Lighthouse Check
+        uses: foo-software/lighthouse-check-action@v2.0.6
+
