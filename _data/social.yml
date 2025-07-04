@@ -10,15 +10,15 @@ links:
   - title: GitHub
     link: https://github.com/ChaelCodes
     icon: fa-github
-  - title: Hachyderm.io Mastodon
-    link: https://hachyderm.io/@ChaelCodes
-    icon: fa-mastodon
-  - title: Ruby.Social Mastodon
+  - title: Mastodon
     link: https://ruby.social/@ChaelCodes
     icon: fa-mastodon
   - title: Discord
     link: https://discord.gg/Yp9N6pF
     icon: fa-discord
+  - title: Bluesky
+    link: https://bsky.app/profile/chaelcodes.bsky.social
+    icon: fa-bluesky
   - title: Steam
     link: https://steamcommunity.com/id/chaelcodes/
     icon: fa-steam
