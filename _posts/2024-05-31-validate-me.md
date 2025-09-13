@@ -5,9 +5,9 @@ description: Unlock the secrets of Rails validators in this enlightening session
 category: talks
 published: true
 excerpt_separator: <!--more-->
-thumbnail: /assets/img/talks/validate-me-thumbnail.PNG
-image: /assets/img/talks/validate-me-thumbnail.PNG
-feature-img: /assets/img/talks/validate-me-thumbnail.PNG
+thumbnail: /assets/img/talks/validate-me-thumbnail.png
+image: /assets/img/talks/validate-me-thumbnail.png
+feature-img: /assets/img/talks/validate-me-thumbnail.png
 twitter:
   card: summary_large_image
 ---
@@ -18,7 +18,7 @@ This talk is about demystifying Rails validators! It talks about validators, whi
 
 ### Watch the Recording
 
-Coming soon!
+{% youtube https://www.youtube.com/embed/evSgpTOYW-I %}
 
 ### Slides
 
