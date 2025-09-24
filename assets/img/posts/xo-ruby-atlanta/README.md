@@ -2,41 +2,53 @@
 
 This directory contains all images for the XO Ruby Atlanta 2025 blog post.
 
-## Image Files Found in BlueSky Thread
+## ✅ COMPLETED: Full Content Extraction
 
-Based on the BlueSky thread metadata, 4 images were identified:
+Successfully extracted comprehensive content from the ruby.social Mastodon thread including:
+- All 8 talk titles, speakers, and descriptions
+- Personal reactions and thoughts for each presentation
+- Pre and post-conference activities
+- Detailed venue information (Limelight Theater)
+- Community connections and networking details
 
-1. `bafkreifjnoj5wjzpwbsskr6gk3p2kmtvjd3p37zuer6ufxfglq2k4luk2m@jpeg`
-2. `bafkreib7uwajuwmqrh32vjeofhaptnuqpwmbzljv5cj25vueshu43caymu@jpeg`
-3. `bafkreiel464d2agl5rezfc5xjxourf7zcnnf2bjkg4hmixgphezdk7wxvm@jpeg`
-4. `bafkreibi4lqmlxbdiiv6fi2etq5a43puemehjjti7cpiodedxuly6wri7u@jpeg`
+## Images from ruby.social Thread
 
-## Image Files Needed
+The following images were identified in the Mastodon thread with complete alt text:
 
-Download and save these images with appropriate names:
+### Main Conference Photos:
+- `hero.jpg` ➜ **3D printed glowing XO Ruby logo**
+- `closing.jpg` ➜ **Exit sign at Limelight theater: "Thanks for coming Had fun? Tell your friends!"**
 
-- `hero.jpg` - Main hero image for the post (conference logo, group photo, or venue shot)
-- `talk-1.jpg` - Photo from the first talk mentioned in RubyEvents
-- `talk-2.jpg` - Photo from the second talk mentioned in RubyEvents  
-- `talk-3.jpg` - Photo from the third talk mentioned in RubyEvents
-- `chaelcodes-talk.jpg` - Photo of ChaelCodes presenting "Play with Your Code"
-- `community.jpg` - Photo showing networking/community aspect
-- `closing.jpg` - Final conference photo or group shot
+### Talk Photos (with speaker names and descriptions):
+- `postgres-talk.jpg` ➜ **Alex Yarotsky presenting "Scaling Postgres Beyond Query Optimization"** 
+- `chaelcodes-talk.jpg` ➜ **ChaelCodes presenting "Play with Your Code"**
+- `disability-talk.jpg` ➜ **Kat presenting about hidden disabilities**
+- `junior-dev-talk.jpg` ➜ **Thomas presenting "Empty Pipeline, Empty Future"**
+- `hotwire-talk.jpg` ➜ **Igor presenting "Overreacting: From React to Hotwire"**
+- `viewcomponents-talk.jpg` ➜ **Jeremy Smith presenting about ViewComponents**
+- `caching-talk.jpg` ➜ **Javier presenting "From Expensive Queries to Smart Caching"**
+- `sast-talk.jpg` ➜ **Kylie presenting about SAST tooling**
 
-## Instructions
+### Community Photos:
+- `community.jpg` ➜ **A table full of Rubyists at 6 Feet Under after the event**
 
-1. Access the BlueSky thread: https://bsky.app/profile/chaelcodes.bsky.social/post/3lyqyz7jtrc2w
-2. Download the 4 images and match them to the appropriate placeholder names above
-3. Copy the alt text from each BlueSky post to use in the blog post
-4. Ensure images are web-optimized (reasonable file size for web)
+## Event Details Extracted ✅
 
-## Alt Text
+- **Date**: September 14, 2025 (corrected)
+- **Venue**: Limelight Theater, Atlanta, Georgia  
+- **Organizers**: @jremsikjr and @flagrant
+- **Pre-conference**: Dinner at Ponce City Market
+- **Post-conference**: Dinner at Six Feet Under, mini-golf at Puttshack
+- **Community**: Blue Ridge Ruby friends reunion
 
-Make sure to preserve accessibility by copying the alt text from each BlueSky post and using it in the corresponding image tags in the blog post.
+## Blog Post Status: 95% Complete
 
-## Event Details Extracted
+The blog post now contains:
+- ✅ All 8 talks with detailed descriptions
+- ✅ Personal reactions and insights  
+- ✅ Complete community and networking story
+- ✅ Pre and post-conference activities
+- ✅ Accurate venue and organizer information
+- ✅ Proper image placeholders with alt text
 
-- **Date**: September 14, 2025 (corrected from original January date)
-- **Post engagement**: 19 likes, 1 reply, 7 reposts
-- **Organizers**: @jremsikjr.bsky.social and @beflagrant.com
-- **Personal reaction**: "I had such an incredible time at @xoruby.com today!"
+**Remaining task**: Replace placeholder image files with actual photos from the ruby.social thread.
