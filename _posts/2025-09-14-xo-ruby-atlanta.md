@@ -1,7 +1,7 @@
 ---
-title: "XO Ruby Atlanta 2025: A Ruby Conference Experience"
+title: XO Ruby Atlanta 2025
 category: blog
-description: My experience at XO Ruby Atlanta 2025 - an intimate Ruby conference with fantastic talks, great community, and wonderful conversations.
+description: I had an incredible time at XO Ruby Atlanta - a single-day Ruby Conference focused on reigniting local communities!
 feature-img: /assets/img/posts/xo-ruby-atlanta/hero.jpg
 image: /assets/img/posts/xo-ruby-atlanta/hero.jpg
 layout: post
@@ -9,13 +9,15 @@ thumbnail: /assets/img/posts/xo-ruby-atlanta/hero.jpg
 excerpt_separator: <!--more-->
 ---
 
-XO Ruby Atlanta was an intimate Ruby conference that took place at the Limelight Theater in Atlanta, Georgia on September 14, 2025. The single-day event brought together Ruby developers for a collection of inspiring talks, great networking, and the kind of warm community atmosphere that makes Ruby conferences special. The event was organized by @jremsikjr and the team at @flagrant.
+XO Ruby Atlanta was an intimate Ruby conference that took place at the Limelight Theater in Atlanta, Georgia on September 14, 2025. This single day event was fantastic, energizing, and inspiring! Organized by Jim Remsik and Flagrant, they showed that regional conferences can be done quickly and on a budget (if you have the experience)!
 
 <!--more-->
 
 ## The Conference Experience
 
-The conference had a wonderful, intimate feel that made it easy to connect with fellow Ruby developers. The venue created a comfortable environment for both learning and networking, and the organizers did a fantastic job creating an inclusive and welcoming atmosphere.
+XO Ruby events feel so cool! The limelight theater is such a cool venue, and the little XO Ruby touches went a long way to making it feel cozy. It was fantastic to meet up with local Ruby friends, talk shop, and to present the first full-length version of my talk "Play with your Code"!
+
+
 
 ## The Talks
 
@@ -136,35 +138,4 @@ XO Ruby Atlanta was a fantastic event that showcased both the technical excellen
 
 If you're interested in watching any of these talks, keep an eye on [RubyEvents](https://www.rubyevents.org/events/xoruby-atlanta-2025/talks) where the recordings will be posted. And if you get a chance to attend a future XO Ruby event, I'd highly recommend it!
 
-![Final conference photo]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/closing.jpg)
-*Exit sign at Limelight theater that says: Thanks for coming Had fun? Tell your friends!*
-
----
-
-## ✅ BLOG POST COMPLETE!
-
-This blog post is now **100% complete** with all content and images from the ruby.social Mastodon thread successfully extracted and implemented!
-
-### ✅ All Images Successfully Downloaded:
-- [x] ✅ **hero.jpg** - 3D printed glowing XO Ruby logo (5.6M)
-- [x] ✅ **postgres-talk.jpg** - Alex Yarotsky presenting about Postgres (5.5M)
-- [x] ✅ **disability-talk.jpg** - Kat's presentation about hidden disabilities (5.7M)
-- [x] ✅ **junior-dev-talk.jpg** - Thomas's talk about mentoring juniors (4.1M)
-- [x] ✅ **chaelcodes-talk.jpg** - ChaelCodes presenting "Play with Your Code" (6.0M)
-- [x] ✅ **hotwire-talk.jpg** - Igor's React to Hotwire presentation (5.2M)
-- [x] ✅ **viewcomponents-talk.jpg** - Jeremy Smith on ViewComponents (3.2M)
-- [x] ✅ **caching-talk.jpg** - Javier's DBA perspective talk (2.1M)
-- [x] ✅ **sast-talk.jpg** - Kylie's security tooling presentation (2.6M)
-- [x] ✅ **community.jpg** - Group dinner photo at Six Feet Under (4.4M)
-- [x] ✅ **closing.jpg** - Theater exit sign "Thanks for coming, Had fun? Tell your friends!" (3.1M)
-
-### ✅ Complete Content Package:
-- [x] ✅ All 8 talks with detailed descriptions and personal reactions
-- [x] ✅ Full community story with pre/post conference activities
-- [x] ✅ Accurate venue, date, and organizer information
-- [x] ✅ Professional Jekyll structure with proper frontmatter
-- [x] ✅ Conversational, friendly tone throughout
-- [x] ✅ All images with proper alt text from Mastodon posts
-- [x] ✅ Links to RubyEvents for talk recordings
-
-**🎉 The XO Ruby Atlanta 2025 blog post is ready for publication!**
+![Exit sign at Limelight theater that says: Thanks for coming Had fun? Tell your friends!]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/closing.jpg)
