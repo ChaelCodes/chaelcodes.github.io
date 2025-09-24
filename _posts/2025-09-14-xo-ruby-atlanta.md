@@ -9,7 +9,7 @@ thumbnail: /assets/img/posts/xo-ruby-atlanta/hero.jpg
 excerpt_separator: <!--more-->
 ---
 
-XO Ruby Atlanta was an intimate Ruby conference that took place in Atlanta, Georgia in January 2025. The single-day event brought together Ruby developers for a collection of inspiring talks, great networking, and the kind of warm community atmosphere that makes Ruby conferences special.
+XO Ruby Atlanta was an intimate Ruby conference that took place in Atlanta, Georgia on September 14, 2025. The single-day event brought together Ruby developers for a collection of inspiring talks, great networking, and the kind of warm community atmosphere that makes Ruby conferences special. The event was organized by @jremsikjr.bsky.social and the team at @beflagrant.com.
 
 <!--more-->
 
@@ -78,7 +78,7 @@ One of the best parts of XO Ruby Atlanta was the community aspect. The intimate 
 
 ## Final Thoughts
 
-XO Ruby Atlanta was a fantastic event that showcased both the technical excellence and the warm community spirit that make Ruby conferences so special. The talks were insightful, the people were wonderful, and the overall experience left me feeling inspired and connected to the broader Ruby community.
+I had such an incredible time at XO Ruby today! I'm really grateful to @jremsikjr.bsky.social and the folks at @beflagrant.com for putting this together. XO Ruby Atlanta was a fantastic event that showcased both the technical excellence and the warm community spirit that make Ruby conferences so special. The talks were insightful, the people were wonderful, and the overall experience left me feeling inspired and connected to the broader Ruby community.
 
 If you're interested in watching any of these talks, keep an eye on [RubyEvents](https://www.rubyevents.org/events/xoruby-atlanta-2025/talks) where the recordings will be posted. And if you get a chance to attend a future XO Ruby event, I'd highly recommend it!
 
@@ -92,9 +92,16 @@ If you're interested in watching any of these talks, keep an eye on [RubyEvents]
 This is a rough draft template that needs to be filled in with actual content from the following sources:
 
 ### From BlueSky Thread (https://bsky.app/profile/chaelcodes.bsky.social/post/3lyqyz7jtrc2w):
-- [ ] Download all photos and save them to `/assets/img/posts/xo-ruby-atlanta/`
+- [x] ✅ Extracted post description and personal reactions 
+- [x] ✅ Updated event date to September 14, 2025
+- [x] ✅ Added organizer information (@jremsikjr.bsky.social and @beflagrant.com)
+- [ ] Download all 4 photos identified in the post metadata:
+  - bafkreifjnoj5wjzpwbsskr6gk3p2kmtvjd3p37zuer6ufxfglq2k4luk2m@jpeg
+  - bafkreib7uwajuwmqrh32vjeofhaptnuqpwmbzljv5cj25vueshu43caymu@jpeg  
+  - bafkreiel464d2agl5rezfc5xjxourf7zcnnf2bjkg4hmixgphezdk7wxvm@jpeg
+  - bafkreibi4lqmlxbdiiv6fi2etq5a43puemehjjti7cpiodedxuly6wri7u@jpeg
+- [ ] Save them to `/assets/img/posts/xo-ruby-atlanta/` with appropriate filenames
 - [ ] Replace placeholder alt text with actual alt text from BlueSky posts
-- [ ] Fill in personal thoughts and reactions from the BlueSky thread
 - [ ] Add any additional conference moments or insights shared in the thread
 
 ### From RubyEvents (https://www.rubyevents.org/events/xoruby-atlanta-2025/talks):
