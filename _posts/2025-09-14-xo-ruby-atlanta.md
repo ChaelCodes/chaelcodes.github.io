@@ -35,6 +35,15 @@ My thoughts: This was really good! The technical depth was perfect and Alex's de
 ![Alex Yarotsky presenting about Postgres optimization]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/postgres-talk.jpg)
 *The slide is "Scaling Postgres Beyond Query Optimization" by Alex Yarotsky, and Alex stands beside it at the podium, pointing at it and looking intense.*
 
+![Alex presenting behind the podium]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/alex-presenting-2.jpg)
+*Alex stands behind the podium, making eye contact with the audience.*
+
+![Alex looking genuinely alarmed at his slide]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/alex-presenting-3.jpg)
+*Alex stands behind the podium, staring at his slide, eyes wide, and looking genuinely alarmed.*
+
+![Alex explaining autovacuum]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/alex-autovacuum.jpg)
+*Alex points intensely at a slide that reads: Why do we need autovacuum? - Reclaims disk space for reuse, Prevents bloat in tables and index, Updates visibility maps to optimize index-only scans, Mitigates transaction ID wraparound risks*
+
 ### Play with Your Code
 **Speaker:** Rachael Wright-Munn (ChaelCodes)
 
@@ -46,6 +55,15 @@ My thoughts: It was wonderful to share this talk with the XO Ruby Atlanta audien
 
 ![ChaelCodes presenting at XO Ruby Atlanta]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/chaelcodes-talk.jpg)
 *Big shot of the theater and Chael standing at the podium next to a slide: Why are Programming Games fun? - Immediate Feedback, Color, Documentation, Purpose, Autonomy*
+
+![ChaelCodes smiling and gesturing]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/chael-presenting-2.jpg)
+*Chael smiling and gesturing to the audience. Her eyes scream "Oh no, every single person in this room hates me." Spoiler alert: they did not.*
+
+![Color adds clarity slide]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/chael-color-slide.jpg)
+*Photo of Chael and the audience, taken from the wings. The slide says "Color adds clarity" and has a photo of RSpec output.*
+
+![What is a programming game slide]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/chael-what-is-game.jpg)
+*Chael behind the podium, the slide says "What is a programming game?"*
 
 ### The Disability Dilemma
 **Speaker:** Kat
@@ -59,6 +77,12 @@ My thoughts: I felt a little called out by "Anxiety: I have to do something, rig
 ![Kat presenting about hidden disabilities]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/disability-talk.jpg)
 *Kat gestures at the slide which reads: ADHD: "I can't remember", ARFID: "I need to pick something to eat from this menu.", Anxiety: "I have to do something, right now", Depression: "I can't do anything, it's pointless", Chronic Fatigue: "My body feels like it's shutting down. I need sleep.", Insomnia: "I can't sleep."*
 
+![Kat looking over the audience]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/kat-presenting.jpg)
+*Kat looks seriously over the audience from the podium.*
+
+![ARFID explanation slide]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/kat-arfid-slide.jpg)
+*Kat describes the body feel of ARFID from behind the podium. Slide: ARFID: "I can't eat this" with empathetic and non-empathetic response examples.*
+
 ### Empty Pipeline, Empty Future
 **Speaker:** Thomas
 
@@ -70,6 +94,15 @@ My thoughts: The quotes "People need food and housing to learn" and "Juniors are
 
 ![Thomas presenting about mentoring junior developers]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/junior-dev-talk.jpg)
 *"People need food and housing to learn" Thomas stands next to this absolute banger of a quote.*
+
+![Thomas with heartfelt expression]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/thomas-heartfelt.jpg)
+*Thomas face is full of heart as he connects with the audience.*
+
+![Juniors are an asset slide]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/thomas-juniors-asset.jpg)
+*"Juniors are an asset, not a charity case or liability" Thomas next to another incredible quote.*
+
+![Quote from Thomas's mentee]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/thomas-mentee-quote.jpg)
+*Thomas ended his talk with a quote from his mentee: "In my experience, companies have basically pivoted away from creating an onboarding process or junior to senior pipeline... Senior devs retire. Junior devs who are brought up within your ranks will become senior devs."*
 
 ### Overreacting: From React to Hotwire
 **Speaker:** Igor Aleksandrov
@@ -83,6 +116,12 @@ My thoughts: Great practical insights about team dynamics and technology choices
 ![Igor presenting about React to Hotwire migration]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/hotwire-talk.jpg)
 *Igor speaks to the audience beside the slide about when AI changed the development game and new requirements for higher efficiency*
 
+![React was our bottleneck]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/igor-bottleneck.jpg)
+*Igor gestures at the screen. React was becoming our bottleneck - Each new feature required: Backend developer, Frontend developer, Manager coordination, API contract design, State management planning, Integration testing*
+
+![Understanding Hotwire]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/igor-hotwire-explained.jpg)
+*Igor points at the slide: Understanding our Migration Destination - Hotwire HTML Over The Wire - Three parts: Turbo Drive, Turbo Frames and Morphing, Turbo Streams, And Stimulus*
+
 ### Refactoring Volatile Views into Cohesive Components
 **Speaker:** Jeremy Smith
 
@@ -94,6 +133,9 @@ My thoughts: Even if you're not using ViewComponents, the framework for thinking
 
 ![Jeremy Smith presenting about ViewComponents]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/viewcomponents-talk.jpg)
 *Jeremy describes how views become complex and volatile, covering Churn, Accumulation, Variation, and Proliferation*
+
+![Dimensions of View Complexity]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/jeremy-dimensions.jpg)
+*Jeremy addresses the audience next to a slide: Dimensions of View Complexity - Browsers/Clients, Viewports, Device Features, Theming/Whitelabeling, Dark/Light Mode, Accessibility, Internationalization, SEO/Open Graph, Authorization, Entitlements, Feature Flags, Framework/Version Changes, Execution Context, Testing Affordances, Design Systems/Tokens*
 
 ### From Expensive Queries to Smart Caching: A DBA's Guide for Rails
 **Speaker:** Javier Zon
@@ -125,10 +167,25 @@ One of the best parts of XO Ruby Atlanta was the community aspect. The intimate 
 
 I went to dinner at Ponce City Market the night before with a few locals, and people traveling in from out of town. It was great to see my Blue Ridge Ruby friends again! The pre-conference dinner was a perfect way to reconnect with familiar faces and meet new people.
 
+![Pre-conference dinner group]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/dinner-group.jpg)
+*Thomas, Jeremy, Chael, Kat, Paul, and Jim taking a selfie at a massive wooden table.*
+
+![Blue Ridge Ruby friends reunion]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/blue-ridge-friends.jpg)
+*Thomas, Jeremy, and Chael - my Blue Ridge Ruby peeps!*
+
+![Conference venue with audience]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/main-post-2.jpg)
+*A room full of rubyists in the limelight theater, looking at Thomas, waiting for his talk.*
+
 After the conference, we gathered everyone who was left and headed over to Six Feet Under for dinner, then played post-conference mini-golf at Puttshack! It was a fantastic way to end a very full day of conferencing.
 
 ![Group photo or networking moment]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/community.jpg)
 *A table full of Rubyists at 6 Feet Under after the event.*
+
+![Post-conference at the pub]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/post-conference-pub.jpg)
+*A table of 12 Rubyists in a seafood-focused pub.*
+
+![Under the glowing Ruby sign]({{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/additional/ruby-sign-group.jpg)
+*Thomas, Matt, Chael, Thomas, Kat, and Jeremy all smiling under a glowing neon Ruby sign.*
 
 ## Final Thoughts
 
