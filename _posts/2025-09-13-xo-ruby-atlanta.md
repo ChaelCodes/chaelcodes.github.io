@@ -166,11 +166,17 @@ Jeremy taught me you can define locals for a partial, and I love it. 😍
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/refactoring-volatile-views-into-cohesive-components-xo-ruby-atlanta-2025)*
 
 <div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/viewcomponents-talk.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/viewcomponents-talk.jpg" alt="Jeremy describes how views become complex and volatile, covering Churn, Accumulation, Variation, and Proliferation" />
+  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/jeremy-portrait.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/jeremy-portrait.jpg" alt="Jeremy Smith behind the podium, microphone in hand" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/jeremy-dimensions.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/jeremy-dimensions.jpg" alt="Jeremy addresses the audience next to a slide: Dimensions of View Complexity - Browsers/Clients, Viewports, Device Features, Theming/Whitelabeling, Dark/Light Mode, Accessibility, Internationalization, SEO/Open Graph, Authorization, Entitlements, Feature Flags, Framework/Version Changes, Execution Context, Testing Affordances, Design Systems/Tokens" />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/jeremy-churn-volatility.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/jeremy-churn-volatility.jpg" alt="Jeremy describes how views become complex and volatile. Churn: Changed seven times, might not be done; Accumulation: Icon, counter, dropdown, non-tabs, etc.; Variation: Tab type, selected state, authorization, etc; Proliferation: Team wants to use this in another section" />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/jeremy-summary.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/jeremy-summary.jpg" alt="Summary: 1. Implement designs in traditional templates 2. Watch for volatility (high churn & complexity) 3. Extract view components and regain stability" />
   </a>
 </div>
 
@@ -187,6 +193,12 @@ Javier Zon talked about issues he sees as a DBA and how to resolve them on the a
   <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/caching-talk.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/caching-talk.jpg" alt="Javier dramatically gestures in front of the title slide: FROM Expensive Queries TO Smart Caching A DBA's Guide for Rails" />
   </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/javier-portrait.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/javier-portrait.jpg" alt="Javier addressing the audience" />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/javier-connections.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/javier-connections.jpg" alt="Javier highlights a giant uptick in connections, starting in August" />
+  </a>
 </div>
 
 ### SAST Tooling for Ruby Applications
@@ -202,8 +214,17 @@ I have CodeQL turned on for MeetAnother.day, it comes free for open-source repos
 *📺 Recording available soon at RubyEvents*
 
 <div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/sast-talk.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/sast-talk.jpg" alt="Kylie breaks down exactly which vulnerabilities each SAST tool covers in a detailed comparison table" />
+  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/kylie-portrait.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/kylie-portrait.jpg" alt="Kylie speaks to the audience" />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/kylie-ruby-sensibility.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/kylie-ruby-sensibility.jpg" alt="Kylie smiles delightedly as she describes: Sensibility of Ruby - Tools (often gems) are: easy to use, fast to set up, naturally fit into workflow" />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/kylie-mass-assignment.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/kylie-mass-assignment.jpg" alt="Kylie describes a common vulnerability in Ruby: Mass Assignment vulnerability with code sample demonstrating the vulnerability" />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/kylie-vulnerability-table.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/xo-ruby-atlanta/kylie-vulnerability-table.jpg" alt="Kylie breaks down exactly which vulnerabilities each SAST tool covers in a detailed comparison table showing: All tools caught Insecure Deserialization, CodeQL caught all listed vulnerabilities, Brakeman and Opengrep caught everything except cross file data flows, CodeQL is the only one that caught cross file data flows" />
   </a>
 </div>
 
