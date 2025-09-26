@@ -1,0 +1,63 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=5">
+
+  <!-- Theme Mode-->
+  <script>
+      const darkBtn = "{{ site.data.language.str_dark | default: "Dark" }}";
+      const lightBtn = "{{ site.data.language.str_light | default: "Light" }}";
+      const isAutoTheme = {% if site.color_theme == 'auto' %}true{% else %}false{% endif %};
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      if (isAutoTheme) {
+          document.documentElement.setAttribute('data-theme', sessionStorage.getItem('theme') ?? preferredTheme);
+      } else {
+          document.documentElement.setAttribute('data-theme', "{{ site.color_theme | default: 'light' }}");
+      }
+  </script>
+
+  <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+  <script defer src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
+
+  <!-- KaTeX 0.16.11 -->
+  {% if site.katex or site.theme_settings.katex %}
+  <script defer src="{{ '/assets/js/vendor/katex.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/js/vendor/katex.auto-render.min.js' | relative_url }}" onload="renderMathInElement(document.body);"></script>
+  {% endif %}
+
+  <!-- Mermaid 11.4.1 -->
+  {% if site.mermaid %}
+  <script defer src="{{ '/assets/js/vendor/mermaid.min.js' | relative_url }}"></script>
+  {% endif %}
+
+  <!-- Simple Jekyll Search 1.10.0 -->
+  <script src="{{ '/assets/js/vendor/simple-jekyll-search.min.js' | relative_url }}" type="text/javascript"></script>
+
+  <!-- Have to keep these of main js fails and the navbar doesn't work -->
+  <script>
+    const cookieName = '';
+    const isCookieConsent = '';
+    const analyticsName = '';
+    const analyticsNameGA4 = '';
+  </script>
+
+  <!-- seo tags -->
+  <meta property="og:image" content="{{ '/' | absolute_url }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
+  {% unless page.layout == post %}
+  <meta property="og:type" content="website">
+  {% endunless %}
+  {% seo %}
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title | default: 'Title' }}" href="{{ 'feed.xml' | absolute_url }}">
+  {% feed_meta %}
+
+  <!-- Mastodon -->
+  <link rel="me" href="https://ruby.social/@ChaelCodes">
+  <meta name="fediverse:creator" content="@ChaelCodes@ruby.social">
+</head>
