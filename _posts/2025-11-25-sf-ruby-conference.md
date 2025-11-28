@@ -9,7 +9,7 @@ thumbnail: /assets/img/posts/sfruby-2025/venue-1.jpg
 excerpt_separator: <!--more-->
 ---
 
-[SF Ruby Conference 2025](https://sfruby.com) was a two-day Ruby conference that took place in San Francisco, California on November 19-20, 2025. Hosted at a gorgeous venue right on the water with views of the Golden Gate Bridge, this conference brought together Rubyists for talks on AI, Rails, and the future of our beloved language. It was amazing! Fantastic talks, great space, great afterparties, and I desperately needed the slower-paced community day by the end.
+[SF Ruby Conference 2025](https://sfruby.com) was a three-day Ruby conference that took place in San Francisco, California on November 19-21, 2025. It was hosted at historic Fort Mason right on the water with views of the Golden Gate Bridge. This conference brought together Rubyists for two days of talks on AI, Rails, and the future of Ruby! It was amazing! Fantastic talks, great space, great afterparties, and a dedicated day for community events on the final day.
 
 <!--more-->
 
@@ -35,6 +35,7 @@ On Day 0, I flew into SF, had jetlagged lunch with Max, and walked over to the v
   </a>
 </div>
 
+### The Venue
 This venue is absolutely gorgeous! I'm loving the transparent chairs and conference spaces!
 
 <div style="display: flex;">
@@ -49,7 +50,9 @@ This venue is absolutely gorgeous! I'm loving the transparent chairs and confere
   </a>
 </div>
 
-I love how cool and zen the zero gravity lounge is. This and the Ruby Warrior room are my go-to places to hide and be comfy.
+### Zero Gravity Lounge
+
+I love how cool and zen the zero gravity lounge is. This was one of my favorite places to hide and be comfy.
 
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/lounge-1.jpg">
@@ -63,21 +66,13 @@ I love how cool and zen the zero gravity lounge is. This and the Ruby Warrior ro
   </a>
 </div>
 
-To start off the conference Irina Nazarova thanked everyone who was involved in making this conference happen and reminded us why we're here–to learn how to build the future in Ruby!
+### Ruby Embassy
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-1.jpg" alt="Irina speaking on stage, gesturing with a serious expression in an iconic orange coat." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-3.jpg" alt="Irina on stage flanked by slides that say 'How to build the future in Ruby'." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-4.jpg" alt="Irina on stage, flanked by screens that say 'Welcome to' and the SF Ruby Conference logo." />
-  </a>
-</div>
-
-I got my Ruby Passport!! ❤️🛂 Thank you to SF Ruby and Ruby Passport for organizing an embassy!
+I got my Ruby Passport!! ❤️🛂
+I've loved seeing these at various events, and I'm so excited to have one of my own!
+The passport has an NFC tag that'll open your RubyEvents profile.
+It's such a fun way to share which events you've been to.
+Thank you to SF Ruby and the Ruby Passport team for organizing an embassy!
 
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-1.jpg">
@@ -90,21 +85,48 @@ I got my Ruby Passport!! ❤️🛂 Thank you to SF Ruby and Ruby Passport for o
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-3.png" alt="A screenshot from RubyEvents.org of Chael's profile. There are now 3 icons next to her name - verified, Ruby Passport, and contributor." />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-4.jpg" alt="An open Ruby Passport in front of a window overlooking the tarmac at SFO." />
+    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-4.jpg" alt="An open Ruby Passport in front of a window overlooking the tarmac at SFO. An attempt has been made to make block letters and emulate a real passport, but it has failed. The ink is smudged and dates have been scratched out and updated. The photo is a stiff, dead-eyed smileless stare like a real passport.
+    First name: RACHAEL
+    Last name: WRIGHT-MUNN
+    Date of birth: (left blank) 
+    Nationality: UNITED STATES
+    Signature: (squiggly ChaelCodes signature) 
+    Date and event of issue: 19 Nov 2025 SF Ruby
+    Date and version when you started using Ruby: 10 Jul 2014, 2.1
+    Date and version when you started using Rails: 03 Mar 2015, 4.2.0
+    " />
   </a>
 </div>
 
 ## The Talks
 
-The line-up for SF Ruby Conference was incredible! A mix of AI, Rails, and community talks kept things fresh and interesting.
+The line-up for SF Ruby Conference was incredible! A mix of AI, Ruby, and community talks kept things fresh and interesting.
+
+### Conference Introduction
+
+To start off the conference Irina Nazarova thanked everyone who was involved in making this conference happen and reminded us why we're here–to learn how to build the future in Ruby!
+
+<div style="display: flex;">
+  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-1.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-1.jpg" alt="Irina speaking on stage, gesturing with a serious expression in an iconic orange dress." />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-3.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-3.jpg" alt="Irina on stage flanked by slides that say 'How to build the future in Ruby'." />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-4.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-4.jpg" alt="Irina on stage, flanked by screens that say 'Welcome to' and the SF Ruby Conference logo." />
+  </a>
+</div>
 
 ### Herb to ReActionView: A New Foundation for the View Layer
 Marco Roth
-> Herb continues to enable incredible advances in the developer experience of HTML+ERB.
+> This talk is the conclusion of a journey I’ve been sharing throughout 2025. At RubyKaigi, I introduced Herb: a new HTML-aware ERB parser and tooling ecosystem. At RailsConf, I released developer tools built on Herb, including a formatter, linter, and language server, alongside a vision for modernizing and improving the Rails view layer.
 
-There was a spontaneous round of applause for the new error page of ReActionView. Even as I was getting my mic, I was on tiptoe trying to see what the latest is.
+Herb continues to enable incredible advances in the developer experience of HTML+ERB.
+There was a spontaneous round of applause for the new error page of ReActionView.
+Even as I was getting my mic, I was on tiptoe trying to see what the latest is.
 
-*📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/keynote-reactionview-an-actionview-compatible-erb-engine)*
+*📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/keynote-herb-to-reactionview-a-new-foundation-for-the-view-layer)*
 
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/reactionview-1.jpg">
@@ -118,9 +140,34 @@ There was a spontaneous round of applause for the new error page of ReActionView
   </a>
 </div>
 
+### Play with Your Code
+Rachael Wright-Munn
+> Why are programming games more fun than our day jobs? We're going to dig into this exact question and see what lessons we can learn from them, and how we can bring it back to our developer experience. Also, we're going to talk about some rad programming games you should play!
+
+I was really nervous about giving this talk.
+The DX of programming games is a fine topic for a lightning talk, but I wasn't sure how it would translate to a full-length talk (or if anyone would care to see it).
+I'm incredibly grateful for the warm reception it received and everyone who came up to me afterwards!
+I liked hearing everyone's takeaways because everyone had something different!
+
+*📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/play-with-your-code-san-francisco-ruby-conference-2025)*
+
+<div style="display: flex;">
+  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-3.jpg">
+    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-3.jpg" alt="Chael doing jazz hands about how ANSI color codes match your editor theme. (It makes sense in context, I promise!)" />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-1.png">
+    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-1.png" alt="Screenshot of Slack message from Chael.
+    Slides are here for &quot;Play with your Code&quot;. There'll be a companion blog post soon! If you have questions, feel free to drop them in a thread! (You do not need to check the slides first to ask a question.)
+    There are 8 tada reactions, and 2 each of the hearts purple, green, and blue, a reference to a joke in the talk." />
+  </a>
+  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-2.png">
+    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-2.png" alt="Screenshot of a slide from the closing keynote 'Rails X'. My cloud character is saying 'Joyful developer experiences are about reducing friction' superimposed over an image of a complicated asset pipeline." />
+  </a>
+</div>
+
 ### Rails Expertise Distilled: AI Agents That Get Your Monolith
 Brandon Weaver
-> Learn about building MCP tooling to better understand your application.
+> New developers face months of unproductive confusion when dropped into massive codebases they can't navigate or understand. What if they could get instant answers about how systems work, identify what code needs changing, and understand complex business logic without waiting for help? This talk demonstrates how Rails' built-in introspection transforms into expert AI tools that understand your specific codebase, making institutional knowledge accessible 24/7. Instead of 3-month ramp-ups, developers contribute meaningfully in days while the entire team stays productive.
 
 Learning about building MCP tooling to better understand your application was fascinating! The questions AI is able to answer when it has access to introspection from Packwerk and Rails is really cool!
 
@@ -131,7 +178,7 @@ Learning about building MCP tooling to better understand your application was fa
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-1.jpg" alt="Brandon addressing the audience." />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-2.jpg" alt="Packed Blackbox Theatre - standing room only. Brandon stands at the podium." />
+    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-2.jpg" alt="Packed Blackbox Theatre - standing room only. Brandon stands at the podium, the slide says '...but What if AI? MCP Tools'" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-3.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-3.jpg" alt="Brandon addresses the audience. The slide shows MCP tooling concepts." />
@@ -143,7 +190,11 @@ Learning about building MCP tooling to better understand your application was fa
 
 ### Master the Rails Asset Pipeline: Best Practices for Apps & Gems
 Adrian Marin
-> A historical perspective and comparison of different ways to handle JS and assets.
+> I toyed around with asset handling a lot in the last 4 years. I started in the pre-webpacker era, and came all the way to importmaps, esbuild and vite.
+>
+> I ship a gem (Avo), which is used in hundreds of different applications with different asset pipeline configurations, and use several techniques to ship my assets.
+>
+> Now I'm developing a plugin system and have hit all the roadblocks I can hit and have a better understanding of how things work.
 
 I really liked Adrian's talk about the asset pipeline. The historical perspective and comparison of different ways to handle JS and assets was interesting. Especially how to include assets in gems (like Avo)!
 
@@ -166,9 +217,11 @@ I really liked Adrian's talk about the asset pipeline. The historical perspectiv
 
 ### Peace, Love, and CRUD: Finding Calm in the Chaos with Ruby, AI, and a Little Garden Magic
 Tia Anderson
-> An app that brings together journaling, gardening, and recipes to promote peace of mind.
+> This talk matters because we are enduring death by a thousand quiet cuts. The world asks us to go faster while our spirits beg us to slow down. Emotional exhaustion has become the norm, but it doesn't have to be. I built Peace of Mind not just with Rails, but with urgency and heart. As a newer dev and RailsConf Scholar, I've lived the tension between burnout and beauty. Choosing peace...in our work, our lives, and our code creates ripples. It starts with one. One you. One me.
 
-Congratulations to Tia Anderson on her first conference talk!! 🎉 She's been working on pom, an app that brings together journaling, gardening, and recipes to promote peace of mind.
+Congratulations to Tia Anderson on her first conference talk!! 🎉
+Tia and I both did lightning talks at RailsConf, and I was really happy to be able to support and encourage her in her first talk.
+She's been working on pom, an app that brings together journaling, gardening, and recipes to promote peace of mind.
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/peace-love-and-crud-finding-calm-in-the-chaos-with-ruby-ai-and-a-little-garden-magic)*
 
@@ -189,9 +242,10 @@ Congratulations to Tia Anderson on her first conference talk!! 🎉 She's been w
 
 ### Navigating Programming Language Evolution in the AI Era
 José Valim
-> Exploring how programming languages can evolve to better support AI development.
+> As AI becomes increasingly integrated into software development, we find ourselves facing questions about how our programming languages and tools should evolve - questions that don't yet have clear answers. Rather than prescribing solutions, this talk explores the open questions and possible directions that developers and tooling authors should be grappling with.
 
-I was really excited about José Valim's talk because I'd heard good things about Tidewave, but now I'm more excited by some of the suggestions he made. The idea of a runtime API for fetching documentation is fascinating to me!
+I was really excited about José Valim's talk because I'd heard good things about Tidewave, but now I'm more excited by some of the suggestions he made.
+The idea of a runtime API for fetching documentation is fascinating to me!
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/navigating-programming-language-evolution-in-the-ai-era)*
 
@@ -212,9 +266,13 @@ I was really excited about José Valim's talk because I'd heard good things abou
 
 ### RubyLLM: One API, One Person, One Machine for AI
 Carmine Paolino
-> A clean interface for building apps that use AI with Ruby.
+> The Merchants of Complexity have sold the AI world a lie. You need their frameworks. Their SDKs. Their enterprise architectures. Bullshit. AI today is just API calls. That's it. And when the game becomes building products instead of training models, complexity is death and simplicity is everything. Rails proved it.
+>
+> RubyLLM: one API for every model, every vendor. One developer on one machine serving thousands. While Python developers debug their 14-line "Hello World," we're shipping. Ruby's time in AI isn't coming - it's here.
 
-RubyLLM is such an incredibly clean interface for building apps that use AI! I appreciate Carmine Paolino's passion for simple interfaces and the philosophy behind it.
+RubyLLM is such an incredibly clean interface for building apps that use AI!
+I appreciate Carmine Paolino's passion for simple interfaces and the philosophy behind it.
+In many ways, I feel the code could've spoken for itself.
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/keynote-rubyllm-one-api-one-person-one-machine-for-ai)*
 
@@ -235,9 +293,11 @@ RubyLLM is such an incredibly clean interface for building apps that use AI! I a
 
 ### Ruby + AI = Conversation
 Obie Fernandez
-> How our understanding of the software development process needs to evolve with AI.
+> A conversation about the intersection of Ruby and AI technologies, exploring opportunities and challenges.
 
-This talk from Obie Fernandez was a great explainer on how our understanding of the software development process needs to evolve with AI! I loved the point about shared human and AI frustrations. New AI tools and docs are helping both!
+This talk from Obie Fernandez was a great explainer on how our understanding of the software development process needs to evolve with AI!
+I loved the point about shared human and AI frustrations.
+New AI tools and docs are helping both!
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/keynote-ruby-ai-conversation)*
 
@@ -258,9 +318,17 @@ This talk from Obie Fernandez was a great explainer on how our understanding of 
 
 ### From Code to Customers: Technical Marketing for People Who'd Rather Be Building
 Colleen Schnettler
-> Different ways to get people interested in your project.
+> Too many brilliant Rails developers build great products and then quit when customers don't appear.
+>
+> They're missing one skill: marketing. I want to change that.
+>
+> The Rails renaissance is here (huge thanks to Evil Martians!), and I believe helping Rails builders become successful entrepreneurs is crucial for our community's future. This might be the conference's most impactful talk.
+>
+> Why me? I'm a technical founder who's built three startups and now coach technical founders on marketing. I've lived this journey and help others navigate it daily.
 
-Tech is great, but you need people to buy into your product or project! Colleen Schnettler's talk was a great overview of some different ways to get people interested in your project! I really liked the points about post quality and building trust.
+Tech is great, but you need people to buy into your product or project!
+Colleen Schnettler's talk was a great overview of some different ways to get people interested in your project!
+I really liked the points about post quality and building trust.
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/from-code-to-customers-technical-marketing-for-people-who-d-rather-be-building)*
 
@@ -281,7 +349,9 @@ Tech is great, but you need people to buy into your product or project! Colleen 
 
 ### The Role of Software Design in an AI World
 Sarah Mei
-> Addressing AI hesitancy and visions for the future.
+> Ruby devs, like all devs, are nervous about their worth in an AI world. This talk gives them reason to be optimistic, & will start to open for them a vista in which they are enhanced by AI rather than being replaced.
+>
+> For 10+ years I've spoken, written, & thought deeply about software design. For the last 6 months I've worked with code assistants to see what they can do in real Rails codebases - not new projects or toy apps. I've got some initial conclusions that are worth sharing widely.
 
 I'm so excited to see Sarah Mei back on the stage! I really loved how she addressed that some AI hesitancy is based on personal fears expressed as societal fears. I also completely agree with her vision of the future. But I think we'll see more small-scale niche projects in addition to ambitious ones, as one-developer applications become more feasible.
 
@@ -304,15 +374,17 @@ I'm so excited to see Sarah Mei back on the stage! I really loved how she addres
 
 ### The Dynamic Ruby Toolkit
 Noel Rappin
-> A reminder to think about pure Ruby objects and data validation.
+> Ruby rewards thinking about types with a dynamic mindset instead of a static one. In this workshop, we’ll show how use Ruby’s dynamism to your advantage. From the humble comment to runtime type checking, from tests to debugging techniques, from data management to true object-oriented design, this workshop will give you the tools you need to bring out Ruby’s full power.
 
-I went to Noel Rappin's workshop! I liked the reminder to think about pure Ruby objects, and agree that data validation replaces the need for static type checking. I was too shy to take photos in such a cozy space, but thankfully all the workshops were recorded!
+I went to Noel Rappin's workshop!
+I liked the reminder to think about pure Ruby objects, and agree that data validation replaces the need for static type checking.
+I was too shy to take photos in such a cozy space, but thankfully all the workshops were recorded!
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/the-dynamic-ruby-toolkit)*
 
 ### Keynote: Rails X
 Vladimir Dementyev (Palkan)
-> A vision of a future ideal Rails X version.
+> The mysterious Rails X. Stay tuned!
 
 I really loved this one! Vladimir painted a picture of a future ideal Rails X version. My favorite ideas:
 * onboarding vibe-coders
@@ -339,7 +411,7 @@ I also loved how he wove in other talks for the closing keynote.
   </a>
 </div>
 
-There was a fun surprise after the closing keynote, a Rails X cake!!
+There was a fun surprise after this closing keynote, a Rails X cake!!
 
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-cake-1.jpg">
@@ -353,27 +425,15 @@ There was a fun surprise after the closing keynote, a Rails X cake!!
   </a>
 </div>
 
-### Play with Your Code
-Rachael Wright-Munn
-> What can we learn from programming games to improve our developer experience?
-
-I was really nervous about giving this talk. The DX of programming games is a fine topic for a lightning talk, but I wasn't sure how it would translate to a full-length talk (or if anyone would care to see it). I'm incredibly grateful for the warm reception it received and everyone who came up to me afterwards! I liked hearing everyone's takeaways because everyone had something different!
-
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-3.jpg" alt="Chael doing jazz hands about how ANSI color codes match your editor theme. (It makes sense in context, I promise!)" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-1.png">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-1.png" alt="Screenshot of Slack message from Chael sharing slides for 'Play with your Code'." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-2.png">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-2.png" alt="Screenshot of a slide from the closing keynote 'Rails X'. My cloud character is saying 'Joyful developer experiences are about reducing friction' superimposed over an image of a complicated asset pipeline." />
-  </a>
-</div>
-
 ## Community Day
 
-Hack day at AngelList was great! I didn't write a line of code, but that's not everything for a hack day! I had some great conversations, and I'm feeling inspired and recharged going into the Thanksgiving break!
+The final day of the conference was community day, and it featured a swim to Alcatraz, a 10K run, a trip to the Yoda fountain, and a bike ride over the Golden Gate Bridge.
+
+
+However, I chose to hang out at the venue with comfy chairs, air conditioning, and free breakfast-
+Hack day at AngelList!
+I didn't write a single line of code, but hack days are about more than just coding!
+I had some great conversations, and I'm feeling inspired and recharged going into the Thanksgiving break!
 
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/hack-day-1.jpg">
@@ -389,7 +449,8 @@ Hack day at AngelList was great! I didn't write a line of code, but that's not e
 
 ## Ruby Friends
 
-Talks are great, but the real value from conferences comes from the connections we make in downtime. ❤️ Between WNB.rb lunch, the GitButler afterparty, and unofficial get-togethers, I had a fantastic time meeting and chatting with my Ruby friends at SF Ruby!
+Talks are great, but the real value from conferences comes from the connections we make in downtime. ❤️
+Between WNB.rb lunch, the GitButler afterparty, and unofficial get-togethers, I had a fantastic time meeting and chatting with my Ruby friends at SF Ruby!
 
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-1.jpg">
@@ -411,6 +472,9 @@ Talks are great, but the real value from conferences comes from the connections 
 
 ## Final Thoughts
 
-I had such an incredible time at SF Ruby Conference 2025! The venue was stunning, the talks were inspiring, and the community was as warm and welcoming as ever.
+I had such an incredible time at SF Ruby Conference 2025!
+The venue was stunning, the talks were inspiring, and the community was as warm and welcoming as ever.
 
-If you're interested in watching any of these talks, keep an eye on [RubyEvents](https://www.rubyevents.org/events/sfruby-2025/talks) where the recordings will be posted. And if you get a chance to attend a future SF Ruby event, I'd highly recommend it!
+
+If you're interested in watching any of these talks, keep an eye on [RubyEvents](https://www.rubyevents.org/events/sfruby-2025/talks) where the recordings will be posted.
+SF Ruby Conference is still looking for [post-production sponsors](https://sfruby.com/sponsors) who'll be featured in the conference videos.
