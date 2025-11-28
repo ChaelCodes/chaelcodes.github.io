@@ -336,28 +336,27 @@ In many ways, I feel the code could've spoken for itself.
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-1.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-1.jpg" alt="Carmine pointing at a slide demoing RubyLLM.
-
-Track usage with RubyLLM
-```
-response = RubyLLM.chat(model: &quot;gemini-2.5-flash&quot;).ask(&quot;What's the oldest known example of conifers?&quot;)
-response.input_tokens
-# => 12
-response.output_tokens
-# => 1279
-```" />
+      Track usage with RubyLLM
+      ```
+      response = RubyLLM.chat(model: &quot;gemini-2.5-flash&quot;).ask(&quot;What's the oldest known example of conifers?&quot;)
+      response.input_tokens
+      # => 12
+      response.output_tokens
+      # => 1279
+      ```" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-2.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-2.jpg" alt="Carmine points at a slide:
-This is Ruby's time to shine in AI" />
+      This is Ruby's time to shine in AI" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-3.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-3.jpg" alt="Carmine on stage. Slide says: 
-The RubyLLM Philosophy
-1. Simple should be simple, complex should be possible
-2. Models and providers are commodities
-3. Convention over configuration 
-4. Progressive disclosure
-5. One API, for One Person, in One Machine" />
+      The RubyLLM Philosophy
+      1. Simple should be simple, complex should be possible
+      2. Models and providers are commodities
+      3. Convention over configuration
+      4. Progressive disclosure
+      5. One API, for One Person, in One Machine" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-4.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-4.jpg" alt="Carmine staring out at the audience." />
@@ -380,32 +379,29 @@ New AI tools and docs are helping both!
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-2.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-2.jpg" alt="Everything that frustrates you in a codebase also frustrates your coding agents. Just in different ways. 
-
-Humans get confused. AI gets unpredictable. 
-Humans feel overwhelmed. AI loses coherence in its generation. 
-Humans slow down. AI drifts, hallucinates, or contradicts itself." />
+      Humans get confused. AI gets unpredictable.
+      Humans feel overwhelmed. AI loses coherence in its generation.
+      Humans slow down. AI drifts, hallucinates, or contradicts itself." />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-3.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-3.jpg" alt="Obie looks at the slide:
-
-Why does process exist again? 
-Reduce uncertainty and coordinate humans
-- Create predictability in an inherently unpredictable  activity
-- Manage risk (technical, timeline, communication, scope) 
-- Align people so teams don't drift, duplicate work, or miss expectations
-- Ensure feedback happens before mistakes get expensive
-- Provide shared rituals that help groups make decisions and adapt" />
+      Why does process exist again?
+      Reduce uncertainty and coordinate humans
+      - Create predictability in an inherently unpredictable  activity
+      - Manage risk (technical, timeline, communication, scope)
+      - Align people so teams don't drift, duplicate work, or miss expectations
+      - Ensure feedback happens before mistakes get expensive
+      - Provide shared rituals that help groups make decisions and adapt" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-4.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-4.jpg" alt="Obie has updated the previous slide for AI
-
-Why does process exist again? **(2025)**
-Reduce uncertainty and coordinate humans **and their AI agents**
-- Create predictability in an inherently unpredictable  activity
-- Manage risk (technical, timeline, communication, scope) 
-- Align agents so they don't drift, duplicate work, or miss expectations
-- Ensure feedback happens before too many tokens get wasted
-- Provide shared rituals that help groups make decisions and adapt" />
+      Why does process exist again? **(2025)**
+      Reduce uncertainty and coordinate humans **and their AI agents**
+      - Create predictability in an inherently unpredictable  activity
+      - Manage risk (technical, timeline, communication, scope)
+      - Align agents so they don't drift, duplicate work, or miss expectations
+      - Ensure feedback happens before too many tokens get wasted
+      - Provide shared rituals that help groups make decisions and adapt" />
   </a>
 </div>
 
@@ -428,45 +424,36 @@ I really liked the points about post quality and building trust.
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-1.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-1.jpg" alt="Colleen on stage, gesturing, next to a slide showing a marketing cycle. 
-
-There's a title &quot;Marketing 101 by Colleen&quot; and then 6 points in a circle. 
-
-Identify Target Audience
-Who are you selling to, and where do they hang out? 
-
-Create
-Create something for them
-
-Communicate
-Tell them about the thing
-
-Build Trust
-Make the thing useful/interesting/good
-
-Sell Product
-Upsell the product
-
-Do it again
-With a new thing" />
+      There's a title &quot;Marketing 101 by Colleen&quot; and then 6 points in a circle.
+      Identify Target Audience
+      Who are you selling to, and where do they hang out?
+      Create
+      Create something for them
+      Communicate
+      Tell them about the thing
+      Build Trust
+      Make the thing useful/interesting/good
+      Sell Product
+      Upsell the product
+      Do it again
+      With a new thing" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-2.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-2.jpg" alt="Colleen on stage, gesturing to the audience." />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-3.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-3.jpg" alt="Colleen on stage with a camera pointed at her in front of a sign &quot;2025 San Francisco Ruby Conference&quot;. The photo composition is particularly good.
-
-Next to her is a slide on an LED screen: 
-None of this works if you don't
-Know who you're talking to
-Know how you're helping them
-(or if it's obviously AI-generated)" />
+      Next to her is a slide on an LED screen:
+      None of this works if you don't
+      Know who you're talking to
+      Know how you're helping them
+      (or if it's obviously AI-generated)" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-4.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-4.jpg" alt="Colleen on stage with a camera pointed at her in front of a sign &quot;2025 San Francisco Ruby Conference&quot;.
-
-Next to her is a slide on an LED screen: 
-The big three
-Social - Company Blog + Newsletter - YouTube" />
+      Next to her is a slide on an LED screen:
+      The big three
+      Social - Company Blog + Newsletter - YouTube" />
   </a>
 </div>
 
@@ -483,22 +470,20 @@ I'm so excited to see Sarah Mei back on the stage! I really loved how she addres
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-1.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-1.jpg" alt="Sarah Mei looking concerned and the slide next to her reads: 
-
-Our Personal Fears
-- I'll lose my job
-- Software jobs will lose prestige or pay less
-- The hard-won skills I have are suddenly useless
-- The thing I like about this job is going away" />
+      Our Personal Fears
+      - I'll lose my job
+      - Software jobs will lose prestige or pay less
+      - The hard-won skills I have are suddenly useless
+      - The thing I like about this job is going away" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-2.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-2.jpg" alt="Sarah Mei on stage, the slide next to her says: 
-
-Current shift: AI Coding Assistants
-Speculation: 
-- Applications can be written faster
-- More applications will be written
-- More ambitious applications
-- More types of people can write them" />
+      Current shift: AI Coding Assistants
+      Speculation:
+      - Applications can be written faster
+      - More applications will be written
+      - More ambitious applications
+      - More types of people can write them" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-3.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-3.jpg" alt="Sarah Mei laughing at her own joke." />
@@ -535,31 +520,29 @@ I also loved how he wove in other talks for the closing keynote.
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-1.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-1.jpg" alt="Vladimir looks at a slide describing...
-
-Rails X
-Beginner-friendly
-Docs, starter-kits, UI kits, vibe-boarding
-Developer-friendly
-LSPs, guardrails, linters
-AI-native
-AI concepts, augmentation
-Ready to scale
-Maintainable architecture, performance-oriented extensions" />
+      Rails X
+      Beginner-friendly
+      Docs, starter-kits, UI kits, vibe-boarding
+      Developer-friendly
+      LSPs, guardrails, linters
+      AI-native
+      AI concepts, augmentation
+      Ready to scale
+      Maintainable architecture, performance-oriented extensions" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-2.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-2.jpg" alt="Vladimir on stage, looking up at the future." />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-3.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-3.jpg" alt="Vladimir gestures to a list of things Rails should reconsider based on a survey he did. The slide looks like a family feud list. 
-
-RECONSIDER
-JS/CSS MGMT (42)
-CALLBACKS (29)
-ACTIVE RECORD (21)
-ACTION MAILBOX (17)
-IVARS IN VIEWS (11)
-ACTION TEXT (9)
-ACTION PATTERN (CONTROLLERS) (4)" />
+      RECONSIDER
+      JS/CSS MGMT (42)
+      CALLBACKS (29)
+      ACTIVE RECORD (21)
+      ACTION MAILBOX (17)
+      IVARS IN VIEWS (11)
+      ACTION TEXT (9)
+      ACTION PATTERN (CONTROLLERS) (4)" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-4.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-4.jpg" alt="Vladimir next to slide: 
@@ -615,21 +598,18 @@ Between WNB.rb lunch, the GitButler afterparty, and unofficial get-togethers, I 
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-1.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-1.jpg" alt="Photo from WNB.rb lunch.
-
-Photo credit Dalma Boros" />
+      Photo credit Dalma Boros" />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-2.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-2.jpg" alt="Me, laying on two bean bags, chatting with Tia Anderson.
-
-Photo credit Amanda Kinney" />
+      Photo credit Amanda Kinney" />
   </a>
 </div>
 
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-3.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-3.jpg" alt="Photo of people hanging out at a bar, playing pool, in the background, Rubyists are milling about.
-
-Jeremy Smith and Jim Remsik are watching Kasper and Mike Dalton play pool." />
+      Jeremy Smith and Jim Remsik are watching Kasper and Mike Dalton play pool." />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-4.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-4.jpg" alt="PJ Hagerty and Chael getting a selfie at the GitButler party." />
