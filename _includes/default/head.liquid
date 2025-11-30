@@ -38,13 +38,17 @@
   <!-- Simple Jekyll Search 1.10.0 -->
   <script src="{{ '/assets/js/vendor/simple-jekyll-search.min.js' | relative_url }}" type="text/javascript"></script>
 
-  <!-- Have to keep these of main js fails and the navbar doesn't work -->
+  <!-- Have to keep these or main js fails and the navbar doesn't work -->
   <script>
     const cookieName = '';
     const isCookieConsent = '';
     const analyticsName = '';
     const analyticsNameGA4 = '';
   </script>
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
   <!-- seo tags -->
   <meta property="og:image" content="{{ '/' | absolute_url }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
