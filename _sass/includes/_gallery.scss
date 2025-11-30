@@ -1,0 +1,11 @@
+// GLightbox dark mode fixes
+[data-theme="dark"] .gslide-description {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+// Light mode explicit styling (optional, for consistency)
+[data-theme="light"] .gslide-description {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
