@@ -28,7 +28,7 @@ Hello Philadelphia! I was excited to attend RailsConf and see everyone! It was a
     <img src="{{ site.baseurl }}/assets/img/posts/railsconf2025/02-storm-clouds-over-suburban-pen.jpg" alt="Storm clouds over suburban Pennsylvania. Taken from the sky." />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/railsconf2025/03-photo-of-the-delaware-river-wi.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/railsconf2025/03-photo-of-the-delaware-river-wi.jpg" alt="Photo of the Delaware River with the city center in the distant background. The sky is overcast, and where this photo was taken from." />
+    <img src="{{ site.baseurl }}/assets/img/posts/railsconf2025/03-photo-of-the-delaware-river-wi.jpg" alt="Photo of the Delaware River with the city center in the distant background. The sky is overcast. Taken from the plane." />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/railsconf2025/04-the-flight-path-for-the-plane-.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/railsconf2025/04-the-flight-path-for-the-plane-.jpg" alt="The flight path for the plane, a windy sideways M from Atlantic City to Philadelphia." />
@@ -248,7 +248,7 @@ I was starving at the Power Happy Hour. I went straight to a pretzel and a chair
 
 <div style="display: flex;">
   <a href="{{ site.baseurl }}/assets/img/posts/railsconf2025/38-selfie-of-chael-with-12-pretze.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/railsconf2025/38-selfie-of-chael-with-12-pretze.jpg" alt="Selfie of Chael, with 1/2 pretzels on plate, mouth full of food." />
+    <img src="{{ site.baseurl }}/assets/img/posts/railsconf2025/38-selfie-of-chael-with-12-pretze.jpg" alt="Selfie of Chael, with one and a half pretzels on plate, mouth full of food." />
   </a>
   <a href="{{ site.baseurl }}/assets/img/posts/railsconf2025/39-a-nice-collection-of-lovely-pe.jpg">
     <img src="{{ site.baseurl }}/assets/img/posts/railsconf2025/39-a-nice-collection-of-lovely-pe.jpg" alt="A nice collection of lovely people milling about and mingling in the hallway outside the ballrooms." />
