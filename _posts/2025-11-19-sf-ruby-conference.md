@@ -7,6 +7,202 @@ image: /assets/img/posts/sfruby-2025/venue-1.jpg
 layout: post
 thumbnail: /assets/img/posts/sfruby-2025/venue-1.jpg
 excerpt_separator: <!--more-->
+galleries:
+  day_zero:
+    id: day-zero
+    images:
+      - src: /assets/img/posts/sfruby-2025/day0-3.jpg
+        alt: "View of the bay as the plane lands."
+      - src: /assets/img/posts/sfruby-2025/day0-4.jpg
+        alt: "Can't go to California without getting In-N-Out! Max Tiu and I getting burgers and fries at In-N-Out."
+      - src: /assets/img/posts/sfruby-2025/day0-1.jpg
+        alt: "Gnarled tree overhanging a sidewalk along the beach – my walk to the venue."
+      - src: /assets/img/posts/sfruby-2025/day0-2.jpg
+        alt: "A view of the venue from far away. It's a low old building over the water with a sign over the front door that says SF Ruby Conference. The bridge is visible in the background beyond the building."
+  venue:
+    id: venue
+    images:
+      - src: /assets/img/posts/sfruby-2025/venue-1.jpg
+        alt: "Open main stage seating with transparent red chairs. The San Francisco Ruby Conference banner is flanked by two led screens with the logo on them."
+      - src: /assets/img/posts/sfruby-2025/venue-2.jpg
+        alt: "Long modern tables with transparent chairs in rows for the workshop studio."
+      - src: /assets/img/posts/sfruby-2025/venue-3.jpg
+        alt: "A moody theater with the walls painted black and the wall has a video of the SF Ruby Conference logo projected on it."
+  zero_gravity_lounge:
+    id: zero-gravity-lounge
+    images:
+      - src: /assets/img/posts/sfruby-2025/lounge-1.jpg
+        alt: "Evil Martians socks hidden in the end tables."
+      - src: /assets/img/posts/sfruby-2025/lounge-2.jpg
+        alt: "A dim room with red lighting and modern curved angular couches. Imagine an octagon but with 3 segments missing."
+      - src: /assets/img/posts/sfruby-2025/lounge-3.jpg
+        alt: "A sign saying 'ATTENTION ZERO GRAVITY' painted on the wall, and a flashing alarm light above the door."
+  ruby_embassy:
+    id: ruby-embassy
+    images:
+      - src: /assets/img/posts/sfruby-2025/ruby-passport-1.jpg
+        alt: "Colorful flag pennants adorn the wall, and props cover the table. The photographer stands by, waiting for the next Rubyist."
+      - src: /assets/img/posts/sfruby-2025/ruby-passport-2.jpg
+        alt: "Colorful flag pennants adorn the wall as two volunteers help someone with their first Ruby Passport."
+      - src: /assets/img/posts/sfruby-2025/ruby-passport-3.png
+        alt: "A screenshot from RubyEvents.org of Chael's profile. There are now 3 icons next to her name - verified, Ruby Passport, and contributor."
+      - src: /assets/img/posts/sfruby-2025/ruby-passport-4.jpg
+        alt: "An open Ruby Passport in front of a window overlooking the tarmac at SFO. An attempt has been made to make block letters and emulate a real passport, but it has failed. The ink is smudged and dates have been scratched out and updated. The photo is a stiff, dead-eyed smileless stare like a real passport. First name: RACHAEL Last name: WRIGHT-MUNN Date of birth: (left blank) Nationality: UNITED STATES Signature: (squiggly ChaelCodes signature) Date and event of issue: 19 Nov 2025 SF Ruby Date and version when you started using Ruby: 10 Jul 2014, 2.1 Date and version when you started using Rails: 03 Mar 2015, 4.2.0"
+  irina_welcome:
+    id: irina-welcome
+    images:
+      - src: /assets/img/posts/sfruby-2025/irina-welcome-1.jpg
+        alt: "Irina speaking on stage, gesturing with a serious expression in an iconic orange vinyl off-shoulder dress with a white mesh long sleeve shirt under it."
+      - src: /assets/img/posts/sfruby-2025/irina-welcome-3.jpg
+        alt: "Irina on stage flanked by slides that say 'How to build the future in Ruby'."
+      - src: /assets/img/posts/sfruby-2025/irina-welcome-4.jpg
+        alt: "Irina on stage, flanked by screens that say 'Welcome to' and the SF Ruby Conference logo."
+  marco_roth_talk:
+    id: marco-roth-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/reactionview-1.jpg
+        alt: "Marco on stage looking serious."
+      - src: /assets/img/posts/sfruby-2025/reactionview-3.jpg
+        alt: "Marco on stage. The slide 'Herb to ReActionView: A New Foundation for the View Layer'"
+      - src: /assets/img/posts/sfruby-2025/reactionview-4.jpg
+        alt: "Marco on stage next to a slide 'Ruby is elegant. Ruby is expressive. Ruby is a joy.'"
+  rachael_wright_munn_talk:
+    id: rachael-wright-munn-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/chael-talk-3.jpg
+        alt: "Chael doing jazz hands about how ANSI color codes match your editor theme. (It makes sense in context, I promise!)"
+      - src: /assets/img/posts/sfruby-2025/chael-talk-1.png
+        alt: "Screenshot of Slack message from Chael. Slides are here for 'Play with your Code'. There'll be a companion blog post soon! If you have questions, feel free to drop them in a thread! (You do not need to check the slides first to ask a question.) There are 8 tada reactions, and 2 each of the hearts purple, green, and blue, a reference to a joke in the talk."
+      - src: /assets/img/posts/sfruby-2025/chael-talk-2.png
+        alt: "Screenshot of a slide from the closing keynote 'Rails X'. My cloud character is saying 'Joyful developer experiences are about reducing friction' superimposed over an image of a complicated asset pipeline."
+  brandon_weaver_talk:
+    id: brandon-weaver-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/mcp-tooling-1.jpg
+        alt: "Brandon addressing the audience"
+      - src: /assets/img/posts/sfruby-2025/mcp-tooling-2.jpg
+        alt: "Packed Blackbox Theatre - standing room only. Brandon stands at the podium, the slide says '...but What if AI? MCP Tools'"
+      - src: /assets/img/posts/sfruby-2025/mcp-tooling-3.jpg
+        alt: "Brandon addresses the audience. The slide is slightly washed out from sunlight. Macro Tools QueryPackwerkTool Comprehensive Packwerk query with multiple query types: - packages - List all packs - violations - Basic violation counts - ownership - Who owns what - patterns - Most violated code with usage patterns - consumers - Who uses a pack - producers - What a pack uses - graph - Full architecture analysis (dependencies, circular deps, team coupling) - suggestions - Refactoring ideas"
+      - src: /assets/img/posts/sfruby-2025/mcp-tooling-4.jpg
+        alt: "Brandon addresses the crowd and slide (slightly washed out from sunlight) says: The Actual Value - 'What does my team own?' -> 2 seconds instead of 20 minutes - 'Where is this used?' -> instant instead of grepping - 'What breaks if I change this?' -> analysis instead of guessing - 'What's blocking the sprint?' -> instant instead of opening Jira - 'Find the deployment docs?' -> instant instead of searching confluence For onboarding: Instead of 3 months to understand the codebase + tools + processes, maybe 3 weeks. For daily work: Less context switching between tools."
+  adrian_marin_talk:
+    id: adrian-marin-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/asset-pipeline-1.jpg
+        alt: "Adrian smiling and laughing on stage."
+      - src: /assets/img/posts/sfruby-2025/asset-pipeline-2.jpg
+        alt: "Adrian on stage emoting with the audience."
+      - src: /assets/img/posts/sfruby-2025/asset-pipeline-3.jpg
+        alt: "Adrian on stage next to a slide: What did we learn? - The asset pipeline is powerful - importmaps is low-hanging fruit - esbuild is powerful and easy to integrate - we can create gems with perfectly delivered assets"
+      - src: /assets/img/posts/sfruby-2025/asset-pipeline-4.jpg
+        alt: "Adrian introduces a summary of the talk. Summary 1. What are assets? 2. How it was in the ol' days 3. Why do we have an asset pipeline? 4. Where are we now 5. How can we leverage it to build effective Rails plugins"
+  tia_anderson_talk:
+    id: tia-anderson-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/tia-talk-1.jpg
+        alt: "Tia gesturing to the audience."
+      - src: /assets/img/posts/sfruby-2025/tia-talk-2.jpg
+        alt: "Tia standing beneath her slide: Peace, Love, and CRUD: Finding Calm in the Chaos–With Ruby, AI, and a Little Garden Magic Tia Anderson - Newish Rubyist and creator of: pom"
+      - src: /assets/img/posts/sfruby-2025/tia-talk-3.jpg
+        alt: "Tia smiling and gesturing behind the podium"
+      - src: /assets/img/posts/sfruby-2025/tia-talk-4.jpg
+        alt: "Tia beneath a slide showing her app - pom"
+  jose_valim_talk:
+    id: jose-valim-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/jose-valim-1.jpg
+        alt: "José pointing at the slides, face serious."
+      - src: /assets/img/posts/sfruby-2025/jose-valim-2.jpg
+        alt: "José addressing the crowd, the slide next to him says: Integrate coding agents into what you are building - Writing scripts, libraries, frameworks => EDITOR - Building web applications => BROWSER - Running data analysis and reports => NOTEBOOKS - Crafting a game => GAME EDITOR"
+      - src: /assets/img/posts/sfruby-2025/jose-valim-3.jpg
+        alt: "José addresses the audience, next to him is the slide: Structured templates - ERB builds HTML using string interpolation - No structure, no validations - HERB(HTML+ERB) to the rescue?"
+      - src: /assets/img/posts/sfruby-2025/jose-valim-4.jpg
+        alt: "Unified documentation - Hard to access, no metaprogramming, no doctests - Proposal: runtime API to fetch documentation (see Python, Elixir, Clojure, PHP) - Proposal: unified documentation website"
+  carmine_paolino_talk:
+    id: carmine-paolino-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/rubyllm-1.jpg
+        alt: "Carmine pointing at a slide demoing RubyLLM. Track usage with RubyLLM ``` response = RubyLLM.chat(model: 'gemini-2.5-flash').ask('What's the oldest known example of conifers?') response.input_tokens # => 12 response.output_tokens # => 1279 ```"
+      - src: /assets/img/posts/sfruby-2025/rubyllm-2.jpg
+        alt: "Carmine points at a slide: This is Ruby's time to shine in AI"
+      - src: /assets/img/posts/sfruby-2025/rubyllm-3.jpg
+        alt: "Carmine on stage. Slide says: The RubyLLM Philosophy 1. Simple should be simple, complex should be possible 2. Models and providers are commodities 3. Convention over configuration 4. Progressive disclosure 5. One API, for One Person, in One Machine"
+      - src: /assets/img/posts/sfruby-2025/rubyllm-4.jpg
+        alt: "Carmine staring out at the audience."
+  obie_fernandez_talk:
+    id: obie-fernandez-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/obie-ai-1.jpg
+        alt: "Obie stands on stage, pointing at the audience. He's wearing a black shirt with the words 'dangerously skip permissions' printed in large letters on it."
+      - src: /assets/img/posts/sfruby-2025/obie-ai-2.jpg
+        alt: "Everything that frustrates you in a codebase also frustrates your coding agents. Just in different ways. Humans get confused. AI gets unpredictable. Humans feel overwhelmed. AI loses coherence in its generation. Humans slow down. AI drifts, hallucinates, or contradicts itself."
+      - src: /assets/img/posts/sfruby-2025/obie-ai-3.jpg
+        alt: "Obie looks at the slide: Why does process exist again? Reduce uncertainty and coordinate humans - Create predictability in an inherently unpredictable activity - Manage risk (technical, timeline, communication, scope) - Align people so teams don't drift, duplicate work, or miss expectations - Ensure feedback happens before mistakes get expensive - Provide shared rituals that help groups make decisions and adapt"
+      - src: /assets/img/posts/sfruby-2025/obie-ai-4.jpg
+        alt: "Obie has updated the previous slide for AI Why does process exist again? **(2025)** Reduce uncertainty and coordinate humans **and their AI agents** - Create predictability in an inherently unpredictable activity - Manage risk (technical, timeline, communication, scope) - Align agents so they don't drift, duplicate work, or miss expectations - Ensure feedback happens before too many tokens get wasted - Provide shared rituals that help groups make decisions and adapt"
+  colleen_schnettler_talk:
+    id: colleen-schnettler-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/colleen-marketing-1.jpg
+        alt: "Colleen on stage, gesturing, next to a slide showing a marketing cycle. There's a title 'Marketing 101 by Colleen' and then 6 points in a circle. Identify Target Audience Who are you selling to, and where do they hang out? Create Create something for them Communicate Tell them about the thing Build Trust Make the thing useful/interesting/good Sell Product Upsell the product Do it again With a new thing"
+      - src: /assets/img/posts/sfruby-2025/colleen-marketing-2.jpg
+        alt: "Colleen on stage, gesturing to the audience."
+      - src: /assets/img/posts/sfruby-2025/colleen-marketing-3.jpg
+        alt: "Colleen on stage with a camera pointed at her in front of a sign '2025 San Francisco Ruby Conference'. The photo composition is particularly good. Next to her is a slide on an LED screen: None of this works if you don't Know who you're talking to Know how you're helping them (or if it's obviously AI-generated)"
+      - src: /assets/img/posts/sfruby-2025/colleen-marketing-4.jpg
+        alt: "Colleen on stage with a camera pointed at her in front of a sign '2025 San Francisco Ruby Conference'. Next to her is a slide on an LED screen: The big three Social - Company Blog + Newsletter - YouTube"
+  sarah_mei_talk:
+    id: sarah-mei-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/sarah-mei-1.jpg
+        alt: "Sarah Mei looking concerned and the slide next to her reads: Our Personal Fears - I'll lose my job - Software jobs will lose prestige or pay less - The hard-won skills I have are suddenly useless - The thing I like about this job is going away"
+      - src: /assets/img/posts/sfruby-2025/sarah-mei-2.jpg
+        alt: "Sarah Mei on stage, the slide next to her says: Current shift: AI Coding Assistants Speculation: - Applications can be written faster - More applications will be written - More ambitious applications - More types of people can write them"
+      - src: /assets/img/posts/sfruby-2025/sarah-mei-3.jpg
+        alt: "Sarah Mei laughing at her own joke."
+      - src: /assets/img/posts/sfruby-2025/sarah-mei-4.jpg
+        alt: "Sarah Mei on stage - the slide next to her says 'The Panic Discourse' and features a bunch of headlines panicking about AI. My favorites are 'The AI coding apocalypse' and ''It's a bloodbath out there': Tech workers forced to take 'survival jobs' as AI cuts swath through workforce'."
+  vladimir_dementyev_talk:
+    id: vladimir-dementyev-talk
+    images:
+      - src: /assets/img/posts/sfruby-2025/rails-x-1.jpg
+        alt: "Vladimir looks at a slide describing... Rails X Beginner-friendly Docs, starter-kits, UI kits, vibe-boarding Developer-friendly LSPs, guardrails, linters AI-native AI concepts, augmentation Ready to scale Maintainable architecture, performance-oriented extensions"
+      - src: /assets/img/posts/sfruby-2025/rails-x-2.jpg
+        alt: "Vladimir on stage, looking up at the future."
+      - src: /assets/img/posts/sfruby-2025/rails-x-3.jpg
+        alt: "Vladimir gestures to a list of things Rails should reconsider based on a survey he did. The slide looks like a family feud list. RECONSIDER JS/CSS MGMT (42) CALLBACKS (29) ACTIVE RECORD (21) ACTION MAILBOX (17) IVARS IN VIEWS (11) ACTION TEXT (9) ACTION PATTERN (CONTROLLERS) (4)"
+      - src: /assets/img/posts/sfruby-2025/rails-x-4.jpg
+        alt: "Vladimir next to slide: Predictions DX is more important than ever AI-readiness is the must Hotwire hits its limits"
+  rails_x_cake:
+    id: rails-x-cake
+    images:
+      - src: /assets/img/posts/sfruby-2025/rails-x-cake-1.jpg
+        alt: "Vladimir on stage next to the opening slide which says 'Rails' and then has a big X railroad crossing."
+      - src: /assets/img/posts/sfruby-2025/rails-x-cake-2.jpg
+        alt: "Brittany Martin, Amanda Kinney, Gary Tou, and Irina Nazarova standing behind a half-eaten cake that's half-vanilla and half-chocolate."
+      - src: /assets/img/posts/sfruby-2025/rails-x-cake-3.jpg
+        alt: "A cake with railroad tracks and a fondant train on it in the entrance."
+  hack_day:
+    id: hack-day
+    images:
+      - src: /assets/img/posts/sfruby-2025/hack-day-1.jpg
+        alt: "Trendy office space with comfy couches and chairs and a few people milling about."
+      - src: /assets/img/posts/sfruby-2025/hack-day-2.jpg
+        alt: "Food and coffee sitting on a table. Breakfast is breakfast burritos, pastries, and fruit."
+      - src: /assets/img/posts/sfruby-2025/hack-day-3.jpg
+        alt: "Irina making opening announcements to a group of people."
+  ruby_friends:
+    id: ruby-friends
+    images:
+      - src: /assets/img/posts/sfruby-2025/ruby-friends-1.jpg
+        alt: "Photo from WNB.rb lunch. Photo credit Dalma Boros"
+      - src: /assets/img/posts/sfruby-2025/ruby-friends-2.jpg
+        alt: "Me, laying on two bean bags, chatting with Tia Anderson. Photo credit Amanda Kinney"
+      - src: /assets/img/posts/sfruby-2025/ruby-friends-3.jpg
+        alt: "Photo of people hanging out at a bar, playing pool, in the background, Rubyists are milling about. Jeremy Smith and Jim Remsik are watching Kasper and Mike Dalton play pool."
+      - src: /assets/img/posts/sfruby-2025/ruby-friends-4.jpg
+        alt: "PJ Hagerty and Chael getting a selfie at the GitButler party."
 ---
 
 [SF Ruby Conference 2025](https://sfruby.com) was a three-day Ruby conference that took place in San Francisco, California on November 19-21, 2025. It was hosted at historic Fort Mason right on the water with views of the Golden Gate Bridge. This conference brought together Rubyists for two days of talks on AI, Rails, and the future of Ruby! It was amazing! Fantastic talks, great space, great afterparties, and a dedicated day for community events on the final day.
@@ -20,53 +216,18 @@ excerpt_separator: <!--more-->
 
 On Day 0, I flew into SF, had jetlagged lunch with Max, and walked over to the venue for tech check and speaker dinner.
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/day0-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/day0-3.jpg" alt="View of the bay as the plane lands." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/day0-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/day0-4.jpg" alt="Can't go to California without getting In-N-Out!
-
-Max Tiu and I getting burgers and fries at In-N-Out." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/day0-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/day0-1.jpg" alt="Gnarled tree overhanging a sidewalk along the beach – my walk to the venue." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/day0-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/day0-2.jpg" alt="A view of the venue from far away. It's a low old building over the water with a sign over the front door that says SF Ruby Conference. The bridge is visible in the background beyond the building." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.day_zero %}
 
 ### The Venue
 This venue is absolutely gorgeous! I'm loving the transparent chairs and conference spaces!
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/venue-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/venue-1.jpg" alt="Open main stage seating with transparent red chairs. The San Francisco Ruby Conference banner is flanked by two led screens with the logo on them." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/venue-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/venue-2.jpg" alt="Long modern tables with transparent chairs in rows for the workshop studio." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/venue-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/venue-3.jpg" alt="A moody theater with the walls painted black and the wall has a video of the SF Ruby Conference logo projected on it." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.venue %}
 
 ### Zero Gravity Lounge
 
 I love how cool and zen the zero gravity lounge is. This was one of my favorite places to hide and be comfy.
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/lounge-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/lounge-1.jpg" alt="Evil Martians socks hidden in the end tables." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/lounge-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/lounge-2.jpg" alt="A dim room with red lighting and modern curved angular couches. Imagine an octagon but with 3 segments missing." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/lounge-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/lounge-3.jpg" alt="A sign saying 'ATTENTION ZERO GRAVITY' painted on the wall, and a flashing alarm light above the door." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.zero_gravity_lounge %}
 
 ### Ruby Embassy
 
@@ -76,29 +237,7 @@ The passport has an NFC tag that'll open your RubyEvents profile.
 It's such a fun way to share which events you've been to.
 Thank you to SF Ruby and the Ruby Passport team for organizing an embassy!
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-1.jpg" alt="Colorful flag pennants adorn the wall, and props cover the table. The photographer stands by, waiting for the next Rubyist." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-2.jpg" alt="Colorful flag pennants adorn the wall as two volunteers help someone with their first Ruby Passport." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-3.png">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-3.png" alt="A screenshot from RubyEvents.org of Chael's profile. There are now 3 icons next to her name - verified, Ruby Passport, and contributor." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-passport-4.jpg" alt="An open Ruby Passport in front of a window overlooking the tarmac at SFO. An attempt has been made to make block letters and emulate a real passport, but it has failed. The ink is smudged and dates have been scratched out and updated. The photo is a stiff, dead-eyed smileless stare like a real passport.
-    First name: RACHAEL
-    Last name: WRIGHT-MUNN
-    Date of birth: (left blank) 
-    Nationality: UNITED STATES
-    Signature: (squiggly ChaelCodes signature) 
-    Date and event of issue: 19 Nov 2025 SF Ruby
-    Date and version when you started using Ruby: 10 Jul 2014, 2.1
-    Date and version when you started using Rails: 03 Mar 2015, 4.2.0
-    " />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.ruby_embassy %}
 
 ## The Talks
 
@@ -108,17 +247,7 @@ The line-up for SF Ruby Conference was incredible! A mix of AI, Ruby, and commun
 
 To start off the conference Irina Nazarova thanked everyone who was involved in making this conference happen and reminded us why we're here–to learn how to build the future in Ruby!
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-1.jpg" alt="Irina speaking on stage, gesturing with a serious expression in an iconic orange vinyl off-shoulder dress with a white mesh long sleeve shirt under it." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-3.jpg" alt="Irina on stage flanked by slides that say &quot;How to build the future in Ruby&quot;." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/irina-welcome-4.jpg" alt="Irina on stage, flanked by screens that say &quot;Welcome to&quot; and the SF Ruby Conference logo." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.irina_welcome %}
 
 ### Herb to ReActionView: A New Foundation for the View Layer
 Marco Roth
@@ -130,17 +259,7 @@ Even as I was getting my mic, I was on tiptoe trying to see what the latest is.
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/keynote-herb-to-reactionview-a-new-foundation-for-the-view-layer)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/reactionview-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/reactionview-1.jpg" alt="Marco on stage looking serious." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/reactionview-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/reactionview-3.jpg" alt="Marco on stage. The slide &quot;Herb to ReActionView: A New Foundation for the View Layer&quot;" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/reactionview-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/reactionview-4.jpg" alt="Marco on stage next to a slide &quot;Ruby is elegant. Ruby is expressive. Ruby is a joy.&quot;" />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.marco_roth_talk %}
 
 ### Play with Your Code
 Rachael Wright-Munn
@@ -153,19 +272,7 @@ I liked hearing everyone's takeaways because everyone had something different!
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/play-with-your-code-san-francisco-ruby-conference-2025)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-3.jpg" alt="Chael doing jazz hands about how ANSI color codes match your editor theme. (It makes sense in context, I promise!)" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-1.png">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-1.png" alt="Screenshot of Slack message from Chael.
-    Slides are here for &quot;Play with your Code&quot;. There'll be a companion blog post soon! If you have questions, feel free to drop them in a thread! (You do not need to check the slides first to ask a question.)
-    There are 8 tada reactions, and 2 each of the hearts purple, green, and blue, a reference to a joke in the talk." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-2.png">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/chael-talk-2.png" alt="Screenshot of a slide from the closing keynote 'Rails X'. My cloud character is saying 'Joyful developer experiences are about reducing friction' superimposed over an image of a complicated asset pipeline." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.rachael_wright_munn_talk %}
 
 ### Rails Expertise Distilled: AI Agents That Get Your Monolith
 Brandon Weaver
@@ -175,43 +282,7 @@ Learning about building MCP tooling to better understand your application was fa
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/rails-expertise-distilled-ai-agents-that-get-your-monolith)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-1.jpg" alt="Brandon addressing the audience" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-2.jpg" alt="Packed Blackbox Theatre - standing room only. Brandon stands at the podium, the slide says &quot;...but What if AI? MCP Tools&quot;" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-3.jpg" alt="Brandon addresses the audience. The slide is slightly washed out from sunlight. 
-
-Macro Tools
-QueryPackwerkTool
-Comprehensive Packwerk query with multiple query types: 
-- packages - List all packs
-- violations - Basic violation counts
-- ownership - Who owns what
-- patterns - Most violated code with usage patterns
-- consumers - Who uses a pack
-- producers - What a pack uses
-- graph - Full architecture analysis (dependencies, circular deps, team coupling)
-- suggestions - Refactoring ideas" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/mcp-tooling-4.jpg" alt="Brandon addresses the crowd and slide (slightly washed out from sunlight) says: 
-
-The Actual Value
-- &quot;What does my team own?&quot; -> 2 seconds instead of 20 minutes 
-- &quot;Where is this used?&quot; -> instant instead of grepping
-- &quot;What breaks if I change this?&quot; -> analysis instead of guessing
-- &quot;What's blocking the sprint?&quot; -> instant instead of opening Jira
-- &quot;Find the deployment docs?&quot; -> instant instead of searching confluence
-
-For onboarding: Instead of 3 months to understand the codebase + tools + processes, maybe 3 weeks. 
-
-For daily work: Less context switching between tools." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.brandon_weaver_talk %}
 
 ### Master the Rails Asset Pipeline: Best Practices for Apps & Gems
 Adrian Marin
@@ -225,33 +296,7 @@ I really liked Adrian's talk about the asset pipeline. The historical perspectiv
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/master-the-rails-asset-pipeline-best-practices-for-apps-gems-san-francisco-ruby-conference-2025)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/asset-pipeline-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/asset-pipeline-1.jpg" alt="Adrian smiling and laughing on stage." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/asset-pipeline-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/asset-pipeline-2.jpg" alt="Adrian on stage emoting with the audience." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/asset-pipeline-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/asset-pipeline-3.jpg" alt="Adrian on stage next to a slide:
-
-What did we learn?
-- The asset pipeline is powerful
-- importmaps is low-hanging fruit
-- esbuild is powerful and easy to integrate
-- we can create gems with perfectly delivered assets" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/asset-pipeline-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/asset-pipeline-4.jpg" alt="Adrian introduces a summary of the talk.
-
-Summary
-1. What are assets? 
-2. How it was in the ol' days
-3. Why do we have an asset pipeline? 
-4. Where are we now
-5. How can we leverage it to build effective Rails plugins" />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.adrian_marin_talk %}
 
 ### Peace, Love, and CRUD: Finding Calm in the Chaos with Ruby, AI, and a Little Garden Magic
 Tia Anderson
@@ -263,25 +308,7 @@ She's been working on pom, an app that brings together journaling, gardening, an
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/peace-love-and-crud-finding-calm-in-the-chaos-with-ruby-ai-and-a-little-garden-magic)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/tia-talk-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/tia-talk-1.jpg" alt="Tia gesturing to the audience." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/tia-talk-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/tia-talk-2.jpg" alt="Tia standing beneath her slide: 
-
-Peace, Love, and CRUD: 
-Finding Calm in the Chaos–With Ruby, AI, and a Little Garden Magic
-
-Tia Anderson - Newish Rubyist and creator of: pom" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/tia-talk-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/tia-talk-3.jpg" alt="Tia smiling and gesturing behind the podium" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/tia-talk-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/tia-talk-4.jpg" alt="Tia beneath a slide showing her app - pom" />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.tia_anderson_talk %}
 
 ### Navigating Programming Language Evolution in the AI Era
 José Valim
@@ -292,34 +319,7 @@ The idea of a runtime API for fetching documentation is fascinating to me!
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/navigating-programming-language-evolution-in-the-ai-era)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/jose-valim-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/jose-valim-1.jpg" alt="José pointing at the slides, face serious." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/jose-valim-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/jose-valim-2.jpg" alt="José addressing the crowd, the slide next to him says: 
-
-Integrate coding agents into what you are building
-- Writing scripts, libraries, frameworks => EDITOR
-- Building web applications => BROWSER
-- Running data analysis and reports => NOTEBOOKS
-- Crafting a game => GAME EDITOR" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/jose-valim-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/jose-valim-3.jpg" alt="José addresses the audience, next to him is the slide:
-
-Structured templates
-- ERB builds HTML using string interpolation
-- No structure, no validations
-- HERB(HTML+ERB) to the rescue?" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/jose-valim-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/jose-valim-4.jpg" alt="Unified documentation
-- Hard to access, no metaprogramming, no doctests
-- Proposal: runtime API to fetch documentation (see Python, Elixir, Clojure, PHP)
-- Proposal: unified documentation website" />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.jose_valim_talk %}
 
 ### RubyLLM: One API, One Person, One Machine for AI
 Carmine Paolino
@@ -333,35 +333,7 @@ In many ways, I feel the code could've spoken for itself.
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/keynote-rubyllm-one-api-one-person-one-machine-for-ai)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-1.jpg" alt="Carmine pointing at a slide demoing RubyLLM.
-      Track usage with RubyLLM
-      ```
-      response = RubyLLM.chat(model: &quot;gemini-2.5-flash&quot;).ask(&quot;What's the oldest known example of conifers?&quot;)
-      response.input_tokens
-      # => 12
-      response.output_tokens
-      # => 1279
-      ```" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-2.jpg" alt="Carmine points at a slide:
-      This is Ruby's time to shine in AI" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-3.jpg" alt="Carmine on stage. Slide says: 
-      The RubyLLM Philosophy
-      1. Simple should be simple, complex should be possible
-      2. Models and providers are commodities
-      3. Convention over configuration
-      4. Progressive disclosure
-      5. One API, for One Person, in One Machine" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rubyllm-4.jpg" alt="Carmine staring out at the audience." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.carmine_paolino_talk %}
 
 ### Ruby + AI = Conversation
 Obie Fernandez
@@ -373,37 +345,7 @@ New AI tools and docs are helping both!
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/keynote-ruby-ai-conversation)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-1.jpg" alt="Obie stands on stage, pointing at the audience. He's wearing a black shirt with the words 'dangerously skip permissions' printed in large letters on it." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-2.jpg" alt="Everything that frustrates you in a codebase also frustrates your coding agents. Just in different ways. 
-      Humans get confused. AI gets unpredictable.
-      Humans feel overwhelmed. AI loses coherence in its generation.
-      Humans slow down. AI drifts, hallucinates, or contradicts itself." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-3.jpg" alt="Obie looks at the slide:
-      Why does process exist again?
-      Reduce uncertainty and coordinate humans
-      - Create predictability in an inherently unpredictable  activity
-      - Manage risk (technical, timeline, communication, scope)
-      - Align people so teams don't drift, duplicate work, or miss expectations
-      - Ensure feedback happens before mistakes get expensive
-      - Provide shared rituals that help groups make decisions and adapt" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/obie-ai-4.jpg" alt="Obie has updated the previous slide for AI
-      Why does process exist again? **(2025)**
-      Reduce uncertainty and coordinate humans **and their AI agents**
-      - Create predictability in an inherently unpredictable  activity
-      - Manage risk (technical, timeline, communication, scope)
-      - Align agents so they don't drift, duplicate work, or miss expectations
-      - Ensure feedback happens before too many tokens get wasted
-      - Provide shared rituals that help groups make decisions and adapt" />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.obie_fernandez_talk %}
 
 ### From Code to Customers: Technical Marketing for People Who'd Rather Be Building
 Colleen Schnettler
@@ -421,41 +363,7 @@ I really liked the points about post quality and building trust.
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/from-code-to-customers-technical-marketing-for-people-who-d-rather-be-building)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-1.jpg" alt="Colleen on stage, gesturing, next to a slide showing a marketing cycle. 
-      There's a title &quot;Marketing 101 by Colleen&quot; and then 6 points in a circle.
-      Identify Target Audience
-      Who are you selling to, and where do they hang out?
-      Create
-      Create something for them
-      Communicate
-      Tell them about the thing
-      Build Trust
-      Make the thing useful/interesting/good
-      Sell Product
-      Upsell the product
-      Do it again
-      With a new thing" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-2.jpg" alt="Colleen on stage, gesturing to the audience." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-3.jpg" alt="Colleen on stage with a camera pointed at her in front of a sign &quot;2025 San Francisco Ruby Conference&quot;. The photo composition is particularly good.
-      Next to her is a slide on an LED screen:
-      None of this works if you don't
-      Know who you're talking to
-      Know how you're helping them
-      (or if it's obviously AI-generated)" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/colleen-marketing-4.jpg" alt="Colleen on stage with a camera pointed at her in front of a sign &quot;2025 San Francisco Ruby Conference&quot;.
-      Next to her is a slide on an LED screen:
-      The big three
-      Social - Company Blog + Newsletter - YouTube" />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.colleen_schnettler_talk %}
 
 ### The Role of Software Design in an AI World
 Sarah Mei
@@ -467,41 +375,7 @@ I'm so excited to see Sarah Mei back on the stage! I really loved how she addres
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/the-role-of-software-design-in-an-ai-world)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-1.jpg" alt="Sarah Mei looking concerned and the slide next to her reads: 
-      Our Personal Fears
-      - I'll lose my job
-      - Software jobs will lose prestige or pay less
-      - The hard-won skills I have are suddenly useless
-      - The thing I like about this job is going away" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-2.jpg" alt="Sarah Mei on stage, the slide next to her says: 
-      Current shift: AI Coding Assistants
-      Speculation:
-      - Applications can be written faster
-      - More applications will be written
-      - More ambitious applications
-      - More types of people can write them" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-3.jpg" alt="Sarah Mei laughing at her own joke." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/sarah-mei-4.jpg" alt="Sarah Mei on stage - the slide next to her says &quot;The Panic Discourse&quot; and features a bunch of headlines panicking about AI. My favorites are &quot;The AI coding apocalypse&quot; and &quot;'It's a bloodbath out there': Tech workers forced to take 'survival jobs' as AI cuts swath through workforce&quot;." />
-  </a>
-</div>
-
-### The Dynamic Ruby Toolkit
-Noel Rappin
-> Ruby rewards thinking about types with a dynamic mindset instead of a static one. In this workshop, we’ll show how use Ruby’s dynamism to your advantage. From the humble comment to runtime type checking, from tests to debugging techniques, from data management to true object-oriented design, this workshop will give you the tools you need to bring out Ruby’s full power.
-
-I went to Noel Rappin's workshop!
-I liked the reminder to think about pure Ruby objects, and agree that data validation replaces the need for static type checking.
-I was too shy to take photos in such a cozy space, but thankfully all the workshops were recorded!
-
-*📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/the-dynamic-ruby-toolkit)*
+{% include gallery.html gallery=page.galleries.sarah_mei_talk %}
 
 ### Keynote: Rails X
 Vladimir Dementyev (Palkan)
@@ -517,56 +391,11 @@ I also loved how he wove in other talks for the closing keynote.
 
 *📺 Recording will be available at [RubyEvents](https://www.rubyevents.org/talks/keynote-rails-x)*
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-1.jpg" alt="Vladimir looks at a slide describing...
-      Rails X
-      Beginner-friendly
-      Docs, starter-kits, UI kits, vibe-boarding
-      Developer-friendly
-      LSPs, guardrails, linters
-      AI-native
-      AI concepts, augmentation
-      Ready to scale
-      Maintainable architecture, performance-oriented extensions" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-2.jpg" alt="Vladimir on stage, looking up at the future." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-3.jpg" alt="Vladimir gestures to a list of things Rails should reconsider based on a survey he did. The slide looks like a family feud list. 
-      RECONSIDER
-      JS/CSS MGMT (42)
-      CALLBACKS (29)
-      ACTIVE RECORD (21)
-      ACTION MAILBOX (17)
-      IVARS IN VIEWS (11)
-      ACTION TEXT (9)
-      ACTION PATTERN (CONTROLLERS) (4)" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-4.jpg" alt="Vladimir next to slide: 
-
-Predictions
-DX is more important than ever
-AI-readiness is the must
-Hotwire hits its limits" />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.vladimir_dementyev_talk %}
 
 There was a fun surprise after this closing keynote, a Rails X cake!!
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-cake-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-cake-1.jpg" alt="Vladimir on stage next to the opening slide which says &quot;Rails&quot; and then has a big X railroad crossing." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-cake-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-cake-2.jpg" alt="Brittany Martin, Amanda Kinney, Gary Tou, and Irina Nazarova standing behind a half-eaten cake that's half-vanilla and half-chocolate." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-cake-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/rails-x-cake-3.jpg" alt="A cake with railroad tracks and a fondant train on it in the entrance." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.rails_x_cake %}
 
 ## Community Day
 
@@ -578,43 +407,14 @@ Hack day at AngelList!
 I didn't write a single line of code, but hack days are about more than just coding!
 I had some great conversations, and I'm feeling inspired and recharged going into the Thanksgiving break!
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/hack-day-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/hack-day-1.jpg" alt="Trendy office space with comfy couches and chairs and a few people milling about." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/hack-day-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/hack-day-2.jpg" alt="Food and coffee sitting on a table. Breakfast is breakfast burritos, pastries, and fruit." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/hack-day-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/hack-day-3.jpg" alt="Irina making opening announcements to a group of people." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.hack_day %}
 
 ## Ruby Friends
 
 Talks are great, but the real value from conferences comes from the connections we make in downtime. ❤️
 Between WNB.rb lunch, the GitButler afterparty, and unofficial get-togethers, I had a fantastic time meeting and chatting with my Ruby friends at SF Ruby!
 
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-1.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-1.jpg" alt="Photo from WNB.rb lunch.
-      Photo credit Dalma Boros" />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-2.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-2.jpg" alt="Me, laying on two bean bags, chatting with Tia Anderson.
-      Photo credit Amanda Kinney" />
-  </a>
-</div>
-
-<div style="display: flex;">
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-3.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-3.jpg" alt="Photo of people hanging out at a bar, playing pool, in the background, Rubyists are milling about.
-      Jeremy Smith and Jim Remsik are watching Kasper and Mike Dalton play pool." />
-  </a>
-  <a href="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-4.jpg">
-    <img src="{{ site.baseurl }}/assets/img/posts/sfruby-2025/ruby-friends-4.jpg" alt="PJ Hagerty and Chael getting a selfie at the GitButler party." />
-  </a>
-</div>
+{% include gallery.html gallery=page.galleries.ruby_friends %}
 
 ## Final Thoughts
 
