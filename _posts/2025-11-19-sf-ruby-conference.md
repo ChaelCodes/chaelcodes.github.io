@@ -40,14 +40,14 @@ galleries:
   ruby_embassy:
     id: ruby-embassy
     images:
+      - src: /assets/img/posts/sfruby-2025/ruby-passport-4.jpg
+        alt: "An open Ruby Passport in front of a window overlooking the tarmac at SFO. An attempt has been made to make block letters and emulate a real passport, but it has failed. The ink is smudged and dates have been scratched out and updated. The photo is a stiff, dead-eyed smileless stare like a real passport. First name: RACHAEL Last name: WRIGHT-MUNN Date of birth: (left blank) Nationality: UNITED STATES Signature: (squiggly ChaelCodes signature) Date and event of issue: 19 Nov 2025 SF Ruby Date and version when you started using Ruby: 10 Jul 2014, 2.1 Date and version when you started using Rails: 03 Mar 2015, 4.2.0"
       - src: /assets/img/posts/sfruby-2025/ruby-passport-1.jpg
         alt: "Colorful flag pennants adorn the wall, and props cover the table. The photographer stands by, waiting for the next Rubyist."
       - src: /assets/img/posts/sfruby-2025/ruby-passport-2.jpg
         alt: "Colorful flag pennants adorn the wall as two volunteers help someone with their first Ruby Passport."
       - src: /assets/img/posts/sfruby-2025/ruby-passport-3.png
         alt: "A screenshot from RubyEvents.org of Chael's profile. There are now 3 icons next to her name - verified, Ruby Passport, and contributor."
-      - src: /assets/img/posts/sfruby-2025/ruby-passport-4.jpg
-        alt: "An open Ruby Passport in front of a window overlooking the tarmac at SFO. An attempt has been made to make block letters and emulate a real passport, but it has failed. The ink is smudged and dates have been scratched out and updated. The photo is a stiff, dead-eyed smileless stare like a real passport. First name: RACHAEL Last name: WRIGHT-MUNN Date of birth: (left blank) Nationality: UNITED STATES Signature: (squiggly ChaelCodes signature) Date and event of issue: 19 Nov 2025 SF Ruby Date and version when you started using Ruby: 10 Jul 2014, 2.1 Date and version when you started using Rails: 03 Mar 2015, 4.2.0"
   irina_welcome:
     id: irina-welcome
     images:
@@ -122,14 +122,14 @@ galleries:
   carmine_paolino_talk:
     id: carmine-paolino-talk
     images:
+      - src: /assets/img/posts/sfruby-2025/rubyllm-4.jpg
+        alt: "Carmine staring out at the audience."
       - src: /assets/img/posts/sfruby-2025/rubyllm-1.jpg
         alt: "Carmine pointing at a slide demoing RubyLLM. Track usage with RubyLLM ``` response = RubyLLM.chat(model: 'gemini-2.5-flash').ask('What's the oldest known example of conifers?') response.input_tokens # => 12 response.output_tokens # => 1279 ```"
       - src: /assets/img/posts/sfruby-2025/rubyllm-2.jpg
         alt: "Carmine points at a slide: This is Ruby's time to shine in AI"
       - src: /assets/img/posts/sfruby-2025/rubyllm-3.jpg
         alt: "Carmine on stage. Slide says: The RubyLLM Philosophy 1. Simple should be simple, complex should be possible 2. Models and providers are commodities 3. Convention over configuration 4. Progressive disclosure 5. One API, for One Person, in One Machine"
-      - src: /assets/img/posts/sfruby-2025/rubyllm-4.jpg
-        alt: "Carmine staring out at the audience."
   obie_fernandez_talk:
     id: obie-fernandez-talk
     images:
@@ -144,10 +144,10 @@ galleries:
   colleen_schnettler_talk:
     id: colleen-schnettler-talk
     images:
-      - src: /assets/img/posts/sfruby-2025/colleen-marketing-1.jpg
-        alt: "Colleen on stage, gesturing, next to a slide showing a marketing cycle. There's a title 'Marketing 101 by Colleen' and then 6 points in a circle. Identify Target Audience Who are you selling to, and where do they hang out? Create Create something for them Communicate Tell them about the thing Build Trust Make the thing useful/interesting/good Sell Product Upsell the product Do it again With a new thing"
       - src: /assets/img/posts/sfruby-2025/colleen-marketing-2.jpg
         alt: "Colleen on stage, gesturing to the audience."
+      - src: /assets/img/posts/sfruby-2025/colleen-marketing-1.jpg
+        alt: "Colleen on stage, gesturing, next to a slide showing a marketing cycle. There's a title 'Marketing 101 by Colleen' and then 6 points in a circle. Identify Target Audience Who are you selling to, and where do they hang out? Create Create something for them Communicate Tell them about the thing Build Trust Make the thing useful/interesting/good Sell Product Upsell the product Do it again With a new thing"
       - src: /assets/img/posts/sfruby-2025/colleen-marketing-3.jpg
         alt: "Colleen on stage with a camera pointed at her in front of a sign '2025 San Francisco Ruby Conference'. The photo composition is particularly good. Next to her is a slide on an LED screen: None of this works if you don't Know who you're talking to Know how you're helping them (or if it's obviously AI-generated)"
       - src: /assets/img/posts/sfruby-2025/colleen-marketing-4.jpg
@@ -155,21 +155,21 @@ galleries:
   sarah_mei_talk:
     id: sarah-mei-talk
     images:
+      - src: /assets/img/posts/sfruby-2025/sarah-mei-3.jpg
+        alt: "Sarah Mei laughing at her own joke."
       - src: /assets/img/posts/sfruby-2025/sarah-mei-1.jpg
         alt: "Sarah Mei looking concerned and the slide next to her reads: Our Personal Fears - I'll lose my job - Software jobs will lose prestige or pay less - The hard-won skills I have are suddenly useless - The thing I like about this job is going away"
       - src: /assets/img/posts/sfruby-2025/sarah-mei-2.jpg
         alt: "Sarah Mei on stage, the slide next to her says: Current shift: AI Coding Assistants Speculation: - Applications can be written faster - More applications will be written - More ambitious applications - More types of people can write them"
-      - src: /assets/img/posts/sfruby-2025/sarah-mei-3.jpg
-        alt: "Sarah Mei laughing at her own joke."
       - src: /assets/img/posts/sfruby-2025/sarah-mei-4.jpg
         alt: "Sarah Mei on stage - the slide next to her says 'The Panic Discourse' and features a bunch of headlines panicking about AI. My favorites are 'The AI coding apocalypse' and ''It's a bloodbath out there': Tech workers forced to take 'survival jobs' as AI cuts swath through workforce'."
   vladimir_dementyev_talk:
     id: vladimir-dementyev-talk
     images:
-      - src: /assets/img/posts/sfruby-2025/rails-x-1.jpg
-        alt: "Vladimir looks at a slide describing... Rails X Beginner-friendly Docs, starter-kits, UI kits, vibe-boarding Developer-friendly LSPs, guardrails, linters AI-native AI concepts, augmentation Ready to scale Maintainable architecture, performance-oriented extensions"
       - src: /assets/img/posts/sfruby-2025/rails-x-2.jpg
         alt: "Vladimir on stage, looking up at the future."
+      - src: /assets/img/posts/sfruby-2025/rails-x-1.jpg
+        alt: "Vladimir looks at a slide describing... Rails X Beginner-friendly Docs, starter-kits, UI kits, vibe-boarding Developer-friendly LSPs, guardrails, linters AI-native AI concepts, augmentation Ready to scale Maintainable architecture, performance-oriented extensions"
       - src: /assets/img/posts/sfruby-2025/rails-x-3.jpg
         alt: "Vladimir gestures to a list of things Rails should reconsider based on a survey he did. The slide looks like a family feud list. RECONSIDER JS/CSS MGMT (42) CALLBACKS (29) ACTIVE RECORD (21) ACTION MAILBOX (17) IVARS IN VIEWS (11) ACTION TEXT (9) ACTION PATTERN (CONTROLLERS) (4)"
       - src: /assets/img/posts/sfruby-2025/rails-x-4.jpg
@@ -177,12 +177,12 @@ galleries:
   rails_x_cake:
     id: rails-x-cake
     images:
+      - src: /assets/img/posts/sfruby-2025/rails-x-cake-3.jpg
+        alt: "A cake with railroad tracks and a fondant train on it in the entrance."
       - src: /assets/img/posts/sfruby-2025/rails-x-cake-1.jpg
         alt: "Vladimir on stage next to the opening slide which says 'Rails' and then has a big X railroad crossing."
       - src: /assets/img/posts/sfruby-2025/rails-x-cake-2.jpg
         alt: "Brittany Martin, Amanda Kinney, Gary Tou, and Irina Nazarova standing behind a half-eaten cake that's half-vanilla and half-chocolate."
-      - src: /assets/img/posts/sfruby-2025/rails-x-cake-3.jpg
-        alt: "A cake with railroad tracks and a fondant train on it in the entrance."
   hack_day:
     id: hack-day
     images:

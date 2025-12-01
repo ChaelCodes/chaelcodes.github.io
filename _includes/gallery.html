@@ -1,8 +1,8 @@
-<div style="display: flex;">
+<div class="gallery-container">
   {% for image in include.gallery.images %}
   <a
     href="{{ site.baseurl }}{{ image.src }}"
-    class="glightbox"
+    class="glightbox gallery-item-{{ forloop.index }}"
     data-gallery="gallery-{{ include.gallery.id }}"
     data-glightbox="description: .custom-desc-{{ include.gallery.id }}-{{ forloop.index }};"
   >
