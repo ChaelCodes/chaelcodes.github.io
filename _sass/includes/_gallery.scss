@@ -1,3 +1,29 @@
+.gallery-container {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 100%;
+  max-height: 40vh;
+  gap: 1rem;
+  align-content: flex-start;
+}
+
+.gallery-container a {
+  max-width: 10vw;
+}
+
+.gallery-container a img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-container .gallery-item-1 {
+  flex: 1 0 40vh;
+  max-height: 40vh;
+  max-width: 60vw;
+}
+
 // GLightbox dark mode fixes
 [data-theme="dark"] .gslide-description {
   background-color: var(--background-color);
