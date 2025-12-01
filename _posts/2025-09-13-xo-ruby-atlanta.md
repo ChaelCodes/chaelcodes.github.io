@@ -11,10 +11,10 @@ galleries:
   alex_yarotsky_talk:
     id: alex-yarotsky-talk
     images:
-      - src: /assets/img/posts/xo-ruby-atlanta/postgres-talk.jpg
-        alt: "The slide is 'Scaling Postgres Beyond Query Optimization' by Alex Yarotsky, and Alex stands beside it at the podium, pointing at it and looking intense."
       - src: /assets/img/posts/xo-ruby-atlanta/alex-presenting-2.jpg
         alt: "Alex stands behind the podium, making eye contact with the audience."
+      - src: /assets/img/posts/xo-ruby-atlanta/postgres-talk.jpg
+        alt: "The slide is 'Scaling Postgres Beyond Query Optimization' by Alex Yarotsky, and Alex stands beside it at the podium, pointing at it and looking intense."
       - src: /assets/img/posts/xo-ruby-atlanta/alex-presenting-3.jpg
         alt: "Alex looking genuinely alarmed at his slide."
       - src: /assets/img/posts/xo-ruby-atlanta/alex-autovacuum.jpg
@@ -31,19 +31,19 @@ galleries:
   katya_sarmiento_talk:
     id: katya-sarmiento-talk
     images:
-      - src: /assets/img/posts/xo-ruby-atlanta/disability-talk.jpg
-        alt: "Kat gestures at the slide which reads: ADHD: 'I can't remember', ARFID: 'I need to pick something to eat from this menu.', Anxiety: 'I have to do something, right now', Depression: 'I can't do anything, it's pointless', Chronic Fatigue: 'My body feels like it's shutting down. I need sleep.', Insomnia: 'I can't sleep.'"
       - src: /assets/img/posts/xo-ruby-atlanta/kat-presenting.jpg
         alt: "Kat looks seriously over the audience from the podium."
+      - src: /assets/img/posts/xo-ruby-atlanta/disability-talk.jpg
+        alt: "Kat gestures at the slide which reads: ADHD: 'I can't remember', ARFID: 'I need to pick something to eat from this menu.', Anxiety: 'I have to do something, right now', Depression: 'I can't do anything, it's pointless', Chronic Fatigue: 'My body feels like it's shutting down. I need sleep.', Insomnia: 'I can't sleep.'"
       - src: /assets/img/posts/xo-ruby-atlanta/kat-arfid-slide.jpg
         alt: "Kat describes the body feel of ARFID from behind the podium. Slide: ARFID: 'I can't eat this' with empathetic and non-empathetic response examples."
   thomas_cannon_talk:
     id: thomas-cannon-talk
     images:
-      - src: /assets/img/posts/xo-ruby-atlanta/junior-dev-talk.jpg
-        alt: "'People need food and housing to learn' Thomas stands next to this absolute banger of a quote."
       - src: /assets/img/posts/xo-ruby-atlanta/thomas-heartfelt.jpg
         alt: "Thomas face is full of heart as he connects with the audience."
+      - src: /assets/img/posts/xo-ruby-atlanta/junior-dev-talk.jpg
+        alt: "'People need food and housing to learn' Thomas stands next to this absolute banger of a quote."
       - src: /assets/img/posts/xo-ruby-atlanta/thomas-juniors-asset.jpg
         alt: "'Juniors are an asset, not a charity case or liability' Thomas next to another incredible quote."
       - src: /assets/img/posts/xo-ruby-atlanta/thomas-mentee-quote.jpg
@@ -71,10 +71,10 @@ galleries:
   javier_zon_talk:
     id: javier-zon-talk
     images:
-      - src: /assets/img/posts/xo-ruby-atlanta/caching-talk.jpg
-        alt: "Javier dramatically gestures in front of the title slide: FROM Expensive Queries TO Smart Caching A DBA's Guide for Rails"
       - src: /assets/img/posts/xo-ruby-atlanta/javier-portrait.jpg
         alt: "Javier addressing the audience"
+      - src: /assets/img/posts/xo-ruby-atlanta/caching-talk.jpg
+        alt: "Javier dramatically gestures in front of the title slide: FROM Expensive Queries TO Smart Caching A DBA's Guide for Rails"
       - src: /assets/img/posts/xo-ruby-atlanta/javier-connections.jpg
         alt: "Javier highlights a giant uptick in connections, starting in August"
   kylie_stradley_talk:
