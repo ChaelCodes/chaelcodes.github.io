@@ -1,3 +1,10 @@
+- date: 02/01/2026
+  title: Joined the RubyEvents.org Team!
+  content: <a href="https://www.rubyevents.org/">RubyEvents.org</a> is a gorgeous app on a mission to index every Ruby event! It has a thriving, vibrant community of contributors, and I'm really excited to help out!
+- date: 19/11/2025
+  title: Play with your Code at SF Ruby 2025
+  content: <a href="https://www.rubyevents.org/talks/play-with-your-code-san-francisco-ruby-conference-2025" target="_blank">Play with your Code</a> is a talk about what makes programming games fun and how to bring it to our day jobs!
+    how they can help you learn new concepts, languages, and frameworks.
 - date: 31/05/2024
   title: Validate me! at Blue Ridge Ruby 2024
   content: <a href="/talks/2024/05/31/validate-me.html">Validate Me! - Demystifying Rails Validators</a> is a fun exploration of
