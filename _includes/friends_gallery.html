@@ -1,0 +1,21 @@
+<div class="friends-gallery-container">
+  {% for image in include.gallery.images %}
+  <a
+    href="{{ site.baseurl }}{{ image.src }}"
+    class="glightbox friends-gallery-item"
+    data-gallery="gallery-{{ include.gallery.id }}"
+    data-glightbox="description: .custom-desc-{{ include.gallery.id }}-{{ forloop.index }};"
+  >
+    <img src="{{ site.baseurl }}{{ image.src }}" alt="{{ image.alt }}">
+  </a>
+  <div class="glightbox-desc custom-desc-{{ include.gallery.id }}-{{ forloop.index }}">
+    <p>{{ image.alt }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+<script type="text/javascript">
+  if (typeof GLightbox !== 'undefined') {
+    const lightbox = GLightbox({ touchNavigation: true });
+  }
+</script>
